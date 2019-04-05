@@ -11,6 +11,17 @@
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
 		E338EBFD22564B660066F863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E338EBFC22564B660066F863 /* Assets.xcassets */; };
+		E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0522565FE30066F863 /* BallFlowController.swift */; };
+		E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
+		E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
+		E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
+		E338EC1222568B910066F863 /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1122568B910066F863 /* BuilderProtocol.swift */; };
+		E338EC142256ACC30066F863 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* GameState.swift */; };
+		E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* FLBallNode.swift */; };
+		E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
+		E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* FLTableNode.swift */; };
+		E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
+		E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +31,17 @@
 		E338EBFA22564B640066F863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E338EBFC22564B660066F863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E338EBFE22564B660066F863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E338EC0522565FE30066F863 /* BallFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowController.swift; sourceTree = "<group>"; };
+		E338EC08225663D20066F863 /* SCNVector3+zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+zero.swift"; sourceTree = "<group>"; };
+		E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
+		E338EC0E22566F330066F863 /* BallFlowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowScene.swift; sourceTree = "<group>"; };
+		E338EC1122568B910066F863 /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
+		E338EC132256ACC30066F863 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		E338EC162256ADCA0066F863 /* FLBallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBallNode.swift; sourceTree = "<group>"; };
+		E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTargetPointNode.swift; sourceTree = "<group>"; };
+		E338EC1A2256B0600066F863 /* FLTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableNode.swift; sourceTree = "<group>"; };
+		E338EC1F2256B1310066F863 /* CollisionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCenter.swift; sourceTree = "<group>"; };
+		E338EC212256B5F70066F863 /* SCNode+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+collisions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,11 @@
 		E338EBF422564B640066F863 /* TVOSBasics */ = {
 			isa = PBXGroup;
 			children = (
+				E338EC1E2256B10D0066F863 /* Collisions */,
+				E338EC152256ADA90066F863 /* Nodes */,
+				E338EC0A2256662C0066F863 /* Utilities */,
+				E338EC07225663A60066F863 /* Extensions */,
+				E338EC0422565FC80066F863 /* Controllers */,
 				E338EBF522564B640066F863 /* AppDelegate.swift */,
 				E338EBF722564B640066F863 /* ViewController.swift */,
 				E338EBF922564B640066F863 /* Main.storyboard */,
@@ -59,6 +86,68 @@
 				E338EBFE22564B660066F863 /* Info.plist */,
 			);
 			path = TVOSBasics;
+			sourceTree = "<group>";
+		};
+		E338EC0422565FC80066F863 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC0D22566F1F0066F863 /* BallFlowController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E338EC07225663A60066F863 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC08225663D20066F863 /* SCNVector3+zero.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E338EC0A2256662C0066F863 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E338EC0D22566F1F0066F863 /* BallFlowController */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC1022568B260066F863 /* Builder */,
+				E338EC0522565FE30066F863 /* BallFlowController.swift */,
+				E338EC0E22566F330066F863 /* BallFlowScene.swift */,
+				E338EC132256ACC30066F863 /* GameState.swift */,
+			);
+			path = BallFlowController;
+			sourceTree = "<group>";
+		};
+		E338EC1022568B260066F863 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC1122568B910066F863 /* BuilderProtocol.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		E338EC152256ADA90066F863 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC162256ADCA0066F863 /* FLBallNode.swift */,
+				E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
+				E338EC1A2256B0600066F863 /* FLTableNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		E338EC1E2256B10D0066F863 /* Collisions */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC1F2256B1310066F863 /* CollisionCenter.swift */,
+				E338EC212256B5F70066F863 /* SCNode+collisions.swift */,
+			);
+			path = Collisions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +220,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
+				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,
+				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
+				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
+				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
 				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
+				E338EC142256ACC30066F863 /* GameState.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
+				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
+				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
+				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
+				E338EC1222568B910066F863 /* BuilderProtocol.swift in Sources */,
+				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
 			};
 			name = Debug;
 		};
@@ -299,6 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
 			};
 			name = Release;
 		};
