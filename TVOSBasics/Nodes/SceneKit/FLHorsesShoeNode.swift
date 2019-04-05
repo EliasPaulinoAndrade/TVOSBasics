@@ -13,24 +13,25 @@ class FLHorsesShoeNode: SCNNode {
     
     var horsesShoeNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "horseshoe.scn", nodeName: "horseshoe")
     
-    init(zPosition: Float) {
+    override init() {
         super.init()
         
         position = SCNVector3.zero
-        position.x = 11.5
-        position.y += 0.5
-        position.z = zPosition
+        position.y = 0.1
         
-        
-        if let horsesShoeNode = horsesShoeNode {
+        if let horsesShoeNode = horsesShoeNode,
+           let horsesShoeGeometry = horsesShoeNode.geometry {
             addChildNode(horsesShoeNode)
-            horsesShoeNode.position.y = 2
+            
+            let shapeBody = SCNPhysicsShape.init(geometry: horsesShoeGeometry, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
+            
+            physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: shapeBody)
+            
+            self.eulerAngles.y = Float.pi
+            self.eulerAngles.z = Float.pi
         }
         
-//        physicsBody = SCNPhysicsBody.init(type: .dynamic, shape: nil)
-        
-//        willCollideWith(nodeTypes: [FLTableNode.self, FLBallsBoxNode.self, FLBallNode.self])
-//        willContactWith(nodeTypes: [FLTargetPointNode.self])
+        willCollideWith(nodeTypes: [FLBallNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {

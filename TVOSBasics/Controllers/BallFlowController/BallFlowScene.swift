@@ -36,10 +36,17 @@ class BallFlowScene: SCNScene {
     var tableNode = FLTableNode.init()
     
     var tableLimitsNode = FLTableLimitsNode.init()
-    
-    var firstTargetPointNode = FLTargetPointNode.init(zPosition: 1)
-    var secondTargetPointNode = FLTargetPointNode.init(zPosition: 5)
-    var thirdTargetPointNode = FLTargetPointNode.init(zPosition: -3)
+
+    var firstWinPointNode = FLWinPointNode.init(zPosition: -3)
+    var secondWinPointNode = FLWinPointNode.init(zPosition: 1)
+    var thirdWinPointNode = FLWinPointNode.init(zPosition: 5)
+    var initialWinPointNode: FLWinPointNode = {
+        let initialWinPointNode = FLWinPointNode.init(zPosition: 5, includeTargetPoint: false)
+        
+        initialWinPointNode.position.x = -initialWinPointNode.position.x
+        
+        return initialWinPointNode
+    }()
     
     var redBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
     lazy var blueBallsBoxNode: FLBallsBoxNode = {
@@ -50,10 +57,6 @@ class BallFlowScene: SCNScene {
         return blueBallsBoxNode
     }()
     
-    lazy var firstShoeNode = FLHorsesShoeNode.init(zPosition: 0)
-    lazy var secondShoeNode = FLHorsesShoeNode.init(zPosition: 5)
-    lazy var thirdShoeNode = FLHorsesShoeNode.init(zPosition: -5)
-    
     var ballNode: FLBallNode?
     
     override init() {
@@ -62,19 +65,17 @@ class BallFlowScene: SCNScene {
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(lightNode)
         rootNode.addChildNode(tableNode)
-        tableNode.addChildNode(firstTargetPointNode)
-        tableNode.addChildNode(secondTargetPointNode)
-        tableNode.addChildNode(thirdTargetPointNode)
-//        tableNode.addChildNode(firstShoeNode)
-//        tableNode.addChildNode(secondShoeNode)
-//        tableNode.addChildNode(thirdShoeNode)
+        tableNode.addChildNode(initialWinPointNode)
+        tableNode.addChildNode(firstWinPointNode)
+        tableNode.addChildNode(secondWinPointNode)
+        tableNode.addChildNode(thirdWinPointNode)
         rootNode.addChildNode(redBallsBoxNode)
         rootNode.addChildNode(blueBallsBoxNode)
         rootNode.addChildNode(tableLimitsNode)
 
         
         self.physicsWorld.contactDelegate = self
-        self.physicsWorld.gravity = SCNVector3.init(0, -100, 0)
+//        self.physicsWorld.gravity = SCNVector3.init(0, -100, 0)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -100,7 +101,7 @@ class BallFlowScene: SCNScene {
         if let newBall = newBall {
             newBall.position = SCNVector3.zero
             newBall.position.y = 1
-            newBall.position.x = -10
+            newBall.position.x = -10.5
             newBall.position.z = -5
             
             rootNode.addChildNode(newBall)
@@ -108,6 +109,18 @@ class BallFlowScene: SCNScene {
         } else if let currentTeam = currentTeam {
             self.delegate?.finished(team: currentTeam)
         }
+    }
+    
+    func removeCurrentBall() {
+        rootNode.runAction(SCNAction.sequence([
+            SCNAction.wait(duration: 0.5),
+            SCNAction.run({ (_) in
+                self.ballNode?.removeFromParentNode()
+                self.ballNode = nil
+                
+                self.addNewBall()
+            })
+        ]))
     }
     
     func initiateGame(forTeam team: BallFlowTeam) {
@@ -146,6 +159,25 @@ extension BallFlowScene: SCNPhysicsContactDelegate {
         if contact.checkCollisionBetween(nodeTypeA: FLBallNode.self, nodeTypeB: FLTableLimitsNode.self) {
             self.ballNode?.removeFromParentNode()
             addNewBall()
+        } else if let (ballNode, targetPointNode) = contact.checkCollisionBetween(
+            nodeTypeA: FLBallNode.self,
+            nodeTypeB: FLTargetPointNode.self), !ballNode.wasUsed {
+            
+            ballNode.wasUsed = true
+            
+            removeCurrentBall()
+            
+            switch targetPointNode.parent {
+                
+            case firstWinPointNode:
+                print("150 pontos")
+            case secondWinPointNode:
+                print("100 pontos")
+            case thirdWinPointNode:
+                print("50 pontos")
+            default:
+                break
+            }
         }
     }
 }

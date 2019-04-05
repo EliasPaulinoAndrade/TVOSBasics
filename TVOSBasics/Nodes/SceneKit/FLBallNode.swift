@@ -10,6 +10,9 @@ import Foundation
 import SceneKit
 
 class FLBallNode: SCNNode {
+    
+    var wasUsed = false
+    
     init(withRadius radius: CGFloat) {
         super.init()
         
@@ -21,8 +24,16 @@ class FLBallNode: SCNNode {
         
         physicsBody = SCNPhysicsBody.init(type: .dynamic, shape: nil)
         
-        willCollideWith(nodeTypes: [FLTableNode.self, FLBallsBoxNode.self, FLBallNode.self])
-        willContactWith(nodeTypes: [FLTargetPointNode.self])
+        willCollideWith(nodeTypes: [
+            FLTableNode.self,
+            FLBallsBoxNode.self,
+            FLBallNode.self,
+            FLHorsesShoeNode.self]
+        )
+        willContactWith(nodeTypes: [
+            FLTargetPointNode.self,
+            FLTableLimitsNode.self
+        ])
     }
     
     required init?(coder aDecoder: NSCoder) {

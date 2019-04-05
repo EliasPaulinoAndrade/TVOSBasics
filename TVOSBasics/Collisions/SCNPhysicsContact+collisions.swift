@@ -44,4 +44,16 @@ extension SCNPhysicsContact {
         }
         return false
     }
+    
+    func checkCollisionBetween<NodeTypeA: SCNNode, NodeTypeB: SCNNode>(nodeTypeA: NodeTypeA.Type, nodeTypeB: NodeTypeB.Type) -> (nodeOfTypeA: NodeTypeA, nodeOfTypeB: NodeTypeB)? {
+        
+        if let nodeA = nodeA as? NodeTypeA, let nodeB = nodeB as? NodeTypeB {
+            return (nodeOfTypeA: nodeA, nodeOfTypeB: nodeB)
+        }
+        
+        if let nodeA = nodeA as? NodeTypeB, let nodeB = nodeB as? NodeTypeA {
+            return (nodeOfTypeA: nodeB, nodeOfTypeB: nodeA)
+        }
+        return nil
+    }
 }

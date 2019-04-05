@@ -34,6 +34,7 @@
 		E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
 		E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
 		E355F5782257D820005034A8 /* horseshoe.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F5732257D304005034A8 /* horseshoe.scn */; };
+		E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		E355F5732257D304005034A8 /* horseshoe.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = horseshoe.scn; sourceTree = "<group>"; };
 		E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNScene+loadSceneNode.swift"; sourceTree = "<group>"; };
 		E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHorsesShoeNode.swift; sourceTree = "<group>"; };
+		E355F5792257F50C005034A8 /* FLWinPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWinPointNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				E355F56022577F53005034A8 /* FLBallsBoxNode.swift */,
 				E355F567225796D2005034A8 /* FLTableLimitsNode.swift */,
 				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
+				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				E355F56622578F76005034A8 /* Queue.swift in Sources */,
 				E355F5702257C354005034A8 /* BallFlowTeam.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
+				E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */,
 				E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
 				E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
