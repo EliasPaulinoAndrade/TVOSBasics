@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum GameState {
-    case inital, playing, ended
+enum FLGameState {
+    case redInitial, blueInitial, redPlaying, bluePlaying
 }

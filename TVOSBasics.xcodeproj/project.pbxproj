@@ -15,7 +15,7 @@
 		E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
 		E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
 		E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
-		E338EC142256ACC30066F863 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* GameState.swift */; };
+		E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
 		E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* FLBallNode.swift */; };
 		E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
 		E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* FLTableNode.swift */; };
@@ -24,6 +24,16 @@
 		E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
 		E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
 		E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
+		E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* FLBallsBoxNode.swift */; };
+		E355F56622578F76005034A8 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
+		E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* FLTableLimitsNode.swift */; };
+		E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
+		E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
+		E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
+		E355F5702257C354005034A8 /* BallFlowTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56F2257C354005034A8 /* BallFlowTeam.swift */; };
+		E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
+		E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
+		E355F5782257D820005034A8 /* horseshoe.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F5732257D304005034A8 /* horseshoe.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +47,7 @@
 		E338EC08225663D20066F863 /* SCNVector3+zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+zero.swift"; sourceTree = "<group>"; };
 		E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
 		E338EC0E22566F330066F863 /* BallFlowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowScene.swift; sourceTree = "<group>"; };
-		E338EC132256ACC30066F863 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		E338EC132256ACC30066F863 /* BallFlowGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowGameState.swift; sourceTree = "<group>"; };
 		E338EC162256ADCA0066F863 /* FLBallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBallNode.swift; sourceTree = "<group>"; };
 		E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTargetPointNode.swift; sourceTree = "<group>"; };
 		E338EC1A2256B0600066F863 /* FLTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableNode.swift; sourceTree = "<group>"; };
@@ -46,6 +56,16 @@
 		E355F5562257662D005034A8 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 		E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fillConstraints.swift"; sourceTree = "<group>"; };
 		E355F55A2257757B005034A8 /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
+		E355F56022577F53005034A8 /* FLBallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBallsBoxNode.swift; sourceTree = "<group>"; };
+		E355F56522578F76005034A8 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E355F567225796D2005034A8 /* FLTableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableLimitsNode.swift; sourceTree = "<group>"; };
+		E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsContact+collisions.swift"; sourceTree = "<group>"; };
+		E355F56B2257B058005034A8 /* GameAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertView.swift; sourceTree = "<group>"; };
+		E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowSceneDelegate.swift; sourceTree = "<group>"; };
+		E355F56F2257C354005034A8 /* BallFlowTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowTeam.swift; sourceTree = "<group>"; };
+		E355F5732257D304005034A8 /* horseshoe.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = horseshoe.scn; sourceTree = "<group>"; };
+		E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNScene+loadSceneNode.swift"; sourceTree = "<group>"; };
+		E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHorsesShoeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +98,7 @@
 		E338EBF422564B640066F863 /* TVOSBasics */ = {
 			isa = PBXGroup;
 			children = (
+				E355F5622257829B005034A8 /* SceneObjects */,
 				E355F5552257641E005034A8 /* Views */,
 				E338EC1E2256B10D0066F863 /* Collisions */,
 				E338EC152256ADA90066F863 /* Nodes */,
@@ -106,6 +127,7 @@
 			children = (
 				E338EC08225663D20066F863 /* SCNVector3+zero.swift */,
 				E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */,
+				E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -114,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */,
+				E355F56522578F76005034A8 /* Queue.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -123,7 +146,9 @@
 			children = (
 				E338EC0522565FE30066F863 /* BallFlowController.swift */,
 				E338EC0E22566F330066F863 /* BallFlowScene.swift */,
-				E338EC132256ACC30066F863 /* GameState.swift */,
+				E338EC132256ACC30066F863 /* BallFlowGameState.swift */,
+				E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */,
+				E355F56F2257C354005034A8 /* BallFlowTeam.swift */,
 			);
 			path = BallFlowController;
 			sourceTree = "<group>";
@@ -131,9 +156,7 @@
 		E338EC152256ADA90066F863 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				E338EC162256ADCA0066F863 /* FLBallNode.swift */,
-				E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
-				E338EC1A2256B0600066F863 /* FLTableNode.swift */,
+				E355F55C22577BFE005034A8 /* SceneKit */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -143,6 +166,7 @@
 			children = (
 				E338EC1F2256B1310066F863 /* CollisionCenter.swift */,
 				E338EC212256B5F70066F863 /* SCNode+collisions.swift */,
+				E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */,
 			);
 			path = Collisions;
 			sourceTree = "<group>";
@@ -152,8 +176,30 @@
 			children = (
 				E355F5562257662D005034A8 /* ScoreBoardView.swift */,
 				E355F55A2257757B005034A8 /* TeamScoreView.swift */,
+				E355F56B2257B058005034A8 /* GameAlertView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E355F55C22577BFE005034A8 /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				E338EC162256ADCA0066F863 /* FLBallNode.swift */,
+				E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
+				E338EC1A2256B0600066F863 /* FLTableNode.swift */,
+				E355F56022577F53005034A8 /* FLBallsBoxNode.swift */,
+				E355F567225796D2005034A8 /* FLTableLimitsNode.swift */,
+				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
+			);
+			path = SceneKit;
+			sourceTree = "<group>";
+		};
+		E355F5622257829B005034A8 /* SceneObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E355F5732257D304005034A8 /* horseshoe.scn */,
+			);
+			path = SceneObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
+				E355F5782257D820005034A8 /* horseshoe.scn in Resources */,
 				E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
+				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
+				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
@@ -234,13 +283,20 @@
 				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
 				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
 				E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
-				E338EC142256ACC30066F863 /* GameState.swift in Sources */,
+				E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
+				E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
+				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
+				E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
 				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
 				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
+				E355F56622578F76005034A8 /* Queue.swift in Sources */,
+				E355F5702257C354005034A8 /* BallFlowTeam.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
+				E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
+				E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

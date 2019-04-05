@@ -10,17 +10,26 @@ import UIKit
 import QuartzCore
 import SceneKit
 
-public class GameViewController: UIViewController {
+public class BallFlowController: UIViewController {
     
     let ballPanForceFactor: CGFloat = 5000
-    
-    var gameState = GameState.inital
     
     var sceneView = SCNView.init()
     
     var scene = BallFlowScene.init()
     
     var scoreBoardView = ScoreBoardView.init()
+    
+    lazy var gameAlertView: GameAlertView = {
+        let gameAlertView = GameAlertView.init(text: "Vez da Equipe Vermelha. Pressione Play para continuar.") {
+            self.scene.initiateGame(forTeam: .red)
+        }
+        return gameAlertView
+    }()
+    
+    override public var preferredFocusEnvironments: [UIFocusEnvironment] {
+        return [gameAlertView]
+    }
     
     public init() {
 
@@ -38,10 +47,12 @@ public class GameViewController: UIViewController {
         self.view = UIView()
         
         sceneView.scene = scene
+        scene.delegate = self
         
         setupSceneView()
         setupInput()
         view.addSubview(scoreBoardView)
+        view.addSubview(gameAlertView)
         
         self.sceneView.backgroundColor = UIColor.clear
     }
@@ -51,11 +62,6 @@ public class GameViewController: UIViewController {
             let panForce = recognizer.force(in: sceneView)
         
             scene.moveBall(withForce: panForce)
-            
-            if gameState == .inital {
-                gameState = .playing
-                scene.rotateTable()
-            }
         }
     }
     
@@ -79,7 +85,27 @@ public class GameViewController: UIViewController {
         
         sceneView.backgroundColor = UIColor.black
         sceneView.showsStatistics = true
-        sceneView.debugOptions = .showPhysicsShapes
+//        sceneView.debugOptions = .showPhysicsShapes
         sceneView.isUserInteractionEnabled = true
+    }
+}
+
+extension BallFlowController: BallFlowSceneDelegate {
+    func finished(team: BallFlowTeam) {
+        switch team {
+        case .blue:
+            break
+        case .red:
+            DispatchQueue.main.async {
+                self.gameAlertView.isHidden = false
+                self.gameAlertView.reset(withText: "Vez da Equipe Azul. Pressione Play para continuar.") {
+                    self.scene.initiateGame(forTeam: .blue)
+                }
+            }
+        }
+    }
+    
+    func lostBall(team: BallFlowTeam) {
+        
     }
 }

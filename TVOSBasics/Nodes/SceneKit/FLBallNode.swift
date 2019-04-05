@@ -10,10 +10,10 @@ import Foundation
 import SceneKit
 
 class FLBallNode: SCNNode {
-    override init() {
+    init(withRadius radius: CGFloat) {
         super.init()
         
-        let ballGeometry = SCNSphere.init(radius: 0.5)
+        let ballGeometry = SCNSphere.init(radius: radius)
         geometry = ballGeometry
         
         position = SCNVector3.zero
@@ -21,7 +21,7 @@ class FLBallNode: SCNNode {
         
         physicsBody = SCNPhysicsBody.init(type: .dynamic, shape: nil)
         
-        willCollideWith(nodeTypes: [FLTableNode.self])
+        willCollideWith(nodeTypes: [FLTableNode.self, FLBallsBoxNode.self, FLBallNode.self])
         willContactWith(nodeTypes: [FLTargetPointNode.self])
     }
     
