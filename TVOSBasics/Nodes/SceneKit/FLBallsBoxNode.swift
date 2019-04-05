@@ -44,7 +44,7 @@ class FLBallsBoxNode: SCNNode {
         geometry?.materials.first?.diffuse.contents = UIImage.init(named: "ballsBoxTexture")
         geometry?.materials.first?.isDoubleSided = true
     
-        position.x = -13.5 - Float(width/2)
+        position.x = -15.5 - Float(width/2)
         position.z = 0
         position.y = Float(height/2)
         

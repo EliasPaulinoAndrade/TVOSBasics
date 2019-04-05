@@ -15,6 +15,7 @@ class FLTargetPointNode: SCNNode {
         super.init()
         
         let targetPointGeometry = SCNCylinder.init(radius: 1, height: 0.05)
+        targetPointGeometry.materials.first?.diffuse.contents = UIColor.clear
         geometry = targetPointGeometry
 
         physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: nil)

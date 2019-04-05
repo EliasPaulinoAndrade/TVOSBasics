@@ -35,6 +35,11 @@
 		E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
 		E355F5782257D820005034A8 /* horseshoe.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F5732257D304005034A8 /* horseshoe.scn */; };
 		E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
+		E355F5802257FB89005034A8 /* imbuia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E355F57F2257FB89005034A8 /* imbuia.jpg */; };
+		E355F5812258023A005034A8 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F57E2257FB7A005034A8 /* table.scn */; };
+		E355F58522580991005034A8 /* horseshoe2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F58422580936005034A8 /* horseshoe2.scn */; };
+		E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
+		E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNScene+loadSceneNode.swift"; sourceTree = "<group>"; };
 		E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHorsesShoeNode.swift; sourceTree = "<group>"; };
 		E355F5792257F50C005034A8 /* FLWinPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWinPointNode.swift; sourceTree = "<group>"; };
+		E355F57E2257FB7A005034A8 /* table.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = table.scn; sourceTree = "<group>"; };
+		E355F57F2257FB89005034A8 /* imbuia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imbuia.jpg; sourceTree = "<group>"; };
+		E355F58422580936005034A8 /* horseshoe2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = horseshoe2.scn; sourceTree = "<group>"; };
+		E355F592225813B0005034A8 /* obstacle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = obstacle.scn; sourceTree = "<group>"; };
+		E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +203,7 @@
 				E355F567225796D2005034A8 /* FLTableLimitsNode.swift */,
 				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
 				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
+				E355F5932258142D005034A8 /* FLObstacleNode.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -200,9 +211,21 @@
 		E355F5622257829B005034A8 /* SceneObjects */ = {
 			isa = PBXGroup;
 			children = (
+				E355F57B2257FAE6005034A8 /* Textures */,
+				E355F58422580936005034A8 /* horseshoe2.scn */,
+				E355F592225813B0005034A8 /* obstacle.scn */,
 				E355F5732257D304005034A8 /* horseshoe.scn */,
+				E355F57E2257FB7A005034A8 /* table.scn */,
 			);
 			path = SceneObjects;
+			sourceTree = "<group>";
+		};
+		E355F57B2257FAE6005034A8 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				E355F57F2257FB89005034A8 /* imbuia.jpg */,
+			);
+			path = Textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +286,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E355F5812258023A005034A8 /* table.scn in Resources */,
+				E355F59522581531005034A8 /* obstacle.scn in Resources */,
+				E355F5802257FB89005034A8 /* imbuia.jpg in Resources */,
 				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
+				E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
 				E355F5782257D820005034A8 /* horseshoe.scn in Resources */,
 				E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
 			);
@@ -288,6 +315,7 @@
 				E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
 				E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
 				E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
+				E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */,
 				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
 				E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,

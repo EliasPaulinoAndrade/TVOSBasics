@@ -28,7 +28,6 @@ class FLTableLimitsNode: SCNNode {
         
         willCollideWith(nodeTypes: [])
         willContactWith(nodeTypes: [FLBallNode.self])
-//        registerCategoryMask()
     }
     
     required init?(coder aDecoder: NSCoder) {

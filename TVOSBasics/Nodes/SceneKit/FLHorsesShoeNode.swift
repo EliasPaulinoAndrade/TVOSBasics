@@ -11,7 +11,7 @@ import SceneKit
 
 class FLHorsesShoeNode: SCNNode {
     
-    var horsesShoeNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "horseshoe.scn", nodeName: "horseshoe")
+    var horsesShoeNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "horseshoe2.scn", nodeName: "horseshoe")
     
     override init() {
         super.init()
@@ -23,12 +23,18 @@ class FLHorsesShoeNode: SCNNode {
            let horsesShoeGeometry = horsesShoeNode.geometry {
             addChildNode(horsesShoeNode)
             
-            let shapeBody = SCNPhysicsShape.init(geometry: horsesShoeGeometry, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
+            let scale = SCNVector3.init(1.4, 1.4, 1.4)
             
-            physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: shapeBody)
+            let shapeBody = SCNPhysicsShape.init(geometry: horsesShoeGeometry, options: [
+                SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron,
+                SCNPhysicsShape.Option.scale: scale
+            ])
             
             self.eulerAngles.y = Float.pi
             self.eulerAngles.z = Float.pi
+            self.scale = scale
+            
+            physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: shapeBody)
         }
         
         willCollideWith(nodeTypes: [FLBallNode.self])

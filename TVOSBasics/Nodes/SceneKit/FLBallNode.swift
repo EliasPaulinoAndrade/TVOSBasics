@@ -28,8 +28,9 @@ class FLBallNode: SCNNode {
             FLTableNode.self,
             FLBallsBoxNode.self,
             FLBallNode.self,
-            FLHorsesShoeNode.self]
-        )
+            FLHorsesShoeNode.self,
+            FLObstacleNode.self
+        ])
         willContactWith(nodeTypes: [
             FLTargetPointNode.self,
             FLTableLimitsNode.self

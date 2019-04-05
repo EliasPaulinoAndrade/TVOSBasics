@@ -37,7 +37,7 @@ class BallFlowScene: SCNScene {
     
     var tableLimitsNode = FLTableLimitsNode.init()
 
-    var firstWinPointNode = FLWinPointNode.init(zPosition: -3)
+    var firstWinPointNode = FLWinPointNode.init(zPosition: -3.5)
     var secondWinPointNode = FLWinPointNode.init(zPosition: 1)
     var thirdWinPointNode = FLWinPointNode.init(zPosition: 5)
     var initialWinPointNode: FLWinPointNode = {
@@ -57,6 +57,8 @@ class BallFlowScene: SCNScene {
         return blueBallsBoxNode
     }()
     
+    var testObstacle = FLObstacleNode.init()
+    
     var ballNode: FLBallNode?
     
     override init() {
@@ -69,6 +71,7 @@ class BallFlowScene: SCNScene {
         tableNode.addChildNode(firstWinPointNode)
         tableNode.addChildNode(secondWinPointNode)
         tableNode.addChildNode(thirdWinPointNode)
+        tableNode.addChildNode(testObstacle)
         rootNode.addChildNode(redBallsBoxNode)
         rootNode.addChildNode(blueBallsBoxNode)
         rootNode.addChildNode(tableLimitsNode)
