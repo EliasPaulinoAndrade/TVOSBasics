@@ -15,7 +15,6 @@
 		E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
 		E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
 		E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
-		E338EC1222568B910066F863 /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1122568B910066F863 /* BuilderProtocol.swift */; };
 		E338EC142256ACC30066F863 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* GameState.swift */; };
 		E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* FLBallNode.swift */; };
 		E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
@@ -35,7 +34,6 @@
 		E338EC08225663D20066F863 /* SCNVector3+zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+zero.swift"; sourceTree = "<group>"; };
 		E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
 		E338EC0E22566F330066F863 /* BallFlowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowScene.swift; sourceTree = "<group>"; };
-		E338EC1122568B910066F863 /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
 		E338EC132256ACC30066F863 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		E338EC162256ADCA0066F863 /* FLBallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBallNode.swift; sourceTree = "<group>"; };
 		E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTargetPointNode.swift; sourceTree = "<group>"; };
@@ -115,20 +113,11 @@
 		E338EC0D22566F1F0066F863 /* BallFlowController */ = {
 			isa = PBXGroup;
 			children = (
-				E338EC1022568B260066F863 /* Builder */,
 				E338EC0522565FE30066F863 /* BallFlowController.swift */,
 				E338EC0E22566F330066F863 /* BallFlowScene.swift */,
 				E338EC132256ACC30066F863 /* GameState.swift */,
 			);
 			path = BallFlowController;
-			sourceTree = "<group>";
-		};
-		E338EC1022568B260066F863 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				E338EC1122568B910066F863 /* BuilderProtocol.swift */,
-			);
-			path = Builder;
 			sourceTree = "<group>";
 		};
 		E338EC152256ADA90066F863 /* Nodes */ = {
@@ -231,7 +220,6 @@
 				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
-				E338EC1222568B910066F863 /* BuilderProtocol.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
