@@ -21,6 +21,9 @@
 		E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* FLTableNode.swift */; };
 		E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
 		E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
+		E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
+		E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
+		E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		E338EC1A2256B0600066F863 /* FLTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableNode.swift; sourceTree = "<group>"; };
 		E338EC1F2256B1310066F863 /* CollisionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCenter.swift; sourceTree = "<group>"; };
 		E338EC212256B5F70066F863 /* SCNode+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+collisions.swift"; sourceTree = "<group>"; };
+		E355F5562257662D005034A8 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fillConstraints.swift"; sourceTree = "<group>"; };
+		E355F55A2257757B005034A8 /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		E338EBF422564B640066F863 /* TVOSBasics */ = {
 			isa = PBXGroup;
 			children = (
+				E355F5552257641E005034A8 /* Views */,
 				E338EC1E2256B10D0066F863 /* Collisions */,
 				E338EC152256ADA90066F863 /* Nodes */,
 				E338EC0A2256662C0066F863 /* Utilities */,
@@ -98,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				E338EC08225663D20066F863 /* SCNVector3+zero.swift */,
+				E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -137,6 +145,15 @@
 				E338EC212256B5F70066F863 /* SCNode+collisions.swift */,
 			);
 			path = Collisions;
+			sourceTree = "<group>";
+		};
+		E355F5552257641E005034A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E355F5562257662D005034A8 /* ScoreBoardView.swift */,
+				E355F55A2257757B005034A8 /* TeamScoreView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,13 +228,16 @@
 			files = (
 				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,
+				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
 				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
 				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
 				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
+				E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
 				E338EC142256ACC30066F863 /* GameState.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
 				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
+				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,

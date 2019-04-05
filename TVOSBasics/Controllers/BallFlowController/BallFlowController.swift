@@ -16,8 +16,11 @@ public class GameViewController: UIViewController {
     
     var gameState = GameState.inital
     
-    lazy var sceneView = SCNView.init()
-    lazy var scene = BallFlowScene.init()
+    var sceneView = SCNView.init()
+    
+    var scene = BallFlowScene.init()
+    
+    var scoreBoardView = ScoreBoardView.init()
     
     public init() {
 
@@ -38,6 +41,7 @@ public class GameViewController: UIViewController {
         
         setupSceneView()
         setupInput()
+        view.addSubview(scoreBoardView)
         
         self.sceneView.backgroundColor = UIColor.clear
     }
@@ -69,10 +73,9 @@ public class GameViewController: UIViewController {
         self.view.addSubview(sceneView)
         sceneView.translatesAutoresizingMaskIntoConstraints = false
         
-        sceneView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        sceneView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
-        sceneView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-        sceneView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        NSLayoutConstraint.activate(
+            sceneView.constraints(toFill: view)
+        )
         
         sceneView.backgroundColor = UIColor.black
         sceneView.showsStatistics = true
