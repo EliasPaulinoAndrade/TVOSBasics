@@ -96,8 +96,9 @@ class TeamScoreView: UIView {
     lazy var scoreLabel: UILabel = {
         let scoreLabel = UILabel.init()
         
-        scoreLabel.text = "50"
+        scoreLabel.text = "0"
         scoreLabel.numberOfLines = 1
+        scoreLabel.font = UIFont.systemFont(ofSize: 30)
         
         return scoreLabel
     }()
@@ -114,13 +115,33 @@ class TeamScoreView: UIView {
     lazy var medalLabel: UILabel = {
         let medalLabel = UILabel.init()
         
-        medalLabel.text = "50"
+        medalLabel.text = "0"
         medalLabel.numberOfLines = 1
+        medalLabel.font = UIFont.systemFont(ofSize: 30)
         
         return medalLabel
     }()
     
     var topWire = DoubleWireView.init(wireHeight: 80, verticalCenter: -155)
+    
+    func scoreImageRotateAnimation() {
+        
+        let scaleTransform = CGAffineTransform.init(scaleX: 1.5, y: 1.5)
+        let rotateTransform = CGAffineTransform.init(rotationAngle: 180)
+        let scaleAndRotateTransform = scaleTransform.concatenating(rotateTransform)
+        
+        let scaleBackTransform = CGAffineTransform.init(scaleX: 1, y: 1)
+        let rotateBackTransform = CGAffineTransform.init(rotationAngle: 0)
+        let scaleBackAndRotateTransform = scaleBackTransform.concatenating(rotateBackTransform)
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.scoreImageView.transform = scaleAndRotateTransform
+        }) { (_) in
+            UIView.animate(withDuration: 0.5, animations: {
+                self.scoreImageView.transform = scaleBackAndRotateTransform
+            })
+        }
+    }
     
     init(teamName: String, showTurnLabel: Bool = false, alignLeft: Bool = false) {
         

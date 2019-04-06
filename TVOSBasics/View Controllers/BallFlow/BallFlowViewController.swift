@@ -133,7 +133,9 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     }
     
     func setViewForPointsChange(ofTeam team: Team, points: Int) {
-        print(team, points)
+        DispatchQueue.main.async {
+            self.scoreBoardView.setPointsTo(team: team, points: points)
+        }
     }
 }
 

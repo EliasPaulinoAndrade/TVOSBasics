@@ -97,6 +97,28 @@ class ScoreBoardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setPointsTo(team: Team, points: Int) {
+        switch team {
+        case .red:
+            redTeamPlaceView.scoreLabel.text = "\(points)"
+            redTeamPlaceView.scoreImageRotateAnimation()
+        case .blue:
+            blueTeamPlaceView.scoreLabel.text = "\(points)"
+            blueTeamPlaceView.scoreImageRotateAnimation()
+        }
+    }
+    
+    func setMedalTo(team: Team, points: Int, goldMedal: Bool) {
+        switch team {
+        case .red:
+            redTeamPlaceView.medalLabel.text = "\(points)"
+            redTeamPlaceView.medalImageView.image = UIImage.init(named: "goldMedal")
+        case .blue:
+            blueTeamPlaceView.medalLabel.text = "\(points)"
+            blueTeamPlaceView.medalImageView.image = UIImage.init(named: "silverMedal")
+        }
+    }
+    
     override func didMoveToSuperview() {
         guard let superView = superview else {
             return
@@ -120,12 +142,12 @@ class ScoreBoardView: UIView {
         
         NSLayoutConstraint.activate(
             redTeamPlaceView.constraints(toLeftFill: self) + [
-            redTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2)
+            redTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.21)
         ])
         
         NSLayoutConstraint.activate(
             blueTeamPlaceView.constraints(toRightFill: self) + [
-            blueTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2)
+            blueTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.21)
         ])
         
         NSLayoutConstraint.activate(
