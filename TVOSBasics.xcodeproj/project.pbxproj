@@ -45,6 +45,9 @@
 		E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
 		E385E4332258F77C001A41F6 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
 		E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
+		E385E43722591DA0001A41F6 /* RoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43622591DA0001A41F6 /* RoundManager.swift */; };
+		E385E43A22592112001A41F6 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43922592112001A41F6 /* Round.swift */; };
+		E385E43E225922BE001A41F6 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43D225922BE001A41F6 /* GameType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		E385E4302258EBEC001A41F6 /* DoubleWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWireView.swift; sourceTree = "<group>"; };
 		E385E4322258F77C001A41F6 /* WireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireView.swift; sourceTree = "<group>"; };
 		E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+addChildNodes.swift"; sourceTree = "<group>"; };
+		E385E43622591DA0001A41F6 /* RoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundManager.swift; sourceTree = "<group>"; };
+		E385E43922592112001A41F6 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		E385E43D225922BE001A41F6 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		E338EC0A2256662C0066F863 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E385E438225920FC001A41F6 /* Round Manager */,
 				E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */,
 				E355F56522578F76005034A8 /* Queue.swift */,
 			);
@@ -241,6 +248,16 @@
 				E355F57F2257FB89005034A8 /* imbuia.jpg */,
 			);
 			path = Textures;
+			sourceTree = "<group>";
+		};
+		E385E438225920FC001A41F6 /* Round Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E385E43622591DA0001A41F6 /* RoundManager.swift */,
+				E385E43922592112001A41F6 /* Round.swift */,
+				E385E43D225922BE001A41F6 /* GameType.swift */,
+			);
+			path = "Round Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +349,7 @@
 				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
 				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
 				E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
+				E385E43722591DA0001A41F6 /* RoundManager.swift in Sources */,
 				E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
 				E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
 				E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */,
@@ -342,8 +360,10 @@
 				E385E4332258F77C001A41F6 /* WireView.swift in Sources */,
 				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
+				E385E43A22592112001A41F6 /* Round.swift in Sources */,
 				E355F56622578F76005034A8 /* Queue.swift in Sources */,
 				E355F5702257C354005034A8 /* BallFlowTeam.swift in Sources */,
+				E385E43E225922BE001A41F6 /* GameType.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
 				E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */,
 				E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */,
