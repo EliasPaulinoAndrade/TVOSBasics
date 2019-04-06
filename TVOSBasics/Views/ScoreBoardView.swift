@@ -12,6 +12,18 @@ import UIKit
 /// A view responsible by show the teams scores
 class ScoreBoardView: UIView {
     
+    var currentTeam = BallFlowTeam.red {
+        didSet {
+            if currentTeam == .blue {
+                redTeamPlaceView.showTurnLabel = false
+                blueTeamPlaceView.showTurnLabel = true
+            } else {
+                redTeamPlaceView.showTurnLabel = true
+                blueTeamPlaceView.showTurnLabel = false
+            }
+        }
+    }
+    
     var redTeamPlaceView = TeamScoreView.init(teamName: "Red", showTurnLabel: true, alignLeft: true)
     
     var blueTeamPlaceView = TeamScoreView.init(teamName: "Blue")

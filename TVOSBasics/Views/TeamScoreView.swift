@@ -12,7 +12,18 @@ import UIKit
 /// the individual team score space
 class TeamScoreView: UIView {
     
-    var showTurnLabel: Bool
+    var showTurnLabel: Bool {
+        didSet {
+            if showTurnLabel {
+                turnLabelSpace.isHidden = false
+                middleWire.isHidden = false
+            } else {
+                turnLabelSpace.isHidden = true
+                middleWire.isHidden = true
+            }
+        }
+    }
+    
     var alignLeft: Bool
     
     lazy var teamNameLabel: UILabel = {

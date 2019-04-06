@@ -58,7 +58,26 @@ class BallFlowScene: SCNScene {
         return blueBallsBoxNode
     }()
     
-    var testObstacle = FLObstacleNode.init()
+    lazy var obstacles: [FLObstacleNode] = {
+        let obstaclePositions: [(x: Float, z: Float, rotation: Float)] = [
+            (x: 0.0, z: 5.0, rotation: 0.0),
+            (x: 5.0, z: 6.0, rotation: 0.7),
+            (x: 5.0, z: -1.0, rotation: -0.7),
+            (x: -7.0, z: -1.0, rotation: 0.7)
+        ]
+        var obstacles: [FLObstacleNode] = []
+        
+        for obstaclePosition in obstaclePositions {
+            let obstacle = FLObstacleNode.init()
+            
+            obstacle.position = SCNVector3.init(obstaclePosition.x, 1.889, obstaclePosition.z)
+            obstacle.eulerAngles.y += obstaclePosition.rotation
+            
+            obstacles.append(obstacle)
+        }
+        
+        return obstacles
+    }()
     
     var testWalls = FLWallsBoxNode.init()
     
@@ -74,7 +93,7 @@ class BallFlowScene: SCNScene {
         tableNode.addChildNode(firstWinPointNode)
         tableNode.addChildNode(secondWinPointNode)
         tableNode.addChildNode(thirdWinPointNode)
-        tableNode.addChildNode(testObstacle)
+        tableNode.addChildNodes(obstacles)
         rootNode.addChildNode(redBallsBoxNode)
         rootNode.addChildNode(blueBallsBoxNode)
         rootNode.addChildNode(tableLimitsNode)

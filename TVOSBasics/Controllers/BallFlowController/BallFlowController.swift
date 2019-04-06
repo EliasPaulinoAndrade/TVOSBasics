@@ -100,6 +100,7 @@ extension BallFlowController: BallFlowSceneDelegate {
                 self.gameAlertView.isHidden = false
                 self.gameAlertView.reset(withText: "Vez da Equipe Azul. Pressione Play para continuar.") {
                     self.scene.initiateGame(forTeam: .blue)
+                    self.scoreBoardView.currentTeam = .blue
                 }
             }
         }

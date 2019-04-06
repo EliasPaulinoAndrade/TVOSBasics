@@ -44,6 +44,7 @@
 		E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
 		E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
 		E385E4332258F77C001A41F6 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
+		E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWallsBoxNode.swift; sourceTree = "<group>"; };
 		E385E4302258EBEC001A41F6 /* DoubleWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWireView.swift; sourceTree = "<group>"; };
 		E385E4322258F77C001A41F6 /* WireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireView.swift; sourceTree = "<group>"; };
+		E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+addChildNodes.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */,
 				E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */,
 				E355F596225822A9005034A8 /* UIColor+colors.swift */,
+				E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
 				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
+				E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
 				E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */,
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
