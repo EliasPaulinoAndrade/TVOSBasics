@@ -20,6 +20,8 @@ public class BallFlowController: UIViewController {
     
     var scoreBoardView = ScoreBoardView.init()
     
+    var gamesManager = GamesManager.init()
+        
     lazy var gameAlertView: GameAlertView = {
         let gameAlertView = GameAlertView.init(text: "Vez da Equipe Vermelha. Pressione Play para continuar.") {
             self.scene.initiateGame(forTeam: .red)
@@ -91,7 +93,7 @@ public class BallFlowController: UIViewController {
 }
 
 extension BallFlowController: BallFlowSceneDelegate {
-    func finished(team: BallFlowTeam) {
+    func finished(team: Team) {
         switch team {
         case .blue:
             break
@@ -106,7 +108,7 @@ extension BallFlowController: BallFlowSceneDelegate {
         }
     }
     
-    func lostBall(team: BallFlowTeam) {
+    func lostBall(team: Team) {
         
     }
 }

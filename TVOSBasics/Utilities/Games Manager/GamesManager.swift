@@ -8,18 +8,15 @@
 
 import Foundation
 
-class RoundManager {
+class GamesManager {
     
-    var numberOfRounds: Int
-    var wonRounds: [BallFlowTeam: Int] = [:]
+    var wonRounds: [Team: Int] = [:]
     var currentRound: Round?
+    var currentGame: Game?
     var oldRounds: [Round] = []
+    var oldGames: [Game] = []
     
-    init(withNumberOfRounds numberOfRounds: Int) {
-        self.numberOfRounds = numberOfRounds
-    }
-    
-    private func addWonRound(toTeam team: BallFlowTeam) {
+    private func addWonRound(toTeam team: Team) {
         if let wonRoundsForTeam = wonRounds[team] {
             wonRounds[team] = wonRoundsForTeam + 1
         } else {
@@ -27,9 +24,9 @@ class RoundManager {
         }
     }
     
-    func teamWithMoreRounds() -> (team: BallFlowTeam, rounds: Int)? {
+    func teamWithMoreRounds() -> (team: Team, rounds: Int)? {
         
-        var maxRoundsTeam: (team: BallFlowTeam, rounds: Int)?
+        var maxRoundsTeam: (team: Team, rounds: Int)?
         
         for (team, rounds) in wonRounds {
             if let safeMaxRoundsTeam = maxRoundsTeam, safeMaxRoundsTeam.rounds < rounds {
@@ -42,7 +39,19 @@ class RoundManager {
         return maxRoundsTeam
     }
     
-    func beginNextRound(ofGame gameType: GameType) {
+    func beginNextGame(ofGameType gameType: GameType, numberOfRounds: Int) {
+        if let currentGame = self.currentGame {
+            oldGames.append(currentGame)
+        }
+        
+        currentGame = Game.init(gameType, withNumberOfRounds: numberOfRounds)
+    }
+    
+    func beginNextRound() -> Bool {
+        guard let currentGame = self.currentGame, currentGame.hasMoreRounds() else {
+            return false
+        }
+        
         if let currentRound = self.currentRound {
             oldRounds.append(currentRound)
             if let teamWithMorePoints = self.currentRound?.teamWithMorePoints() {
@@ -50,10 +59,12 @@ class RoundManager {
             }
         }
         
-        currentRound = Round.init(withGameType: gameType)
+        currentRound = Round.init(withGameType: currentGame.gameType)
+        
+        return true
     }
 
-    func newPoints(_ points: Int, toTeam team: BallFlowTeam) -> Int? {
+    func newPoints(_ points: Int, toTeam team: Team) -> Int? {
         return currentRound?.addPoints(points, toTeam: team)
     }
 }

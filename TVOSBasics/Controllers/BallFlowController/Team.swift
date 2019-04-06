@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum BallFlowTeam {
+enum Team {
     case red, blue
 }

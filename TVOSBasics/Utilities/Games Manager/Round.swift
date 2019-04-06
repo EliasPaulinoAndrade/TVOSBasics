@@ -9,7 +9,7 @@
 import Foundation
 
 class Round {
-    var teamScores: [BallFlowTeam: Int] = [:]
+    var teamScores: [Team: Int] = [:]
     var gameType: GameType
     
     init(withGameType gameType: GameType) {
@@ -17,7 +17,7 @@ class Round {
         self.gameType = gameType
     }
     
-    func addPoints(_ points: Int, toTeam team: BallFlowTeam) -> Int {
+    func addPoints(_ points: Int, toTeam team: Team) -> Int {
         
         if let teamScore = self.teamScores[team] {
             self.teamScores[team] = teamScore + points
@@ -28,9 +28,9 @@ class Round {
         }
     }
     
-    func teamWithMorePoints() -> (team: BallFlowTeam, points: Int)? {
+    func teamWithMorePoints() -> (team: Team, points: Int)? {
         
-        var maxPointsTeam: (team: BallFlowTeam, points: Int)?
+        var maxPointsTeam: (team: Team, points: Int)?
         
         for (team, points) in teamScores {
             if let safeMaxPointsTeam = maxPointsTeam, safeMaxPointsTeam.points < points {

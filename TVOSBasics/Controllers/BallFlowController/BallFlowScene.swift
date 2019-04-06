@@ -97,7 +97,6 @@ class BallFlowScene: SCNScene {
         rootNode.addChildNode(redBallsBoxNode)
         rootNode.addChildNode(blueBallsBoxNode)
         rootNode.addChildNode(tableLimitsNode)
-        
         rootNode.addChildNode(testWalls)
 
         
@@ -112,7 +111,7 @@ class BallFlowScene: SCNScene {
     func addNewBall() {
         
         var newBall: FLBallNode?
-        var currentTeam: BallFlowTeam?
+        var currentTeam: Team?
         
         switch state {
         case .redInitial, .blueInitial:
@@ -150,7 +149,7 @@ class BallFlowScene: SCNScene {
         ]))
     }
     
-    func initiateGame(forTeam team: BallFlowTeam) {
+    func initiateGame(forTeam team: Team) {
         
         switch team {
         case .red:
