@@ -76,7 +76,7 @@ class FLBallsBoxNode: SCNNode {
         
         willCollideWith(nodeTypes: [FLBallNode.self])
         
-        add(balls: ballNodes(numberOfBalls: numberOfBalls, ballRadius: ballsRadius))
+        fill()
         
         addChildNode(shoeNode)
     }
@@ -96,6 +96,10 @@ class FLBallsBoxNode: SCNNode {
         }
         
         return ballNodes
+    }
+    
+    func fill() {
+        add(balls: ballNodes(numberOfBalls: numberOfBalls, ballRadius: ballsRadius))
     }
     
     func add(balls: [FLBallNode]) {

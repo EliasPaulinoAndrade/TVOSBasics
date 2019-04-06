@@ -49,9 +49,9 @@ class BallFlowScene: SCNScene {
         return initialWinPointNode
     }()
     
-    var redBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
+    var redBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 2, ballsRadius: 0.5)
     lazy var blueBallsBoxNode: FLBallsBoxNode = {
-        let blueBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
+        let blueBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 2, ballsRadius: 0.5)
         
         blueBallsBoxNode.position.x = -blueBallsBoxNode.position.x
         
@@ -132,8 +132,8 @@ class BallFlowScene: SCNScene {
             
             rootNode.addChildNode(newBall)
             self.ballNode = newBall
-        } else if let currentTeam = currentTeam {
-            self.delegate?.finished(team: currentTeam)
+        } else if let _ = currentTeam {
+            self.delegate?.finished()
         }
     }
     
@@ -161,6 +161,21 @@ class BallFlowScene: SCNScene {
         rotateTable {
             self.addNewBall()
         }
+    }
+    
+    func initiateRound(forTeam team: Team) {
+        switch team {
+        case .red:
+            self.state = .redPlaying
+            self.redBallsBoxNode.fill()
+            self.blueBallsBoxNode.fill()
+        case .blue:
+            self.state = .bluePlaying
+            self.redBallsBoxNode.fill()
+            self.blueBallsBoxNode.fill()
+        }
+        
+        self.addNewBall()
     }
     
     func rotateTable(completion: (() -> ())? = nil) {
@@ -196,11 +211,11 @@ extension BallFlowScene: SCNPhysicsContactDelegate {
             switch targetPointNode.parent {
                 
             case firstWinPointNode:
-                print("150 pontos")
+                delegate?.newPoints(points: 150)
             case secondWinPointNode:
-                print("100 pontos")
+                delegate?.newPoints(points: 100)
             case thirdWinPointNode:
-                print("50 pontos")
+                delegate?.newPoints(points: 50)
             default:
                 break
             }

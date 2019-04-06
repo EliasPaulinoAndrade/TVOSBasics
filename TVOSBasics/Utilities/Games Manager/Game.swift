@@ -10,7 +10,7 @@ import Foundation
 
 class Game {
     var numberOfRounds: Int
-    var currentRound: Int?
+    var currentRound = 0
     var gameType: GameType
     
     init(_ gameType: GameType, withNumberOfRounds numberOfRounds: Int) {
@@ -19,16 +19,11 @@ class Game {
     }
     
     func hasMoreRounds() -> Bool {
-        if let currentRound = self.currentRound {
-            if numberOfRounds - currentRound >= 1 {
-                return true
-            } else {
-                return false
-            }
-        } else if numberOfRounds > 0 {
+        
+        if currentRound + 1 < numberOfRounds {
             return true
+        } else {
+            return false
         }
-
-        return true
     }
 }

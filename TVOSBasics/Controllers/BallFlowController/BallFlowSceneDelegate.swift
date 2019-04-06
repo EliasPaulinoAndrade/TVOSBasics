@@ -9,6 +9,6 @@
 import Foundation
 
 protocol BallFlowSceneDelegate: AnyObject {
-    func finished(team: Team)
-    func lostBall(team: Team)
+    func finished()
+    func newPoints(points: Int)
 }

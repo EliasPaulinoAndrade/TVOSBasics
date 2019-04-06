@@ -11,19 +11,39 @@ import Foundation
 class Round {
     var teamScores: [Team: Int] = [:]
     var gameType: GameType
+    var currentTeam: Team?
+    var teamRoundCounter = 0
+    var numberOfTeams: Int
     
-    init(withGameType gameType: GameType) {
+    init(withGameType gameType: GameType, beginByTeam team: Team, andNumberOfTeams numberOfTeams: Int) {
 
         self.gameType = gameType
+        self.currentTeam = team
+        self.numberOfTeams = numberOfTeams
     }
     
-    func addPoints(_ points: Int, toTeam team: Team) -> Int {
+    func changeTeamTo(_ team: Team) -> Bool {
+        guard teamRoundCounter + 1 < numberOfTeams else {
+            return false
+        }
         
-        if let teamScore = self.teamScores[team] {
-            self.teamScores[team] = teamScore + points
+        self.currentTeam = team
+        teamRoundCounter += 1
+        
+        return true
+    }
+    
+    func addPoints(_ points: Int) -> Int {
+        
+        guard let currentTeam = self.currentTeam else {
+            return -1
+        }
+        
+        if let teamScore = self.teamScores[currentTeam] {
+            self.teamScores[currentTeam] = teamScore + points
             return teamScore + points
         } else {
-            teamScores[team] = points
+            teamScores[currentTeam] = points
             return points
         }
     }
