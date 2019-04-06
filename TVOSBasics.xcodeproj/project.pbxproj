@@ -51,9 +51,9 @@
 		E385E44022592A88001A41F6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43F22592A88001A41F6 /* Game.swift */; };
 		E385E44322592F32001A41F6 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
 		E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4442259309C001A41F6 /* ViewControllerType.swift */; };
-		E385E447225932D1001A41F6 /* GamesComunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GamesComunicator.swift */; };
-		E385E4492259335E001A41F6 /* GameControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameControllerProtocol.swift */; };
-		E385E44B225933E1001A41F6 /* GameControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameControllerDelegates.swift */; };
+		E385E447225932D1001A41F6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
+		E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
+		E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,9 +103,9 @@
 		E385E43F22592A88001A41F6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E385E44222592F32001A41F6 /* GamesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesNavigator.swift; sourceTree = "<group>"; };
 		E385E4442259309C001A41F6 /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
-		E385E446225932D1001A41F6 /* GamesComunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesComunicator.swift; sourceTree = "<group>"; };
-		E385E4482259335E001A41F6 /* GameControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerProtocol.swift; sourceTree = "<group>"; };
-		E385E44A225933E1001A41F6 /* GameControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerDelegates.swift; sourceTree = "<group>"; };
+		E385E446225932D1001A41F6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerProtocol.swift; sourceTree = "<group>"; };
+		E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +144,8 @@
 				E338EC152256ADA90066F863 /* Nodes */,
 				E338EC0A2256662C0066F863 /* Utilities */,
 				E338EC07225663A60066F863 /* Extensions */,
-				E338EC0422565FC80066F863 /* Controllers */,
+				E385E44C22594F37001A41F6 /* Controllers */,
+				E338EC0422565FC80066F863 /* View Controllers */,
 				E338EBF522564B640066F863 /* AppDelegate.swift */,
 				E338EBF722564B640066F863 /* ViewController.swift */,
 				E338EBF922564B640066F863 /* Main.storyboard */,
@@ -154,12 +155,12 @@
 			path = TVOSBasics;
 			sourceTree = "<group>";
 		};
-		E338EC0422565FC80066F863 /* Controllers */ = {
+		E338EC0422565FC80066F863 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E338EC0D22566F1F0066F863 /* BallFlowController */,
+				E338EC0D22566F1F0066F863 /* BallFlow */,
 			);
-			path = Controllers;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		E338EC07225663A60066F863 /* Extensions */ = {
@@ -185,7 +186,7 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E338EC0D22566F1F0066F863 /* BallFlowController */ = {
+		E338EC0D22566F1F0066F863 /* BallFlow */ = {
 			isa = PBXGroup;
 			children = (
 				E338EC0522565FE30066F863 /* BallFlowController.swift */,
@@ -193,7 +194,7 @@
 				E338EC132256ACC30066F863 /* BallFlowGameState.swift */,
 				E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */,
 			);
-			path = BallFlowController;
+			path = BallFlow;
 			sourceTree = "<group>";
 		};
 		E338EC152256ADA90066F863 /* Nodes */ = {
@@ -279,11 +280,26 @@
 			children = (
 				E385E44222592F32001A41F6 /* GamesNavigator.swift */,
 				E385E4442259309C001A41F6 /* ViewControllerType.swift */,
-				E385E446225932D1001A41F6 /* GamesComunicator.swift */,
-				E385E4482259335E001A41F6 /* GameControllerProtocol.swift */,
-				E385E44A225933E1001A41F6 /* GameControllerDelegates.swift */,
 			);
 			path = "Games Navigator";
+			sourceTree = "<group>";
+		};
+		E385E44C22594F37001A41F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E385E45022594F9B001A41F6 /* GameController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E385E45022594F9B001A41F6 /* GameController */ = {
+			isa = PBXGroup;
+			children = (
+				E385E446225932D1001A41F6 /* GameController.swift */,
+				E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */,
+				E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */,
+			);
+			path = GameController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,8 +383,8 @@
 				E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */,
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,
-				E385E4492259335E001A41F6 /* GameControllerProtocol.swift in Sources */,
-				E385E447225932D1001A41F6 /* GamesComunicator.swift in Sources */,
+				E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
+				E385E447225932D1001A41F6 /* GameController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
 				E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
@@ -384,7 +400,7 @@
 				E385E44022592A88001A41F6 /* Game.swift in Sources */,
 				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
 				E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */,
-				E385E44B225933E1001A41F6 /* GameControllerDelegates.swift in Sources */,
+				E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
 				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
 				E385E4332258F77C001A41F6 /* WireView.swift in Sources */,

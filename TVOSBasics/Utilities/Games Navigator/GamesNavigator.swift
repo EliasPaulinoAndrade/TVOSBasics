@@ -12,13 +12,11 @@ import UIKit
 class GamesNavigator {
 
     var flowBallViewController = BallFlowController.init()
-    var gamesControllerComunicator = GamesComunicator.init()
     
     func show(controllerType: ViewControllerType) {
         switch controllerType {
         case .flowBall:
             show(controller: flowBallViewController)
-            gamesControllerComunicator.currentControllerHasChangedTo(flowBallViewController)
         }
     }
     

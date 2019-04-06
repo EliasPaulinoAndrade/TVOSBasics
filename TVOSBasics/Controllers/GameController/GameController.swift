@@ -9,19 +9,17 @@
 import Foundation
 import UIKit
 
-class GamesComunicator {
+class GameController {
     
     var gameManager = GamesManager.init()
-    var currentController: GameControllerProtocol?
+    weak var currentController: GameViewControllerProtocol?
     
-    func currentControllerHasChangedTo(_ controller: GameControllerProtocol) {
-        self.currentController = controller
-        controller.gameDelegate = self
-        controller.gameDatasource = self
+    init(withGameViewControler gameViewController: GameViewControllerProtocol) {
+        self.currentController = gameViewController
     }
 }
 
-extension GamesComunicator: GameControllerDelegate {
+extension GameController: GameViewControllerDelegate {
     func newPoints(points: Int) {
         guard let currentTeam = gameManager.currentRound?.currentTeam,
               let currentController = self.currentController,
@@ -73,8 +71,4 @@ extension GamesComunicator: GameControllerDelegate {
         
         return gameManager.beginNextRound(byTeam: team, andNumberOfTeams: 2)
     }
-}
-
-extension GamesComunicator: GameControllerDataSource {
-    
 }

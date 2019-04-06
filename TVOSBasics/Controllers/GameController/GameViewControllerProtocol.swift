@@ -8,12 +8,11 @@
 
 import UIKit
 
-protocol GameControllerProtocol: UIViewController {
+protocol GameViewControllerProtocol: UIViewController {
     
     var gameType: GameType { get }
     var numberOfRounds: Int { get }
-    var gameDelegate: GameControllerDelegate? { get set }
-    var gameDatasource: GameControllerDataSource? { get set }
+    var gameDelegate: GameViewControllerDelegate? { get set }
     
     func setViewForChangeOf(team: Team)
     func setViewForChangeOfRound(toTeam team: Team)

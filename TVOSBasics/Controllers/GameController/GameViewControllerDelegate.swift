@@ -8,14 +8,10 @@
 
 import Foundation
 
-protocol GameControllerDelegate: AnyObject {
+protocol GameViewControllerDelegate: AnyObject {
     
     @discardableResult
     func beginGame(withTeam: Team) -> Bool
     func teamHasFinished()
     func newPoints(points: Int)
-}
-
-protocol GameControllerDataSource: AnyObject {
-    
 }

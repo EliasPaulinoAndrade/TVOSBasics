@@ -10,7 +10,7 @@ import UIKit
 import QuartzCore
 import SceneKit
 
-public class BallFlowController: UIViewController, GameControllerProtocol {
+public class BallFlowController: UIViewController, GameViewControllerProtocol {
 
     let ballPanForceFactor: CGFloat = 5000
     
@@ -20,15 +20,20 @@ public class BallFlowController: UIViewController, GameControllerProtocol {
     
     var scoreBoardView = ScoreBoardView.init()
     
-    var gameDelegate: GameControllerDelegate?
-    var gameDatasource: GameControllerDataSource?
+    lazy var gameController: GameController = {
+        let gameController = GameController.init(withGameViewControler: self)
+        
+        return gameController
+    }()
+    
+    var gameDelegate: GameViewControllerDelegate?
     
     var gameType: GameType = .flowBall
     
     var numberOfRounds = 2
         
     lazy var gameAlertView: GameAlertView = {
-        let gameAlertView = GameAlertView.init(text: "Vez da Equipe Vermelha. Pressione Play para continuar.") {
+        let gameAlertView = GameAlertView.init(text: "Vez da Equipe \(Team.red). Pressione Play para continuar.") {
             self.scene.initiateGame(forTeam: .red)
             self.gameDelegate?.beginGame(withTeam: .red)
         }
@@ -63,6 +68,8 @@ public class BallFlowController: UIViewController, GameControllerProtocol {
         view.addSubview(gameAlertView)
         
         self.sceneView.backgroundColor = UIColor.flLightBlue
+        
+        self.gameDelegate = gameController
     }
     
     @objc func swipeHappend(recognizer: ForceSwipeGestureRecognizer) {
@@ -98,43 +105,22 @@ public class BallFlowController: UIViewController, GameControllerProtocol {
     }
     
     func setViewForChangeOf(team: Team) {
-        switch team {
-        case .blue:
-            DispatchQueue.main.async {
-                self.gameAlertView.isHidden = false
-                self.gameAlertView.reset(withText: "Vez da Equipe Azul. Pressione Play para continuar.") {
-                    self.scene.initiateGame(forTeam: team)
-                    self.scoreBoardView.currentTeam = team
-                }
-            }
-        case .red:
-            DispatchQueue.main.async {
-                self.gameAlertView.isHidden = false
-                self.gameAlertView.reset(withText: "Vez da Equipe Vermelha. Pressione Play para continuar.") {
-                    self.scene.initiateGame(forTeam: team)
-                    self.scoreBoardView.currentTeam = team
-                }
+        
+        DispatchQueue.main.async {
+            self.gameAlertView.isHidden = false
+            self.gameAlertView.reset(withText: "Vez da Equipe \(team). Pressione Play para continuar.") {
+                self.scene.initiateGame(forTeam: team)
+                self.scoreBoardView.currentTeam = team
             }
         }
     }
     
     func setViewForChangeOfRound(toTeam team: Team) {
-        switch team {
-        case .blue:
-            DispatchQueue.main.async {
-                self.gameAlertView.isHidden = false
-                self.gameAlertView.reset(withText: "Novo round. Vez da Equipe Azul. Pressione Play para continuar.") {
-                    self.scoreBoardView.currentTeam = team
-                    self.scene.initiateRound(forTeam: team)
-                }
-            }
-        case .red:
-            DispatchQueue.main.async {
-                self.gameAlertView.isHidden = false
-                self.gameAlertView.reset(withText: "Novo round. Vez da Equipe Vermelha. Pressione Play para continuar.") {
-                    self.scoreBoardView.currentTeam = team
-                    self.scene.initiateRound(forTeam: team)
-                }
+        DispatchQueue.main.async {
+            self.gameAlertView.isHidden = false
+            self.gameAlertView.reset(withText: "Novo round. Vez da Equipe \(team). Pressione Play para continuar.") {
+                self.scoreBoardView.currentTeam = team
+                self.scene.initiateRound(forTeam: team)
             }
         }
     }

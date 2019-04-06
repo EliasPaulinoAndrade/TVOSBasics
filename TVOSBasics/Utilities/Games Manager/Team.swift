@@ -8,6 +8,10 @@
 
 import Foundation
 
-enum Team {
+enum Team: String, CustomStringConvertible {
+    var description: String {
+        return self.rawValue
+    }
+    
     case red, blue
 }
