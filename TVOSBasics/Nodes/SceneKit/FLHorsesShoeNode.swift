@@ -13,7 +13,7 @@ class FLHorsesShoeNode: SCNNode {
     
     var horsesShoeNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "horseshoe2.scn", nodeName: "horseshoe")
     
-    override init() {
+    init(withColor color: UIColor? = nil) {
         super.init()
         
         position = SCNVector3.zero
@@ -22,6 +22,10 @@ class FLHorsesShoeNode: SCNNode {
         if let horsesShoeNode = horsesShoeNode,
            let horsesShoeGeometry = horsesShoeNode.geometry {
             addChildNode(horsesShoeNode)
+            
+            if let materialColor = color {
+                colorMaterial()?.diffuse.contents = materialColor
+            }
             
             let scale = SCNVector3.init(1.4, 1.4, 1.4)
             
@@ -38,6 +42,15 @@ class FLHorsesShoeNode: SCNNode {
         }
         
         willCollideWith(nodeTypes: [FLBallNode.self])
+    }
+    
+    func colorMaterial() -> SCNMaterial? {
+        return horsesShoeNode?.geometry?.materials.first(where: { (material) -> Bool in
+            if let materialName = material.name, materialName == "color" {
+                return true
+            }
+            return false
+        })
     }
     
     required init?(coder aDecoder: NSCoder) {

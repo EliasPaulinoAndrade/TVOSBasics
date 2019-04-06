@@ -28,6 +28,15 @@ class FLBallsBoxNode: SCNNode {
         return 2.1 * ballsRadius
     }()
     
+    lazy var shoeNode: SCNNode = {
+        let shoeGeometry = SCNCylinder.init(radius: 0.1, height: 20)
+        
+        let shoeNode = SCNNode.init(geometry: shoeGeometry)
+        shoeNode.position.y = Float(-self.height/2 - 10)
+        
+        return shoeNode
+    }()
+    
     init(numberOfBalls: Int, ballsRadius: CGFloat) {
         self.numberOfBalls = numberOfBalls
         self.ballsRadius = ballsRadius
@@ -58,6 +67,8 @@ class FLBallsBoxNode: SCNNode {
         willCollideWith(nodeTypes: [FLBallNode.self])
         
         add(balls: ballNodes(numberOfBalls: numberOfBalls, ballRadius: ballsRadius))
+        
+        addChildNode(shoeNode)
     }
     
     func ballNodes(numberOfBalls: Int, ballRadius: CGFloat) -> [FLBallNode] {

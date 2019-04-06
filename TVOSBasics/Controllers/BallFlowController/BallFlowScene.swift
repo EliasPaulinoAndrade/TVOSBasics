@@ -37,9 +37,9 @@ class BallFlowScene: SCNScene {
     
     var tableLimitsNode = FLTableLimitsNode.init()
 
-    var firstWinPointNode = FLWinPointNode.init(zPosition: -3.5)
-    var secondWinPointNode = FLWinPointNode.init(zPosition: 1)
-    var thirdWinPointNode = FLWinPointNode.init(zPosition: 5)
+    var firstWinPointNode = FLWinPointNode.init(zPosition: -3.5, withColor: UIColor.flPink)
+    var secondWinPointNode = FLWinPointNode.init(zPosition: 1, withColor: UIColor.flBlue)
+    var thirdWinPointNode = FLWinPointNode.init(zPosition: 5, withColor: UIColor.flGreen)
     var initialWinPointNode: FLWinPointNode = {
         let initialWinPointNode = FLWinPointNode.init(zPosition: 5, includeTargetPoint: false)
         

@@ -11,11 +11,15 @@ import SceneKit
 
 class FLWinPointNode: SCNNode {
     
-    let horsesShoeNode = FLHorsesShoeNode.init()
+    lazy var horsesShoeNode = FLHorsesShoeNode.init(withColor: self.color)
     let targetPointNode = FLTargetPointNode.init()
     
+    let color: UIColor?
     
-    init(zPosition: Float, includeTargetPoint: Bool = true) {
+    init(zPosition: Float, includeTargetPoint: Bool = true, withColor color: UIColor? = nil) {
+        
+        self.color = color
+        
         super.init()
         
         position.x = 11

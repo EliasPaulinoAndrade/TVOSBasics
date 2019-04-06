@@ -33,13 +33,13 @@
 		E355F5702257C354005034A8 /* BallFlowTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56F2257C354005034A8 /* BallFlowTeam.swift */; };
 		E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
 		E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
-		E355F5782257D820005034A8 /* horseshoe.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F5732257D304005034A8 /* horseshoe.scn */; };
 		E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
 		E355F5802257FB89005034A8 /* imbuia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E355F57F2257FB89005034A8 /* imbuia.jpg */; };
 		E355F5812258023A005034A8 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F57E2257FB7A005034A8 /* table.scn */; };
 		E355F58522580991005034A8 /* horseshoe2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F58422580936005034A8 /* horseshoe2.scn */; };
 		E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
 		E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
+		E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +69,6 @@
 		E355F56B2257B058005034A8 /* GameAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertView.swift; sourceTree = "<group>"; };
 		E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowSceneDelegate.swift; sourceTree = "<group>"; };
 		E355F56F2257C354005034A8 /* BallFlowTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowTeam.swift; sourceTree = "<group>"; };
-		E355F5732257D304005034A8 /* horseshoe.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = horseshoe.scn; sourceTree = "<group>"; };
 		E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNScene+loadSceneNode.swift"; sourceTree = "<group>"; };
 		E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHorsesShoeNode.swift; sourceTree = "<group>"; };
 		E355F5792257F50C005034A8 /* FLWinPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWinPointNode.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		E355F58422580936005034A8 /* horseshoe2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = horseshoe2.scn; sourceTree = "<group>"; };
 		E355F592225813B0005034A8 /* obstacle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = obstacle.scn; sourceTree = "<group>"; };
 		E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
+		E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +140,7 @@
 				E338EC08225663D20066F863 /* SCNVector3+zero.swift */,
 				E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */,
 				E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */,
+				E355F596225822A9005034A8 /* UIColor+colors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,7 +215,6 @@
 				E355F57B2257FAE6005034A8 /* Textures */,
 				E355F58422580936005034A8 /* horseshoe2.scn */,
 				E355F592225813B0005034A8 /* obstacle.scn */,
-				E355F5732257D304005034A8 /* horseshoe.scn */,
 				E355F57E2257FB7A005034A8 /* table.scn */,
 			);
 			path = SceneObjects;
@@ -291,7 +291,6 @@
 				E355F5802257FB89005034A8 /* imbuia.jpg in Resources */,
 				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
 				E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
-				E355F5782257D820005034A8 /* horseshoe.scn in Resources */,
 				E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +306,7 @@
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,
+				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
 				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
