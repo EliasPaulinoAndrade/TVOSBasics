@@ -40,6 +40,7 @@
 		E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
 		E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
 		E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
+		E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		E355F592225813B0005034A8 /* obstacle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = obstacle.scn; sourceTree = "<group>"; };
 		E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
 		E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
+		E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				E355F5562257662D005034A8 /* ScoreBoardView.swift */,
 				E355F55A2257757B005034A8 /* TeamScoreView.swift */,
 				E355F56B2257B058005034A8 /* GameAlertView.swift */,
+				E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
+				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,

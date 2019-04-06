@@ -26,4 +26,20 @@ extension UIColor {
     static var flPink: UIColor {
         return UIColor.init(named: "flPink") ?? UIColor.flDefault
     }
+    
+    static var flYellow: UIColor {
+        return UIColor.init(named: "flYellow") ?? UIColor.flDefault
+    }
+    
+    static var flLightYellow: UIColor {
+        return UIColor.init(named: "flLightYellow") ?? UIColor.flDefault
+    }
+    
+    static var flDarkYellow: UIColor {
+        return UIColor.init(named: "flDarkYellow") ?? UIColor.flDefault
+    }
+    
+    static var flLightBlue: UIColor {
+        return UIColor.init(named: "flLightBlue") ?? UIColor.flDefault
+    }
 }

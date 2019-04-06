@@ -12,21 +12,9 @@ import UIKit
 /// A view responsible by show the teams scores
 class ScoreBoardView: UIView {
     
-    lazy var redTeamPlaceView: TeamScoreView = {
-        let redTeamPlaceView = TeamScoreView.init(teamName: "Red")
-        
-        redTeamPlaceView.backgroundColor = UIColor.red
-        
-        return redTeamPlaceView
-    }()
+    var redTeamPlaceView = TeamScoreView.init(teamName: "Red", showTurnLabel: true, alignLeft: true)
     
-    lazy var blueTeamPlaceView: TeamScoreView = {
-        let blueTeamPlaceView = TeamScoreView.init(teamName: "Blue")
-        
-        blueTeamPlaceView.backgroundColor = UIColor.blue
-        
-        return blueTeamPlaceView
-    }()
+    var blueTeamPlaceView = TeamScoreView.init(teamName: "Blue")
     
     lazy var middlePlaceView: UIView = {
         let middlePlaceView = UIView.init()
@@ -34,13 +22,42 @@ class ScoreBoardView: UIView {
         return middlePlaceView
     }()
     
+    lazy var middleTitleSpace: UIView = {
+        let middleTitleSpace = ScoreShadowView.init()
+        
+        middleTitleSpace.backgroundColor = UIColor.flYellow
+        middleTitleSpace.layer.borderWidth = 5
+        middleTitleSpace.layer.borderColor = UIColor.flDarkYellow.cgColor
+        
+        return middleTitleSpace
+    }()
+    
+    lazy var middleRoundSpace: UIView = {
+        let middleRoundSpace = ScoreShadowView.init()
+        
+        middleRoundSpace.backgroundColor = UIColor.flLightYellow
+        middleRoundSpace.layer.borderWidth = 5
+        middleRoundSpace.layer.borderColor = UIColor.flDarkYellow.cgColor
+        
+        return middleRoundSpace
+    }()
+    
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel.init()
         
-        titleLabel.text = "Round 2 of 3"
+        titleLabel.text = "Paper Plate Targets"
         titleLabel.textAlignment = .center
         
         return titleLabel
+    }()
+    
+    lazy var roundLabel: UILabel = {
+        let roundLabel = UILabel.init()
+        
+        roundLabel.text = "Round 2 of 3"
+        roundLabel.textAlignment = .center
+        
+        return roundLabel
     }()
     
     override init(frame: CGRect) {
@@ -50,7 +67,11 @@ class ScoreBoardView: UIView {
         addSubview(middlePlaceView)
         addSubview(blueTeamPlaceView)
         
-        middlePlaceView.addSubview(titleLabel)
+        middlePlaceView.addSubview(middleTitleSpace)
+        middlePlaceView.addSubview(middleRoundSpace)
+        
+        middleTitleSpace.addSubview(titleLabel)
+        middleRoundSpace.addSubview(roundLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -69,20 +90,23 @@ class ScoreBoardView: UIView {
         middlePlaceView.translatesAutoresizingMaskIntoConstraints = false
         blueTeamPlaceView.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        middleTitleSpace.translatesAutoresizingMaskIntoConstraints = false
+        roundLabel.translatesAutoresizingMaskIntoConstraints = false
+        middleRoundSpace.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate(
             constraints(toTopFill: superViewMargins) + [
-            heightAnchor.constraint(equalToConstant: 150)
+            heightAnchor.constraint(equalToConstant: 250)
         ])
         
         NSLayoutConstraint.activate(
             redTeamPlaceView.constraints(toLeftFill: self) + [
-            redTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.25)
+            redTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2)
         ])
         
         NSLayoutConstraint.activate(
             blueTeamPlaceView.constraints(toRightFill: self) + [
-            blueTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.25)
+            blueTeamPlaceView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2)
         ])
         
         NSLayoutConstraint.activate(
@@ -92,7 +116,20 @@ class ScoreBoardView: UIView {
         ])
         
         NSLayoutConstraint.activate(
-            titleLabel.constraints(toFill: middlePlaceView)
-        )
+            titleLabel.constraints(toFill: middleTitleSpace, margin: 20) + [
+            middleTitleSpace.topAnchor.constraint(equalTo: middlePlaceView.topAnchor),
+            middleTitleSpace.heightAnchor.constraint(equalToConstant: 90),
+            middleTitleSpace.widthAnchor.constraint(lessThanOrEqualTo: middlePlaceView.widthAnchor, constant: -20),
+            middleTitleSpace.centerXAnchor.constraint(equalTo: middlePlaceView.centerXAnchor)
+        ])
+        
+        NSLayoutConstraint.activate(
+            roundLabel.constraints(toFill: middleRoundSpace, margin: 20) + [
+            middleRoundSpace.topAnchor.constraint(equalTo: middleTitleSpace.bottomAnchor, constant: 10),
+            middleRoundSpace.heightAnchor.constraint(equalToConstant: 90),
+            middleRoundSpace.widthAnchor.constraint(lessThanOrEqualTo: middleTitleSpace.widthAnchor),
+            middleRoundSpace.centerXAnchor.constraint(equalTo: middlePlaceView.centerXAnchor)
+        ])
     }
 }
+

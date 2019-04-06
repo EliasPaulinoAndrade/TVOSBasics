@@ -54,7 +54,7 @@ public class BallFlowController: UIViewController {
         view.addSubview(scoreBoardView)
         view.addSubview(gameAlertView)
         
-        self.sceneView.backgroundColor = UIColor.clear
+        self.sceneView.backgroundColor = UIColor.flLightBlue
     }
     
     @objc func swipeHappend(recognizer: ForceSwipeGestureRecognizer) {
