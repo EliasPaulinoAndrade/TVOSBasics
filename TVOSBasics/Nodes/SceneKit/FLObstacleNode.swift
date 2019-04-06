@@ -21,18 +21,9 @@ class FLObstacleNode: SCNNode {
         
         if let obstacleNode = obstacleNode,
             let obstacleNodeGeometry = obstacleNode.geometry {
-//            addChildNode(obstacleNode)
             
             geometry = obstacleNodeGeometry
-//            let scale = SCNVector3.init(1.4, 1.4, 1.4)
-            
-//            let shapeBody = SCNPhysicsShape.init(geometry: obstacleNodeGeometry, options: [
-//                SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron
-//            ])
-//
-////            self.eulerAngles.y = Float.pi
-//            self.eulerAngles.z = Float.pi
-//            self.scale = scale
+
             
             self.scale = obstacleNode.scale
             self.rotation = obstacleNode.rotation

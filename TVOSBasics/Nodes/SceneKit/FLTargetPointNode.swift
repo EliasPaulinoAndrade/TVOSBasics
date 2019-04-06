@@ -9,6 +9,7 @@
 import Foundation
 import SceneKit
 
+/// a concept place node where the user need to go for winning points.
 class FLTargetPointNode: SCNNode {
     
     override init() {

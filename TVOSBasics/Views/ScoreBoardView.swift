@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// A view responsible by show the teams scores
 class ScoreBoardView: UIView {
     
     lazy var redTeamPlaceView: TeamScoreView = {

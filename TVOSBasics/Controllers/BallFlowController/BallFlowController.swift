@@ -84,7 +84,7 @@ public class BallFlowController: UIViewController {
         )
         
         sceneView.backgroundColor = UIColor.black
-        sceneView.showsStatistics = true
+//        sceneView.showsStatistics = true
 //        sceneView.debugOptions = .showPhysicsShapes
         sceneView.isUserInteractionEnabled = true
     }

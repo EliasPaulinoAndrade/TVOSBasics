@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import SceneKit
 
+
+/// a swipe regognizer that returns a 3D world force using the velocity of pan gesture
 class ForceSwipeGestureRecognizer: UIPanGestureRecognizer {
 
     var forceFactor: CGFloat

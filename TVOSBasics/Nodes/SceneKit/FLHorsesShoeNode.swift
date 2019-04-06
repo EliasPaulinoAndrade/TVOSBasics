@@ -9,6 +9,7 @@
 import Foundation
 import SceneKit
 
+/// the hourse shoe node
 class FLHorsesShoeNode: SCNNode {
     
     var horsesShoeNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "horseshoe2.scn", nodeName: "horseshoe")

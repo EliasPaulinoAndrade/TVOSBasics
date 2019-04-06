@@ -28,7 +28,8 @@ class BallFlowScene: SCNScene {
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
         lightNode.light?.type = .omni
-        lightNode.position = SCNVector3(x: 0, y: 10, z: 0)
+        lightNode.light?.intensity = 1500
+        lightNode.position = SCNVector3(x: 0, y: 20, z: 0)
         
         return lightNode
     }()

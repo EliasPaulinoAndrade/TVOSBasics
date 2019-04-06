@@ -9,6 +9,7 @@
 import Foundation
 import SceneKit
 
+/// a class responsible by giving CategoryIds for nodes and making them collision and contact masks
 class CollisionCenter {
     
     static var standard = CollisionCenter.init()

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// the individual team score space
 class TeamScoreView: UIView {
     
     lazy var teamNameLabel: UILabel = {

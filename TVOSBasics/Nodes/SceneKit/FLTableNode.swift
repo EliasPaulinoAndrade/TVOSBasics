@@ -9,6 +9,7 @@
 import Foundation
 import SceneKit
 
+/// the table of the game
 class FLTableNode: SCNNode {
     
     var tableNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "table.scn", nodeName: "table")

@@ -9,6 +9,7 @@
 import Foundation
 import SceneKit
 
+/// the box where the balls stay before to be used
 class FLBallsBoxNode: SCNNode {
     
     let numberOfBalls: Int

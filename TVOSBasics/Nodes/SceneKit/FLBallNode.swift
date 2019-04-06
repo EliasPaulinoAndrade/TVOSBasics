@@ -9,6 +9,7 @@
 import Foundation
 import SceneKit
 
+/// the ball controlled by the user
 class FLBallNode: SCNNode {
     
     var wasUsed = false

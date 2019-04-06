@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// a simple alert with text, and need to tap play/pause to close
 class GameAlertView: UIView {
     
     var completion: (() -> ())?

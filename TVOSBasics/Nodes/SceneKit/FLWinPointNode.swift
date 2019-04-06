@@ -9,6 +9,7 @@
 import Foundation
 import SceneKit
 
+/// the union of the target point and the horseshoe nodes.
 class FLWinPointNode: SCNNode {
     
     lazy var horsesShoeNode = FLHorsesShoeNode.init(withColor: self.color)
