@@ -13,13 +13,15 @@ import SceneKit
 class FLWinPointNode: SCNNode {
     
     lazy var horsesShoeNode = FLHorsesShoeNode.init(withColor: self.color)
-    let targetPointNode = FLTargetPointNode.init()
+    lazy var targetPointNode = FLTargetPointNode.init(withText: text)
     
     let color: UIColor?
+    let text: String
     
-    init(zPosition: Float, includeTargetPoint: Bool = true, withColor color: UIColor? = nil) {
+    init(zPosition: Float, includeTargetPoint: Bool = true, withColor color: UIColor? = nil, withText text: String = "") {
         
         self.color = color
+        self.text = text
         
         super.init()
         
