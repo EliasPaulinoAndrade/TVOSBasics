@@ -42,6 +42,7 @@
 		E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
 		E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
 		E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
+		E385E4312258EBEC001A41F6 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* WireView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 		E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
 		E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWallsBoxNode.swift; sourceTree = "<group>"; };
+		E385E4302258EBEC001A41F6 /* WireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				E355F55A2257757B005034A8 /* TeamScoreView.swift */,
 				E355F56B2257B058005034A8 /* GameAlertView.swift */,
 				E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */,
+				E385E4302258EBEC001A41F6 /* WireView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
 				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
+				E385E4312258EBEC001A41F6 /* WireView.swift in Sources */,
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,

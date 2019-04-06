@@ -63,6 +63,18 @@ class TeamScoreView: UIView {
         return teamScoresSpace
     }()
     
+    lazy var middleWire: WireView = {
+        let middleWire = WireView.init(wireHeight: 30, verticalCenter: 50)
+        
+        if !showTurnLabel {
+            middleWire.isHidden = true
+        }
+        
+        return middleWire
+    }()
+    
+    var topWire = WireView.init(wireHeight: 70, verticalCenter: -150)
+    
     init(teamName: String, showTurnLabel: Bool = false, alignLeft: Bool = false) {
         
         self.showTurnLabel = showTurnLabel
@@ -74,6 +86,8 @@ class TeamScoreView: UIView {
 
         addSubview(teamScoresSpace)
         addSubview(turnLabelSpace)
+        addSubview(middleWire)
+        addSubview(topWire)
         
         teamScoresSpace.addSubview(teamNameLabel)
         turnLabelSpace.addSubview(turnNameLabel)

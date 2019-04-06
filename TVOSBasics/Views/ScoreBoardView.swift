@@ -60,6 +60,10 @@ class ScoreBoardView: UIView {
         return roundLabel
     }()
     
+    lazy var middleWire = WireView.init(wireHeight: 30, verticalCenter: -30, prefferedWidthAnchor: middleRoundSpace.widthAnchor)
+    
+    lazy var topWire = WireView.init(wireHeight: 70, verticalCenter: -150, prefferedWidthAnchor: middleRoundSpace.widthAnchor)
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -72,6 +76,9 @@ class ScoreBoardView: UIView {
         
         middleTitleSpace.addSubview(titleLabel)
         middleRoundSpace.addSubview(roundLabel)
+        
+        middlePlaceView.addSubview(middleWire)
+        middlePlaceView.addSubview(topWire)
     }
     
     required init?(coder aDecoder: NSCoder) {
