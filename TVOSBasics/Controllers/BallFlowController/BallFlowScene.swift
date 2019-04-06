@@ -60,6 +60,8 @@ class BallFlowScene: SCNScene {
     
     var testObstacle = FLObstacleNode.init()
     
+    var testWalls = FLWallsBoxNode.init()
+    
     var ballNode: FLBallNode?
     
     override init() {
@@ -76,6 +78,8 @@ class BallFlowScene: SCNScene {
         rootNode.addChildNode(redBallsBoxNode)
         rootNode.addChildNode(blueBallsBoxNode)
         rootNode.addChildNode(tableLimitsNode)
+        
+        rootNode.addChildNode(testWalls)
 
         
         self.physicsWorld.contactDelegate = self

@@ -15,11 +15,11 @@ class ScoreShadowView: UIView {
         super.init(frame: frame)
         
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowRadius = 2
+        layer.shadowRadius = 3
         clipsToBounds = false
         layer.masksToBounds = false
         layer.shadowOpacity = 0.5
-        layer.shadowOffset = CGSize.init(width: 0, height: 4)
+        layer.shadowOffset = CGSize.init(width: 0, height: 5)
     }
     
     required init?(coder aDecoder: NSCoder) {

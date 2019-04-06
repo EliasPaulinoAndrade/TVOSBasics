@@ -42,4 +42,8 @@ extension UIColor {
     static var flLightBlue: UIColor {
         return UIColor.init(named: "flLightBlue") ?? UIColor.flDefault
     }
+    
+    static var flGrayBlue: UIColor {
+        return UIColor.init(named: "flGrayBlue") ?? UIColor.flDefault
+    }
 }

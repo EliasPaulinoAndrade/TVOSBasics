@@ -41,6 +41,7 @@
 		E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
 		E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
 		E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
+		E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
 		E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 		E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
+		E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWallsBoxNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
 				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
 				E355F5932258142D005034A8 /* FLObstacleNode.swift */,
+				E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
+				E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
 				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
