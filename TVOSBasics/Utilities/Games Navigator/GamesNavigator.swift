@@ -11,7 +11,7 @@ import UIKit
 
 class GamesNavigator {
 
-    var flowBallViewController = BallFlowController.init()
+    var flowBallViewController = BallFlowViewController.init()
     
     func show(controllerType: ViewControllerType) {
         switch controllerType {

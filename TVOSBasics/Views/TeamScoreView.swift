@@ -84,6 +84,42 @@ class TeamScoreView: UIView {
         return middleWire
     }()
     
+    lazy var scoreImageView: UIImageView = {
+        let scoreImageView = UIImageView.init()
+        
+        scoreImageView.image = UIImage.init(named: "score")
+        scoreImageView.contentMode = .scaleAspectFit
+        
+        return scoreImageView
+    }()
+    
+    lazy var scoreLabel: UILabel = {
+        let scoreLabel = UILabel.init()
+        
+        scoreLabel.text = "50"
+        scoreLabel.numberOfLines = 1
+        
+        return scoreLabel
+    }()
+    
+    lazy var medalImageView: UIImageView = {
+        let medalImageView = UIImageView.init()
+        
+        medalImageView.image = UIImage.init(named: "goldMedal")
+        medalImageView.contentMode = .scaleAspectFit
+        
+        return medalImageView
+    }()
+    
+    lazy var medalLabel: UILabel = {
+        let medalLabel = UILabel.init()
+        
+        medalLabel.text = "50"
+        medalLabel.numberOfLines = 1
+        
+        return medalLabel
+    }()
+    
     var topWire = DoubleWireView.init(wireHeight: 80, verticalCenter: -155)
     
     init(teamName: String, showTurnLabel: Bool = false, alignLeft: Bool = false) {
@@ -101,6 +137,11 @@ class TeamScoreView: UIView {
         addSubview(topWire)
         
         teamScoresSpace.addSubview(teamNameLabel)
+        teamScoresSpace.addSubview(scoreImageView)
+        teamScoresSpace.addSubview(medalImageView)
+        teamScoresSpace.addSubview(scoreLabel)
+        teamScoresSpace.addSubview(medalLabel)
+        
         turnLabelSpace.addSubview(turnNameLabel)
         
         setupConstraints()
@@ -111,9 +152,13 @@ class TeamScoreView: UIView {
     }
     
     func setupConstraints() {
+        scoreLabel.translatesAutoresizingMaskIntoConstraints = false
+        medalLabel.translatesAutoresizingMaskIntoConstraints = false
         turnNameLabel.translatesAutoresizingMaskIntoConstraints = false
         teamNameLabel.translatesAutoresizingMaskIntoConstraints = false
         turnLabelSpace.translatesAutoresizingMaskIntoConstraints = false
+        scoreImageView.translatesAutoresizingMaskIntoConstraints = false
+        medalImageView.translatesAutoresizingMaskIntoConstraints = false
         teamScoresSpace.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate(
@@ -122,7 +167,23 @@ class TeamScoreView: UIView {
             teamScoresSpace.constraints(toTopFill: self) +
             turnLabelSpace.constraints(toBottomFill: self) + [
                 turnLabelSpace.topAnchor.constraint(equalTo: teamScoresSpace.bottomAnchor, constant: 10),
-                turnLabelSpace.heightAnchor.constraint(equalToConstant: 70)
+                turnLabelSpace.heightAnchor.constraint(equalToConstant: 70),
+                
+                scoreImageView.widthAnchor.constraint(equalToConstant: 70),
+                scoreImageView.heightAnchor.constraint(equalToConstant: 70),
+                scoreImageView.bottomAnchor.constraint(equalTo: teamScoresSpace.bottomAnchor, constant: -20),
+                scoreImageView.leftAnchor.constraint(equalTo: teamScoresSpace.leftAnchor, constant: 20),
+                scoreLabel.centerYAnchor.constraint(equalTo: scoreImageView.centerYAnchor),
+                scoreLabel.leftAnchor.constraint(equalTo: scoreImageView.rightAnchor, constant: 20),
+                
+                medalImageView.widthAnchor.constraint(equalToConstant: 70),
+                medalImageView.heightAnchor.constraint(equalToConstant: 70),
+                medalImageView.leftAnchor.constraint(equalTo: scoreLabel.rightAnchor, constant: 20),
+                medalImageView.bottomAnchor.constraint(equalTo: teamScoresSpace.bottomAnchor, constant: -20),
+                medalLabel.leftAnchor.constraint(equalTo: medalImageView.rightAnchor, constant: 20),
+                medalLabel.centerYAnchor.constraint(equalTo: medalImageView.centerYAnchor),
+                medalLabel.rightAnchor.constraint(equalTo: teamScoresSpace.rightAnchor, constant: -20),
+                medalLabel.widthAnchor.constraint(equalToConstant: 50)
             ]
         )
     }

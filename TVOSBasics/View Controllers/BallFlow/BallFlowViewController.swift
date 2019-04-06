@@ -10,7 +10,7 @@ import UIKit
 import QuartzCore
 import SceneKit
 
-public class BallFlowController: UIViewController, GameViewControllerProtocol {
+public class BallFlowViewController: UIViewController, GameViewControllerProtocol {
 
     let ballPanForceFactor: CGFloat = 5000
     
@@ -137,7 +137,7 @@ public class BallFlowController: UIViewController, GameViewControllerProtocol {
     }
 }
 
-extension BallFlowController: BallFlowSceneDelegate {
+extension BallFlowViewController: BallFlowSceneDelegate {
     func newPoints(points: Int) {
         self.gameDelegate?.newPoints(points: points)
     }
