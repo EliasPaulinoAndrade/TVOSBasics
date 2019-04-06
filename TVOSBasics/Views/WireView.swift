@@ -9,30 +9,36 @@
 import UIKit
 
 class WireView: UIView {
-    
-    var wireHeight: CGFloat
-    
-    var verticalCenter: CGFloat
-    
-    var prefferedWidthAnchor: NSLayoutDimension?
-    
-    var firstWire = UIView.init()
-    
-    var secondWire = UIView.init()
 
-    init(wireHeight: CGFloat, verticalCenter: CGFloat, prefferedWidthAnchor: NSLayoutDimension? = nil) {
+    var wirePointRadius: CGFloat
+    
+    lazy var firstEndView: UIView = {
+        let firstEndView = UIView.init()
         
-        self.wireHeight = wireHeight
-        self.verticalCenter = verticalCenter
-        self.prefferedWidthAnchor = prefferedWidthAnchor
+        firstEndView.backgroundColor = UIColor.black
+        firstEndView.layer.cornerRadius = self.wirePointRadius/2
+        
+        return firstEndView
+    }()
+    
+    lazy var secondEndView: UIView = {
+        let secondEndView = UIView.init()
+        
+        secondEndView.backgroundColor = UIColor.black
+        secondEndView.layer.cornerRadius = self.wirePointRadius/2
+        
+        return secondEndView
+    }()
+    
+    init(wirePointRadius: CGFloat) {
+        self.wirePointRadius = wirePointRadius
         
         super.init(frame: CGRect.zero)
         
-        addSubview(firstWire)
-        addSubview(secondWire)
+        backgroundColor = UIColor.black
         
-        firstWire.backgroundColor = UIColor.black
-        secondWire.backgroundColor = UIColor.black
+        addSubview(firstEndView)
+        addSubview(secondEndView)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,33 +46,20 @@ class WireView: UIView {
     }
     
     override func didMoveToSuperview() {
-        guard let superview = self.superview else {
-            return
-        }
+        firstEndView.translatesAutoresizingMaskIntoConstraints = false
+        secondEndView.translatesAutoresizingMaskIntoConstraints = false
         
-        translatesAutoresizingMaskIntoConstraints = false
-        firstWire.translatesAutoresizingMaskIntoConstraints = false
-        secondWire.translatesAutoresizingMaskIntoConstraints = false
-        
-        var viewsConstraints =
-            firstWire.constraints(toVerticalFill: self) +
-            secondWire.constraints(toVerticalFill: self) + [
-                heightAnchor.constraint(equalToConstant: wireHeight),
-                centerYAnchor.constraint(equalTo: superview.centerYAnchor, constant: verticalCenter),
-                firstWire.widthAnchor.constraint(equalToConstant: 5),
-                secondWire.widthAnchor.constraint(equalToConstant: 5),
-                firstWire.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
-                secondWire.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10)
-        ]
-        
-        if let prefferedWidthAnchor = prefferedWidthAnchor {
-            let prefferedWidthConstraint = widthAnchor.constraint(equalTo: prefferedWidthAnchor)
-            let centerXConstraint = centerXAnchor.constraint(equalTo: superview.centerXAnchor)
-            viewsConstraints += [prefferedWidthConstraint, centerXConstraint]
-        } else {
-            viewsConstraints += constraints(toHorizontalFill: superview)
-        }
-        
-        NSLayoutConstraint.activate(viewsConstraints)
+        NSLayoutConstraint.activate([
+            firstEndView.widthAnchor.constraint(equalToConstant: wirePointRadius),
+            firstEndView.heightAnchor.constraint(equalToConstant: wirePointRadius),
+            secondEndView.widthAnchor.constraint(equalToConstant: wirePointRadius),
+            secondEndView.heightAnchor.constraint(equalToConstant: wirePointRadius),
+            
+            firstEndView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            firstEndView.centerYAnchor.constraint(equalTo: topAnchor),
+            
+            secondEndView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            secondEndView.centerYAnchor.constraint(equalTo: bottomAnchor)
+        ])
     }
 }
