@@ -15,16 +15,20 @@ class FLWallsBoxNode: SCNNode {
         
         let boxGeomtry = SCNBox.init(width: 90, height: 50, length: 50, chamferRadius: 0)
         
-        let boxWallMaterial = SCNMaterial.init()
-        boxWallMaterial.diffuse.contents = UIImage.init(named: "wallsTexture")
-        boxWallMaterial.isDoubleSided = true
+        let boxPaperWallMaterial = SCNMaterial.init()
+        boxPaperWallMaterial.diffuse.contents = UIImage.init(named: "wallsPaperTexture")
+        boxPaperWallMaterial.isDoubleSided = true
         
         let boxFloorMaterial = SCNMaterial.init()
         boxFloorMaterial.diffuse.contents = UIColor.flGrayBlue
         boxFloorMaterial.isDoubleSided = true
         
-        boxGeomtry.materials = [boxWallMaterial, boxWallMaterial, boxWallMaterial,
-                                boxWallMaterial, boxWallMaterial, boxFloorMaterial]
+        let boxWallMaterial = SCNMaterial.init()
+        boxWallMaterial.diffuse.contents = UIImage.init(named: "wallsTexture")
+        boxWallMaterial.isDoubleSided = true
+        
+        boxGeomtry.materials = [boxPaperWallMaterial, boxWallMaterial, boxPaperWallMaterial,
+                                boxWallMaterial, boxPaperWallMaterial, boxFloorMaterial]
         
         geometry = boxGeomtry
         position.y = 5

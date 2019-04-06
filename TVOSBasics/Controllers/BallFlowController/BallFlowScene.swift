@@ -70,7 +70,7 @@ class BallFlowScene: SCNScene {
         for obstaclePosition in obstaclePositions {
             let obstacle = FLObstacleNode.init()
             
-            obstacle.position = SCNVector3.init(obstaclePosition.x, 1.889, obstaclePosition.z)
+            obstacle.position = SCNVector3.init(obstaclePosition.x, 0.676, obstaclePosition.z)
             obstacle.eulerAngles.y += obstaclePosition.rotation
             
             obstacles.append(obstacle)

@@ -33,7 +33,7 @@ class FLBallsBoxNode: SCNNode {
         let shoeGeometry = SCNCylinder.init(radius: 0.1, height: 20)
         
         let shoeNode = SCNNode.init(geometry: shoeGeometry)
-        shoeNode.position.y = Float(-self.height/2 - 10)
+        shoeNode.position.y = Float(-self.height/2 - 10.05)
         
         return shoeNode
     }()
@@ -44,15 +44,24 @@ class FLBallsBoxNode: SCNNode {
         
         super.init()
         
+        let boxWallTexture = SCNMaterial.init()
+        boxWallTexture.diffuse.contents = UIImage.init(named: "ballsBoxTexture")
+        boxWallTexture.isDoubleSided = true
+        
+        let boxFloorTexture = SCNMaterial.init()
+        boxFloorTexture.diffuse.contents = UIColor.flBlue
+        boxFloorTexture.isDoubleSided = true
+        
         let boxGeometry = SCNBox.init(
             width: width,
             height: height,
             length: length,
             chamferRadius: 0
         )
+        
         geometry = boxGeometry
-        geometry?.materials.first?.diffuse.contents = UIImage.init(named: "ballsBoxTexture")
-        geometry?.materials.first?.isDoubleSided = true
+        geometry?.materials = [boxWallTexture, boxWallTexture, boxWallTexture,
+                               boxWallTexture, boxWallTexture, boxFloorTexture]
     
         position.x = -15.5 - Float(width/2)
         position.z = 0
