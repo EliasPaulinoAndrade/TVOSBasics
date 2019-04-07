@@ -12,7 +12,7 @@ import SceneKit
 
 public class BallFlowViewController: UIViewController, GameViewControllerProtocol {
 
-    let ballPanForceFactor: CGFloat = 5000
+    let ballPanForceFactor: CGFloat = 1000
     
     var sceneView = SCNView.init()
     
