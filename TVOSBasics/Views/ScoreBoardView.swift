@@ -108,14 +108,28 @@ class ScoreBoardView: UIView {
         }
     }
     
-    func setMedalTo(team: Team, points: Int, goldMedal: Bool) {
+    func setMedalPointsTo(team: Team, points: Int) {
         switch team {
         case .red:
             redTeamPlaceView.medalLabel.text = "\(points)"
-            redTeamPlaceView.medalImageView.image = UIImage.init(named: "goldMedal")
+            
         case .blue:
             blueTeamPlaceView.medalLabel.text = "\(points)"
+            
+        }
+    }
+    
+    func setMedals(blueIsGold: Bool, redIsGold: Bool) {
+        if blueIsGold {
+            blueTeamPlaceView.medalImageView.image = UIImage.init(named: "goldMedal")
+        } else {
             blueTeamPlaceView.medalImageView.image = UIImage.init(named: "silverMedal")
+        }
+        
+        if redIsGold {
+            redTeamPlaceView.medalImageView.image = UIImage.init(named: "goldMedal")
+        } else {
+            redTeamPlaceView.medalImageView.image = UIImage.init(named: "silverMedal")
         }
     }
     

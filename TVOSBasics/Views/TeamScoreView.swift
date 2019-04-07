@@ -106,7 +106,7 @@ class TeamScoreView: UIView {
     lazy var medalImageView: UIImageView = {
         let medalImageView = UIImageView.init()
         
-        medalImageView.image = UIImage.init(named: "goldMedal")
+        medalImageView.image = UIImage.init(named: "silverMedal")
         medalImageView.contentMode = .scaleAspectFit
         
         return medalImageView

@@ -115,11 +115,13 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         }
     }
     
-    func setViewForChangeOfRound(toTeam team: Team) {
+    func setViewForChangeOfRound(toTeam team: Team, withRedRounds redRounds: Int, andBlueRounds blueRounds: Int) {
         DispatchQueue.main.async {
             self.gameAlertView.isHidden = false
             self.gameAlertView.reset(withText: "Novo round. Vez da Equipe \(team). Pressione Play para continuar.") {
                 self.scoreBoardView.currentTeam = team
+                self.scoreBoardView.setMedalPointsTo(team: .red, points: redRounds)
+                self.scoreBoardView.setMedalPointsTo(team: .blue, points: blueRounds)
                 self.scene.initiateRound(forTeam: team)
             }
         }
@@ -135,6 +137,13 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     func setViewForPointsChange(ofTeam team: Team, points: Int) {
         DispatchQueue.main.async {
             self.scoreBoardView.setPointsTo(team: team, points: points)
+        }
+    }
+    
+    func setViewForPositionChange(redWinner: Bool, blueWinner: Bool) {
+        DispatchQueue.main.async {
+
+            self.scoreBoardView.setMedals(blueIsGold: blueWinner, redIsGold: redWinner)
         }
     }
 }
