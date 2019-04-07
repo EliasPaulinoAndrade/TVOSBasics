@@ -53,8 +53,10 @@ class Round {
         var maxPointsTeam: (team: Team, points: Int)?
         
         for (team, points) in teamScores {
-            if let safeMaxPointsTeam = maxPointsTeam, safeMaxPointsTeam.points < points {
-                maxPointsTeam = (team, points)
+            if let safeMaxPointsTeam = maxPointsTeam {
+                if  safeMaxPointsTeam.points < points {
+                    maxPointsTeam = (team, points)
+                }
             } else {
                 maxPointsTeam = (team, points)
             }

@@ -29,8 +29,10 @@ class GamesManager {
         var maxRoundsTeam: (team: Team, rounds: Int)?
         
         for (team, rounds) in wonRounds {
-            if let safeMaxRoundsTeam = maxRoundsTeam, safeMaxRoundsTeam.rounds < rounds {
-                maxRoundsTeam = (team, rounds)
+            if let safeMaxRoundsTeam = maxRoundsTeam {
+                if safeMaxRoundsTeam.rounds < rounds {
+                    maxRoundsTeam = (team, rounds)
+                }
             } else {
                 maxRoundsTeam = (team, rounds)
             }

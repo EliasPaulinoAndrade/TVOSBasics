@@ -30,7 +30,7 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     
     var gameType: GameType = .flowBall
     
-    var numberOfRounds = 2
+    var numberOfRounds = 5
         
     lazy var gameAlertView: GameAlertView = {
         let gameAlertView = GameAlertView.init(text: "Vez da Equipe \(Team.red). Pressione Play para continuar.") {

@@ -105,32 +105,6 @@ extension GameController: GameViewControllerDelegate {
         }
     }
     
-//    private func checkWinnerChange() {
-//        guard let currentController = self.currentController else {
-//            return
-//        }
-//
-//        if let (currentWinningTeam, _) = self.winnerInfo,
-//            let (realWinningTeam, winningRounds) = gameManager.teamWithMoreRounds(),
-//            currentWinningTeam != realWinningTeam {
-//
-//            currentController.setViewForWinnerChange(
-//                toTeam: realWinningTeam,
-//                withRounds: winningRounds
-//            )
-//
-//            self.winnerInfo = (realWinningTeam, winningRounds)
-//        } else if let (realWinningTeam, winningRounds) = gameManager.teamWithMoreRounds() {
-//
-//            currentController.setViewForWinnerChange(
-//                toTeam: realWinningTeam,
-//                withRounds: winningRounds
-//            )
-//
-//            self.winnerInfo = (realWinningTeam, winningRounds)
-//        }
-//    }
-    
     func beginGame(withTeam team: Team) -> Bool {
         guard let currentController = self.currentController else {
             return false
