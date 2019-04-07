@@ -54,6 +54,55 @@
 		E385E447225932D1001A41F6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
 		E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
 		E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
+		E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */; };
+		E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CE225A25CA006C1226 /* ViewController.swift */; };
+		E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D0225A25CA006C1226 /* Main.storyboard */; };
+		E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D3225A25CC006C1226 /* Assets.xcassets */; };
+		E3BFE2D7225A25CC006C1226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */; };
+		E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
+		E3BFE2DD225A26B9006C1226 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
+		E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
+		E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0522565FE30066F863 /* BallFlowViewController.swift */; };
+		E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
+		E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
+		E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
+		E3BFE2E3225A26C9006C1226 /* FLBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* FLBallNode.swift */; };
+		E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
+		E3BFE2E5225A26C9006C1226 /* FLTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* FLTableNode.swift */; };
+		E3BFE2E6225A26C9006C1226 /* FLBallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* FLBallsBoxNode.swift */; };
+		E3BFE2E7225A26C9006C1226 /* FLTableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* FLTableLimitsNode.swift */; };
+		E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
+		E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
+		E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
+		E3BFE2EB225A26C9006C1226 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
+		E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
+		E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
+		E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
+		E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4442259309C001A41F6 /* ViewControllerType.swift */; };
+		E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
+		E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
+		E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
+		E3BFE2F3225A26D6006C1226 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
+		E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
+		E3BFE2F5225A26DD006C1226 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
+		E3BFE2F6225A26DD006C1226 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
+		E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
+		E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
+		E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
+		E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
+		E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
+		E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
+		E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
+		E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F58422580936005034A8 /* horseshoe2.scn */; };
+		E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
+		E3BFE300225A26E8006C1226 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F57E2257FB7A005034A8 /* table.scn */; };
+		E3BFE301225A26EB006C1226 /* imbuia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E355F57F2257FB89005034A8 /* imbuia.jpg */; };
+		E3BFE302225A26EE006C1226 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56F2257C354005034A8 /* Team.swift */; };
+		E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43622591DA0001A41F6 /* GamesManager.swift */; };
+		E3BFE304225A26EE006C1226 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43922592112001A41F6 /* Round.swift */; };
+		E3BFE305225A26EE006C1226 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43D225922BE001A41F6 /* GameType.swift */; };
+		E3BFE306225A26EE006C1226 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43F22592A88001A41F6 /* Game.swift */; };
+		E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E338EBFC22564B660066F863 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,10 +155,24 @@
 		E385E446225932D1001A41F6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerProtocol.swift; sourceTree = "<group>"; };
 		E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerDelegate.swift; sourceTree = "<group>"; };
+		E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3BFE2CE225A25CA006C1226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3BFE2D1225A25CA006C1226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3BFE2D3225A25CC006C1226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3BFE2D6225A25CC006C1226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3BFE2D8225A25CC006C1226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E338EBEF22564B640066F863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFE2C7225A25CA006C1226 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				E338EBF422564B640066F863 /* TVOSBasics */,
+				E3BFE2CB225A25CA006C1226 /* TVOSTestApp */,
 				E338EBF322564B640066F863 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E338EBF222564B640066F863 /* TVOSBasics.app */,
+				E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,6 +367,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E3BFE2CB225A25CA006C1226 /* TVOSTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */,
+				E3BFE2CE225A25CA006C1226 /* ViewController.swift */,
+				E3BFE2D0225A25CA006C1226 /* Main.storyboard */,
+				E3BFE2D3225A25CC006C1226 /* Assets.xcassets */,
+				E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */,
+				E3BFE2D8225A25CC006C1226 /* Info.plist */,
+			);
+			path = TVOSTestApp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,18 +400,38 @@
 			productReference = E338EBF222564B640066F863 /* TVOSBasics.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E3BFE2C9225A25CA006C1226 /* TVOSTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3BFE2DB225A25CC006C1226 /* Build configuration list for PBXNativeTarget "TVOSTestApp" */;
+			buildPhases = (
+				E3BFE2C6225A25CA006C1226 /* Sources */,
+				E3BFE2C7225A25CA006C1226 /* Frameworks */,
+				E3BFE2C8225A25CA006C1226 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVOSTestApp;
+			productName = TVOSTestApp;
+			productReference = E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E338EBEA22564B640066F863 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Elias Paulino";
 				TargetAttributes = {
 					E338EBF122564B640066F863 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					E3BFE2C9225A25CA006C1226 = {
+						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
@@ -351,6 +449,7 @@
 			projectRoot = "";
 			targets = (
 				E338EBF122564B640066F863 /* TVOSBasics */,
+				E3BFE2C9225A25CA006C1226 /* TVOSTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -366,6 +465,21 @@
 				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
 				E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
 				E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BFE2C8225A25CA006C1226 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BFE2D7225A25CC006C1226 /* LaunchScreen.storyboard in Resources */,
+				E3BFE301225A26EB006C1226 /* imbuia.jpg in Resources */,
+				E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */,
+				E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */,
+				E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */,
+				E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */,
+				E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */,
+				E3BFE300225A26E8006C1226 /* table.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +534,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3BFE2C6225A25CA006C1226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */,
+				E3BFE2E3225A26C9006C1226 /* FLBallNode.swift in Sources */,
+				E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */,
+				E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */,
+				E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */,
+				E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */,
+				E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */,
+				E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */,
+				E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */,
+				E3BFE2F6225A26DD006C1226 /* SCNode+collisions.swift in Sources */,
+				E3BFE304225A26EE006C1226 /* Round.swift in Sources */,
+				E3BFE2DD225A26B9006C1226 /* GameViewControllerProtocol.swift in Sources */,
+				E3BFE2E5225A26C9006C1226 /* FLTableNode.swift in Sources */,
+				E3BFE305225A26EE006C1226 /* GameType.swift in Sources */,
+				E3BFE2F3225A26D6006C1226 /* UIColor+colors.swift in Sources */,
+				E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */,
+				E3BFE306225A26EE006C1226 /* Game.swift in Sources */,
+				E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */,
+				E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */,
+				E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */,
+				E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */,
+				E3BFE2EB225A26C9006C1226 /* FLWallsBoxNode.swift in Sources */,
+				E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */,
+				E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */,
+				E3BFE2F5225A26DD006C1226 /* CollisionCenter.swift in Sources */,
+				E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */,
+				E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */,
+				E3BFE302225A26EE006C1226 /* Team.swift in Sources */,
+				E3BFE2E7225A26C9006C1226 /* FLTableLimitsNode.swift in Sources */,
+				E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */,
+				E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */,
+				E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */,
+				E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */,
+				E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */,
+				E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */,
+				E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */,
+				E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */,
+				E3BFE2E6225A26C9006C1226 /* FLBallsBoxNode.swift in Sources */,
+				E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */,
+				E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */,
+				E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -429,6 +591,22 @@
 				E338EBFA22564B640066F863 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3BFE2D0225A25CA006C1226 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BFE2D1225A25CA006C1226 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3BFE2D6225A25CC006C1226 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -588,6 +766,48 @@
 			};
 			name = Release;
 		};
+		E3BFE2D9225A25CC006C1226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				INFOPLIST_FILE = TVOSTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3BFE2DA225A25CC006C1226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				INFOPLIST_FILE = TVOSTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,6 +825,15 @@
 			buildConfigurations = (
 				E338EC0222564B660066F863 /* Debug */,
 				E338EC0322564B660066F863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3BFE2DB225A25CC006C1226 /* Build configuration list for PBXNativeTarget "TVOSTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3BFE2D9225A25CC006C1226 /* Debug */,
+				E3BFE2DA225A25CC006C1226 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
