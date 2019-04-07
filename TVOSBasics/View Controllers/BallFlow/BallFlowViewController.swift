@@ -70,6 +70,9 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         self.sceneView.backgroundColor = UIColor.flLightBlue
         
         self.gameDelegate = gameController
+        
+        self.scoreBoardView.titleLabel.text = "Flow Ball Game"
+        self.scoreBoardView.setRound(to: 1, of: numberOfRounds)
     }
     
     @objc func swipeHappend(recognizer: ForceSwipeGestureRecognizer) {
@@ -115,7 +118,7 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         }
     }
     
-    func setViewForChangeOfRound(toTeam team: Team, withRedRounds redRounds: Int, andBlueRounds blueRounds: Int) {
+    func setViewForChangeOfRound(toTeam team: Team, withRedRounds redRounds: Int, andBlueRounds blueRounds: Int, nextRoundNumber: Int) {
         DispatchQueue.main.async {
             self.gameAlertView.isHidden = false
             self.gameAlertView.reset(withText: "Novo round. Vez da Equipe \(team). Pressione Play para continuar.") {
@@ -124,6 +127,8 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
                 self.scoreBoardView.setMedalPointsTo(team: .blue, points: blueRounds)
                 self.scene.initiateRound(forTeam: team)
             }
+            
+            self.scoreBoardView.setRound(to: nextRoundNumber, of: self.numberOfRounds)
         }
     }
     

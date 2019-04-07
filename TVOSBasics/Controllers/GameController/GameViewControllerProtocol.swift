@@ -15,7 +15,7 @@ protocol GameViewControllerProtocol: UIViewController {
     var gameDelegate: GameViewControllerDelegate? { get set }
     
     func setViewForChangeOf(team: Team)
-    func setViewForChangeOfRound(toTeam team: Team, withRedRounds redRounds: Int, andBlueRounds blueRounds: Int)
+    func setViewForChangeOfRound(toTeam team: Team, withRedRounds redRounds: Int, andBlueRounds blueRounds: Int, nextRoundNumber: Int)
     func setViewForPositionChange(redWinner: Bool, blueWinner: Bool)
     func setViewForEndGame()
     func setViewForPointsChange(ofTeam team: Team, points: Int)

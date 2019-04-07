@@ -60,7 +60,12 @@ extension GameController: GameViewControllerDelegate {
             let redRounds = gameManager.wonRounds[.red] ?? 0
             let blueRounds = gameManager.wonRounds[.blue] ?? 0
             
-            currentController.setViewForChangeOfRound(toTeam: team, withRedRounds: redRounds, andBlueRounds: blueRounds)
+            currentController.setViewForChangeOfRound(
+                toTeam: team,
+                withRedRounds: redRounds,
+                andBlueRounds: blueRounds,
+                nextRoundNumber: (gameManager.currentGame?.currentRound ?? 0) + 1
+            )
             
             currentController.setViewForPointsChange(ofTeam: .red, points: 0)
             currentController.setViewForPointsChange(ofTeam: .blue, points: 0)

@@ -18,7 +18,7 @@ class FLBallsBoxNode: SCNNode {
     var ballsQueue = Queue<FLBallNode>()
     
     lazy var height: CGFloat = {
-        return 2.1 * CGFloat(numberOfBalls) * ballsRadius
+        return max(2.1 * CGFloat(numberOfBalls) * ballsRadius, 4)
     }()
     
     lazy var width: CGFloat = {

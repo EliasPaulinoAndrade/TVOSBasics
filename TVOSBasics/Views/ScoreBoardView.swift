@@ -57,7 +57,7 @@ class ScoreBoardView: UIView {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel.init()
         
-        titleLabel.text = "Paper Plate Targets"
+        titleLabel.text = "..."
         titleLabel.textAlignment = .center
         
         return titleLabel
@@ -66,7 +66,7 @@ class ScoreBoardView: UIView {
     lazy var roundLabel: UILabel = {
         let roundLabel = UILabel.init()
         
-        roundLabel.text = "Round 2 of 3"
+        roundLabel.text = "..."
         roundLabel.textAlignment = .center
         
         return roundLabel
@@ -131,6 +131,10 @@ class ScoreBoardView: UIView {
         } else {
             redTeamPlaceView.medalImageView.image = UIImage.init(named: "silverMedal")
         }
+    }
+    
+    func setRound(to round: Int, of maxRound: Int) {
+        self.roundLabel.text = "Round \(round) of \(maxRound)"
     }
     
     override func didMoveToSuperview() {

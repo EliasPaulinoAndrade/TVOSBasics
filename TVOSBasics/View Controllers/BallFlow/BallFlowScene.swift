@@ -49,9 +49,9 @@ class BallFlowScene: SCNScene {
         return initialWinPointNode
     }()
     
-    var redBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 2, ballsRadius: 0.5)
+    var redBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
     lazy var blueBallsBoxNode: FLBallsBoxNode = {
-        let blueBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 2, ballsRadius: 0.5)
+        let blueBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
         
         blueBallsBoxNode.position.x = -blueBallsBoxNode.position.x
         
