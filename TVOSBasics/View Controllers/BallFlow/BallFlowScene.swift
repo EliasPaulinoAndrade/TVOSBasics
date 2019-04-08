@@ -34,7 +34,7 @@ class BallFlowScene: SCNScene {
         return lightNode
     }()
     
-    var tableNode = FLTableNode.init()
+    var tableNode = TableNode.init()
     
     var tableLimitsNode = FLTableLimitsNode.init()
 
@@ -200,12 +200,9 @@ extension BallFlowScene: SCNPhysicsContactDelegate {
         if contact.checkCollisionBetween(nodeTypeA: FLBallNode.self, nodeTypeB: FLTableLimitsNode.self) {
             self.ballNode?.removeFromParentNode()
             addNewBall()
-        } else if let (ballNode, targetPointNode) = contact.checkCollisionBetween(
-            nodeTypeA: FLBallNode.self,
-            nodeTypeB: FLTargetPointNode.self), !ballNode.wasUsed {
+        } else if let (ballNode, targetPointNode): (FLBallNode,FLTargetPointNode) = contact.checkCollisionBetween(nodeTypeA: FLBallNode.self, nodeTypeB: FLTargetPointNode.self), !ballNode.wasUsed {
             
             ballNode.wasUsed = true
-            
             removeCurrentBall()
             
             switch targetPointNode.parent {

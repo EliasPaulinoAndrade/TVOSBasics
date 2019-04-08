@@ -12,12 +12,18 @@ import UIKit
 class GamesNavigator {
 
     var flowBallViewController = BallFlowViewController.init()
+    var paperPlateViewControler = PaperPlateViewController()
     
     func show(controllerType: ViewControllerType) {
         switch controllerType {
         case .flowBall:
             show(controller: flowBallViewController)
+            break
+        case .paperPlate:
+            show(controller: paperPlateViewControler)
+            break
         }
+        
     }
     
     func show(controller: UIViewController) {

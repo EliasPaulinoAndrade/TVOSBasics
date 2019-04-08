@@ -26,7 +26,7 @@ class FLBallNode: SCNNode {
         physicsBody = SCNPhysicsBody.init(type: .dynamic, shape: nil)
         
         willCollideWith(nodeTypes: [
-            FLTableNode.self,
+            TableNode.self,
             FLBallsBoxNode.self,
             FLBallNode.self,
             FLHorsesShoeNode.self,
