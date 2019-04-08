@@ -18,9 +18,10 @@ class PaperPlateScene: SCNScene {
     lazy var cameraNode: SCNNode = {
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
-        cameraNode.position = SCNVector3(x: 0, y: 5, z: 20)
+        cameraNode.position = SCNVector3(x: 0, y: 10, z: 17)
         cameraNode.camera?.fieldOfView = 90
-        cameraNode.eulerAngles = SCNVector3Make(0.1, 0, 0)
+        let rad = -50 * Float.pi / 180
+        cameraNode.eulerAngles = SCNVector3Make(rad, 0, 0)
         
         return cameraNode
     }()
@@ -61,10 +62,10 @@ class PaperPlateScene: SCNScene {
         let xScale = table.scale.x
         let yScale = table.scale.y
         let zScale = table.scale.z
-        table.scale = SCNVector3(x: xScale, y: yScale, z: zScale * 1.4 )
+        table.scale = SCNVector3(x: xScale, y: yScale, z: zScale * 1.5 )
+        table.position.y -= 4
         return table
     }()
-    
     
     override init() {
         super.init()

@@ -24,6 +24,7 @@ class TableNode: SCNNode {
         physicsBody = SCNPhysicsBody.init(type: .static, shape: nil)
         
         if let tableNode = tableNode {
+            tableNode.position.y += 0.1
             addChildNode(tableNode)
         }
         
