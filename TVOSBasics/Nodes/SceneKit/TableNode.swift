@@ -28,7 +28,7 @@ class TableNode: SCNNode {
             addChildNode(tableNode)
         }
         
-        willCollideWith(nodeTypes: [FLBallNode.self])
+        willCollideWith(nodeTypes: [BallNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {

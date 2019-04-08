@@ -11,7 +11,8 @@ import SceneKit
 
 class PaperPlateScene: SCNScene {
     
-    var state = FLGameState.redInitial
+    var state = PaperPlateGameState.redPlaying
+    var currentBall: BallNode?
     
     weak var delegate: BallFlowSceneDelegate?
     
@@ -36,15 +37,8 @@ class PaperPlateScene: SCNScene {
         return lightNode
     }()
     
-    lazy var straw: SCNNode = {
-        let tube = SCNTube(innerRadius: 0.25, outerRadius: 0.5, height: 5.0)
-        let strawNode = SCNNode(geometry: tube)
-        strawNode.physicsBody = SCNPhysicsBody(type: .static, shape: nil)
-        strawNode.position = SCNVector3(x: 0.0, y: 2.0, z: 13)
-        strawNode.eulerAngles = SCNVector3Make(-80, 0, 0);
-        let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "Assets.xcassets/texturaCanudo")
-        tube.materials = [material]
+    lazy var straw: PPStrawNode = {
+        let strawNode = PPStrawNode()
         
         return strawNode
     }()
@@ -56,6 +50,20 @@ class PaperPlateScene: SCNScene {
 //        
 //        return plateNode
 //    }()
+    
+    lazy var boxBollsTeam1: BallsBoxNode = {
+        let balls = BallsBoxNode(numberOfBalls: 5, ballsRadius: 0.2)
+        balls.position = SCNVector3(x: 15.0, y: 5.0, z: 8.0)
+    
+        return balls
+    }()
+    
+    lazy var boxBollsTeam2: BallsBoxNode = {
+        let balls = BallsBoxNode(numberOfBalls: 5, ballsRadius: 0.2)
+        balls.position = SCNVector3(x: -15.0, y: 5.0, z: 8.0)
+        
+        return balls
+    }()
     
     lazy var tableNode: SCNNode = {
         let table = TableNode()
@@ -73,9 +81,44 @@ class PaperPlateScene: SCNScene {
         rootNode.addChildNode(straw)
         rootNode.addChildNode(lightNode)
         rootNode.addChildNode(tableNode)
+        rootNode.addChildNode(boxBollsTeam1)
+        rootNode.addChildNode(boxBollsTeam2)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func addNewBall() {
+        
+        var newBall: BallNode?
+        var currentTeam: Team?
+        
+        switch state {
+        case .redInitial, .blueInitial:
+            break
+        case .redPlaying:
+            newBall = boxBollsTeam1.pull()
+            currentTeam = .red
+        case .bluePlaying:
+            newBall = boxBollsTeam2.pull()
+            currentTeam = .blue
+        }
+        
+        if let newBall = newBall {
+            newBall.position = SCNVector3.zero
+            newBall.position.y = 2.0
+            newBall.position.x = 0.0
+            newBall.position.z = 13
+            
+            rootNode.addChildNode(newBall)
+            self.currentBall = newBall
+        } else if let _ = currentTeam {
+            self.delegate?.finished()
+        }
+    }
+    
+    func throwBall(withForce force: SCNVector3){
+        self.currentBall?.physicsBody?.applyForce(force, asImpulse: true)
     }
 }

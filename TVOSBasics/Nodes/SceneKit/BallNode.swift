@@ -10,7 +10,7 @@ import Foundation
 import SceneKit
 
 /// the ball controlled by the user
-class FLBallNode: SCNNode {
+class BallNode: SCNNode {
     
     var wasUsed = false
     
@@ -27,10 +27,11 @@ class FLBallNode: SCNNode {
         
         willCollideWith(nodeTypes: [
             TableNode.self,
-            FLBallsBoxNode.self,
-            FLBallNode.self,
+            BallsBoxNode.self,
+            BallNode.self,
             FLHorsesShoeNode.self,
-            FLObstacleNode.self
+            FLObstacleNode.self,
+            PPStrawNode.self
         ])
         willContactWith(nodeTypes: [
             FLTargetPointNode.self,

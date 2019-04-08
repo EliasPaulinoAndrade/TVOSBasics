@@ -36,7 +36,7 @@ class FLTargetPointNode: SCNNode {
 
         physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: nil)
         
-        willContactWith(nodeTypes: [FLBallNode.self])
+        willContactWith(nodeTypes: [BallNode.self])
      
         addChildNode(pointsTextNode)
     }

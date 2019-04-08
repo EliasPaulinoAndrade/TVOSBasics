@@ -13,17 +13,21 @@ import SceneKit
 class PaperPlateViewController: UIViewController {
     
     var scnView: SCNView!
-    var scnScene: SCNScene!
+    var scnScene: PaperPlateScene!
     var cameraNode: SCNNode!
     var tube: SCNTube!
     var table: SCNPlane!
+    
+    let force = SCNVector3(2500, 0, 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupScene()
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-        self.scnView.addGestureRecognizer(tapGesture)
+        self.scnScene.addNewBall()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture.allowedPressTypes = [NSNumber(value: UIPress.PressType.select.rawValue)]
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     private func setupView(){
@@ -35,6 +39,7 @@ class PaperPlateViewController: UIViewController {
         )
         self.scnView.allowsCameraControl = false
         self.scnView.showsStatistics = true
+        self.scnView.debugOptions = .showPhysicsShapes
     }
     
     private func setupScene() {
@@ -43,9 +48,9 @@ class PaperPlateViewController: UIViewController {
         self.scnScene.background.contents = UIImage(named: "background")
     }
     
-    @objc
-    func handleTap(_ gestureRecognize: UIGestureRecognizer) {
-        
+    @objc func handleTap() {
+        self.scnScene.throwBall(withForce: force)
+
     }
     
 }

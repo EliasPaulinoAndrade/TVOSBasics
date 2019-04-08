@@ -49,9 +49,9 @@ class BallFlowScene: SCNScene {
         return initialWinPointNode
     }()
     
-    var redBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
-    lazy var blueBallsBoxNode: FLBallsBoxNode = {
-        let blueBallsBoxNode = FLBallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
+    var redBallsBoxNode = BallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
+    lazy var blueBallsBoxNode: BallsBoxNode = {
+        let blueBallsBoxNode = BallsBoxNode.init(numberOfBalls: 5, ballsRadius: 0.5)
         
         blueBallsBoxNode.position.x = -blueBallsBoxNode.position.x
         
@@ -81,7 +81,7 @@ class BallFlowScene: SCNScene {
     
     var testWalls = FLWallsBoxNode.init()
     
-    var ballNode: FLBallNode?
+    var ballNode: BallNode?
     
     override init() {
         super.init()
@@ -110,7 +110,7 @@ class BallFlowScene: SCNScene {
     
     func addNewBall() {
         
-        var newBall: FLBallNode?
+        var newBall: BallNode?
         var currentTeam: Team?
         
         switch state {
@@ -197,10 +197,10 @@ class BallFlowScene: SCNScene {
 extension BallFlowScene: SCNPhysicsContactDelegate {
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
      
-        if contact.checkCollisionBetween(nodeTypeA: FLBallNode.self, nodeTypeB: FLTableLimitsNode.self) {
+        if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: FLTableLimitsNode.self) {
             self.ballNode?.removeFromParentNode()
             addNewBall()
-        } else if let (ballNode, targetPointNode): (FLBallNode,FLTargetPointNode) = contact.checkCollisionBetween(nodeTypeA: FLBallNode.self, nodeTypeB: FLTargetPointNode.self), !ballNode.wasUsed {
+        } else if let (ballNode, targetPointNode): (BallNode,FLTargetPointNode) = contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: FLTargetPointNode.self), !ballNode.wasUsed {
             
             ballNode.wasUsed = true
             removeCurrentBall()
