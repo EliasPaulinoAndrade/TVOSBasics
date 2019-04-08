@@ -9,7 +9,7 @@
 import Foundation
 import SceneKit
 
-class FLWallsBoxNode: SCNNode {
+class WallsBoxNode: SCNNode {
     override init() {
         super.init()
         

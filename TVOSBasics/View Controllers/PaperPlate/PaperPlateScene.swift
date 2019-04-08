@@ -75,6 +75,8 @@ class PaperPlateScene: SCNScene {
         return table
     }()
     
+    var walls = WallsBoxNode()
+    
     override init() {
         super.init()
         rootNode.addChildNode(cameraNode)
@@ -83,6 +85,7 @@ class PaperPlateScene: SCNScene {
         rootNode.addChildNode(tableNode)
         rootNode.addChildNode(boxBollsTeam1)
         rootNode.addChildNode(boxBollsTeam2)
+        rootNode.addChildNode(walls)
     }
     
     required init?(coder aDecoder: NSCoder) {

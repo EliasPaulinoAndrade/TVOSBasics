@@ -79,7 +79,7 @@ class BallFlowScene: SCNScene {
         return obstacles
     }()
     
-    var testWalls = FLWallsBoxNode.init()
+    var testWalls = WallsBoxNode.init()
     
     var ballNode: BallNode?
     

@@ -46,7 +46,7 @@
 		E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
 		E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
 		E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
-		E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
+		E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
 		E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
 		E385E4332258F77C001A41F6 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
 		E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
@@ -79,7 +79,7 @@
 		E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
 		E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
 		E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
-		E3BFE2EB225A26C9006C1226 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
+		E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
 		E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
 		E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
 		E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
@@ -151,7 +151,7 @@
 		E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
 		E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 		E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
-		E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWallsBoxNode.swift; sourceTree = "<group>"; };
+		E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallsBoxNode.swift; sourceTree = "<group>"; };
 		E385E4302258EBEC001A41F6 /* DoubleWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWireView.swift; sourceTree = "<group>"; };
 		E385E4322258F77C001A41F6 /* WireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireView.swift; sourceTree = "<group>"; };
 		E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+addChildNodes.swift"; sourceTree = "<group>"; };
@@ -324,7 +324,7 @@
 				E355F567225796D2005034A8 /* FLTableLimitsNode.swift */,
 				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
 				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
-				E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */,
+				E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
 				2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
 			);
 			path = SceneKit;
@@ -522,7 +522,7 @@
 				E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
 				E385E447225932D1001A41F6 /* GameController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
-				E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */,
+				E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
 				2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */,
@@ -584,7 +584,7 @@
 				E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */,
 				E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */,
 				E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */,
-				E3BFE2EB225A26C9006C1226 /* FLWallsBoxNode.swift in Sources */,
+				E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */,
 				2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */,
 				E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */,
 				E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */,
