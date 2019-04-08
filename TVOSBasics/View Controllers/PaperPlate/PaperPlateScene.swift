@@ -20,7 +20,7 @@ class PaperPlateScene: SCNScene {
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(x: 0, y: 10, z: 17)
         cameraNode.camera?.fieldOfView = 90
-        let rad = -50 * Float.pi / 180
+        let rad = -20 * Float.pi / 180
         cameraNode.eulerAngles = SCNVector3Make(rad, 0, 0)
         
         return cameraNode
@@ -40,7 +40,7 @@ class PaperPlateScene: SCNScene {
         let tube = SCNTube(innerRadius: 0.25, outerRadius: 0.5, height: 5.0)
         let strawNode = SCNNode(geometry: tube)
         strawNode.physicsBody = SCNPhysicsBody(type: .static, shape: nil)
-        strawNode.position = SCNVector3(x: 0.0, y: -2.5, z: 12)
+        strawNode.position = SCNVector3(x: 0.0, y: 2.0, z: 13)
         strawNode.eulerAngles = SCNVector3Make(-80, 0, 0);
         let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: "Assets.xcassets/texturaCanudo")
@@ -63,7 +63,7 @@ class PaperPlateScene: SCNScene {
         let yScale = table.scale.y
         let zScale = table.scale.z
         table.scale = SCNVector3(x: xScale, y: yScale, z: zScale * 1.5 )
-        table.position.y -= 4
+        //table.position.y -= 10
         return table
     }()
     
