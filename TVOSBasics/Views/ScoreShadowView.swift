@@ -11,8 +11,8 @@ import UIKit
 
 
 class ScoreShadowView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(withBorderColor borderColor: UIColor) {
+        super.init(frame: CGRect.zero)
         
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowRadius = 3
@@ -20,6 +20,9 @@ class ScoreShadowView: UIView {
         layer.masksToBounds = false
         layer.shadowOpacity = 0.5
         layer.shadowOffset = CGSize.init(width: 0, height: 5)
+        
+        layer.borderWidth = 5
+        layer.borderColor = borderColor.cgColor
     }
     
     required init?(coder aDecoder: NSCoder) {

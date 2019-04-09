@@ -12,7 +12,7 @@ import SceneKit
 
 public class BallFlowViewController: UIViewController, GameViewControllerProtocol {
 
-    let ballPanForceFactor: CGFloat = 2500
+    let ballPanForceFactor: CGFloat = 100
     
     var sceneView = SCNView.init()
     
@@ -32,16 +32,16 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     
     var numberOfRounds = 5
         
-    lazy var gameAlertView: GameAlertView = {
-        let gameAlertView = GameAlertView.init(text: "Vez da Equipe \(Team.red). Pressione Play para continuar.") {
+    lazy var textualGameAlert: TextualGameAlert = {
+        let textualGameAlert = TextualGameAlert.init(withAlertTitle: "Attention", text: "Your Turn. Press Play to continue...", andContentTitle: Team.red.description.capitalized) {
             self.scene.initiateGame(forTeam: .red)
             self.gameDelegate?.beginGame(withTeam: .red)
         }
-        return gameAlertView
+        return textualGameAlert
     }()
     
     override public var preferredFocusEnvironments: [UIFocusEnvironment] {
-        return [gameAlertView]
+        return [textualGameAlert.gameAlertView]
     }
     
     public init() {
@@ -65,7 +65,7 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         setupSceneView()
         setupInput()
         view.addSubview(scoreBoardView)
-        view.addSubview(gameAlertView)
+        view.addSubview(textualGameAlert.gameAlertView)
         
         self.sceneView.backgroundColor = UIColor.flLightBlue
         
@@ -79,7 +79,10 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         if recognizer.state == .ended {
             let panForce = recognizer.force(in: sceneView)
         
-            scene.moveBall(withForce: panForce)
+//            if panForce.z <= 0 {
+                scene.moveBall(withForce: panForce)
+//                print(panForce)
+//            }
         }
     }
     
@@ -110,8 +113,7 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     func setViewForChangeOf(team: Team) {
         
         DispatchQueue.main.async {
-            self.gameAlertView.isHidden = false
-            self.gameAlertView.reset(withText: "Vez da Equipe \(team). Pressione Play para continuar.") {
+            self.textualGameAlert.reset(withTitle: team.description.capitalized, andText: "Your Turn. Press Play to continue..") {
                 self.scene.initiateGame(forTeam: team)
                 self.scoreBoardView.currentTeam = team
             }
@@ -120,8 +122,8 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     
     func setViewForChangeOfRound(toTeam team: Team, withRedRounds redRounds: Int, andBlueRounds blueRounds: Int, nextRoundNumber: Int) {
         DispatchQueue.main.async {
-            self.gameAlertView.isHidden = false
-            self.gameAlertView.reset(withText: "Novo round. Vez da Equipe \(team). Pressione Play para continuar.") {
+            self.textualGameAlert.gameAlertView.isHidden = false
+            self.textualGameAlert.reset(withTitle: team.description.capitalized, andText: "Your Turn. Press Play to continue..") {
                 self.scoreBoardView.currentTeam = team
                 self.scoreBoardView.setMedalPointsTo(team: .red, points: redRounds)
                 self.scoreBoardView.setMedalPointsTo(team: .blue, points: blueRounds)
@@ -134,8 +136,8 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     
     func setViewForEndGame() {
         DispatchQueue.main.async {
-            self.gameAlertView.isHidden = false
-            self.gameAlertView.reset(withText: "End Game")
+            self.textualGameAlert.gameAlertView.isHidden = false
+            self.textualGameAlert.reset(withTitle: "End Game", andText: "")
         }
     }
     
