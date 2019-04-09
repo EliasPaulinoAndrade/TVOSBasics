@@ -18,7 +18,7 @@ class PaperPlateViewController: UIViewController {
     var tube: SCNTube!
     var table: SCNPlane!
     
-    let force = SCNVector3(2500, 0, 0)
+    let force = SCNVector3(0, 0, -30)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ class PaperPlateViewController: UIViewController {
         )
         self.scnView.allowsCameraControl = false
         self.scnView.showsStatistics = true
-        self.scnView.debugOptions = .showPhysicsShapes
+        //self.scnView.debugOptions = .showPhysicsShapes
     }
     
     private func setupScene() {
@@ -50,7 +50,5 @@ class PaperPlateViewController: UIViewController {
     
     @objc func handleTap() {
         self.scnScene.throwBall(withForce: force)
-
     }
-    
 }

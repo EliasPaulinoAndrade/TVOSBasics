@@ -10,8 +10,10 @@
 		2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
 		2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
 		2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
+		2F5366CB225C3DA300F4C51C /* PPTableLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */; };
 		2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
 		2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
+		2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
 		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
@@ -31,7 +33,7 @@
 		E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
 		E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
 		E355F56622578F76005034A8 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
-		E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* FLTableLimitsNode.swift */; };
+		E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
 		E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
 		E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
 		E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
@@ -75,7 +77,7 @@
 		E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
 		E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
 		E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
-		E3BFE2E7225A26C9006C1226 /* FLTableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* FLTableLimitsNode.swift */; };
+		E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
 		E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
 		E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
 		E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
@@ -113,6 +115,7 @@
 /* Begin PBXFileReference section */
 		2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateViewController.swift; sourceTree = "<group>"; };
 		2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateScene.swift; sourceTree = "<group>"; };
+		2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTableLimits.swift; sourceTree = "<group>"; };
 		2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateGameState.swift; sourceTree = "<group>"; };
 		2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStrawNode.swift; sourceTree = "<group>"; };
 		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +139,7 @@
 		E355F55A2257757B005034A8 /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
 		E355F56022577F53005034A8 /* BallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallsBoxNode.swift; sourceTree = "<group>"; };
 		E355F56522578F76005034A8 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		E355F567225796D2005034A8 /* FLTableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableLimitsNode.swift; sourceTree = "<group>"; };
+		E355F567225796D2005034A8 /* TableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLimitsNode.swift; sourceTree = "<group>"; };
 		E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsContact+collisions.swift"; sourceTree = "<group>"; };
 		E355F56B2257B058005034A8 /* GameAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertView.swift; sourceTree = "<group>"; };
 		E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowSceneDelegate.swift; sourceTree = "<group>"; };
@@ -321,11 +324,12 @@
 				E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
 				E338EC1A2256B0600066F863 /* TableNode.swift */,
 				E355F56022577F53005034A8 /* BallsBoxNode.swift */,
-				E355F567225796D2005034A8 /* FLTableLimitsNode.swift */,
+				E355F567225796D2005034A8 /* TableLimitsNode.swift */,
 				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
 				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
 				E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
 				2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
+				2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -513,6 +517,7 @@
 			files = (
 				E338EC172256ADCA0066F863 /* BallNode.swift in Sources */,
 				2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */,
+				2F5366CB225C3DA300F4C51C /* PPTableLimits.swift in Sources */,
 				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
 				E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
@@ -553,7 +558,7 @@
 				E385E44322592F32001A41F6 /* GamesNavigator.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
 				E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */,
-				E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */,
+				E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
 				E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
 			);
@@ -592,10 +597,11 @@
 				E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */,
 				E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */,
 				E3BFE302225A26EE006C1226 /* Team.swift in Sources */,
-				E3BFE2E7225A26C9006C1226 /* FLTableLimitsNode.swift in Sources */,
+				E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */,
 				E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */,
 				E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */,
 				E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */,
+				2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */,
 				E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */,
 				E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */,
 				E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */,

@@ -9,5 +9,5 @@
 import Foundation
 
 enum PaperPlateGameState {
-    case redInitial, blueInitial, redPlaying, bluePlaying
+    case redPlaying, bluePlaying
 }

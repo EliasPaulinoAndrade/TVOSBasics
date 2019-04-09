@@ -65,7 +65,7 @@ class PaperPlateScene: SCNScene {
         return balls
     }()
     
-    lazy var tableNode: SCNNode = {
+    lazy var tableNode: TableNode = {
         let table = TableNode()
         let xScale = table.scale.x
         let yScale = table.scale.y
@@ -75,7 +75,22 @@ class PaperPlateScene: SCNScene {
         return table
     }()
     
+//    lazy var tableLimitsNode: TableLimitsNode = {
+//        let limits = TableLimitsNode()
+//        guard let box = limits.geometry as? SCNBox else { return limits}
+//        limits.geometry.wa
+//
+//        return limits
+//    }()
+    
+    lazy var tableLimitsNode: PPTableLimits = {
+        let limits = PPTableLimits()
+  
+        return limits
+    }()
+    
     var walls = WallsBoxNode()
+    
     
     override init() {
         super.init()
@@ -86,6 +101,8 @@ class PaperPlateScene: SCNScene {
         rootNode.addChildNode(boxBollsTeam1)
         rootNode.addChildNode(boxBollsTeam2)
         rootNode.addChildNode(walls)
+        rootNode.addChildNode(tableLimitsNode)
+        self.physicsWorld.contactDelegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -98,8 +115,6 @@ class PaperPlateScene: SCNScene {
         var currentTeam: Team?
         
         switch state {
-        case .redInitial, .blueInitial:
-            break
         case .redPlaying:
             newBall = boxBollsTeam1.pull()
             currentTeam = .red
@@ -123,5 +138,15 @@ class PaperPlateScene: SCNScene {
     
     func throwBall(withForce force: SCNVector3){
         self.currentBall?.physicsBody?.applyForce(force, asImpulse: true)
+    }
+}
+
+extension PaperPlateScene: SCNPhysicsContactDelegate {
+    
+    func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
+        if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: TableLimitsNode.self) {
+            self.currentBall?.removeFromParentNode()
+            addNewBall()
+        }
     }
 }

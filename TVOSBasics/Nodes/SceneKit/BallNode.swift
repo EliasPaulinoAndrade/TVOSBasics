@@ -35,7 +35,7 @@ class BallNode: SCNNode {
         ])
         willContactWith(nodeTypes: [
             FLTargetPointNode.self,
-            FLTableLimitsNode.self
+            TableLimitsNode.self
         ])
     }
     
