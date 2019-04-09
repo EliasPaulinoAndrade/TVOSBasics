@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol GameViewControllerProtocol: UIViewController {
+protocol GameViewControllerProtocol: class {
     
     var gameType: GameType { get }
     var numberOfRounds: Int { get }

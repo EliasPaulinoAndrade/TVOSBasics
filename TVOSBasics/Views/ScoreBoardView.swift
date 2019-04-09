@@ -35,17 +35,15 @@ class ScoreBoardView: UIView {
     }()
     
     lazy var middleTitleSpace: UIView = {
-        let middleTitleSpace = ScoreShadowView.init()
+        let middleTitleSpace = ScoreShadowView.init(withBorderColor: UIColor.flDarkYellow)
         
         middleTitleSpace.backgroundColor = UIColor.flYellow
-        middleTitleSpace.layer.borderWidth = 5
-        middleTitleSpace.layer.borderColor = UIColor.flDarkYellow.cgColor
         
         return middleTitleSpace
     }()
     
     lazy var middleRoundSpace: UIView = {
-        let middleRoundSpace = ScoreShadowView.init()
+        let middleRoundSpace = ScoreShadowView.init(withBorderColor: UIColor.flDarkYellow)
         
         middleRoundSpace.backgroundColor = UIColor.flLightYellow
         middleRoundSpace.layer.borderWidth = 5

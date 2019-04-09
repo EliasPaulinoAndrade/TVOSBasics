@@ -45,6 +45,12 @@
 		E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
 		E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
 		E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
+		E3761D89225CC9CF00DBF3F8 /* WiredButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */; };
+		E3761D8B225CCA3100DBF3F8 /* MenuCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */; };
+		E3761D8D225CD11000DBF3F8 /* CardBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */; };
+		E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */; };
+		E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */; };
+		E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D94225D456300DBF3F8 /* InputGameAlert.swift */; };
 		E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
 		E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
 		E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
@@ -151,6 +157,12 @@
 		E355F592225813B0005034A8 /* obstacle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = obstacle.scn; sourceTree = "<group>"; };
 		E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
 		E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
+		E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiredButtonView.swift; sourceTree = "<group>"; };
+		E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCardView.swift; sourceTree = "<group>"; };
+		E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBorderView.swift; sourceTree = "<group>"; };
+		E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertViewDatasource.swift; sourceTree = "<group>"; };
+		E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextualGameAlert.swift; sourceTree = "<group>"; };
+		E3761D94225D456300DBF3F8 /* InputGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGameAlert.swift; sourceTree = "<group>"; };
 		E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
 		E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWallsBoxNode.swift; sourceTree = "<group>"; };
 		E385E4302258EBEC001A41F6 /* DoubleWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWireView.swift; sourceTree = "<group>"; };
@@ -313,13 +325,16 @@
 		E355F5552257641E005034A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3761D8E225D3C1D00DBF3F8 /* Game Alert */,
 				E355F5562257662D005034A8 /* ScoreBoardView.swift */,
 				E355F55A2257757B005034A8 /* TeamScoreView.swift */,
-				E355F56B2257B058005034A8 /* GameAlertView.swift */,
 				E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */,
 				E385E4302258EBEC001A41F6 /* DoubleWireView.swift */,
 				E385E4322258F77C001A41F6 /* WireView.swift */,
 				4D00B57F225CE22E007531D0 /* GameBoxView.swift */,
+				E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */,
+				E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */,
+				E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,6 +372,17 @@
 				E355F57F2257FB89005034A8 /* imbuia.jpg */,
 			);
 			path = Textures;
+			sourceTree = "<group>";
+		};
+		E3761D8E225D3C1D00DBF3F8 /* Game Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E355F56B2257B058005034A8 /* GameAlertView.swift */,
+				E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */,
+				E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */,
+				E3761D94225D456300DBF3F8 /* InputGameAlert.swift */,
+			);
+			path = "Game Alert";
 			sourceTree = "<group>";
 		};
 		E385E44122592F13001A41F6 /* Games Navigator */ = {
@@ -526,6 +552,7 @@
 				E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
 				E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */,
+				E3761D8B225CCA3100DBF3F8 /* MenuCardView.swift in Sources */,
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
 				E338EC0622565FE30066F863 /* BallFlowViewController.swift in Sources */,
 				E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
@@ -533,11 +560,13 @@
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
 				E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
+				E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
 				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
 				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
 				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
 				E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
+				E3761D8D225CD11000DBF3F8 /* CardBorderView.swift in Sources */,
 				E385E43722591DA0001A41F6 /* GamesManager.swift in Sources */,
 				E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
 				E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
@@ -549,7 +578,9 @@
 				E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
 				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
+				E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */,
 				E385E4332258F77C001A41F6 /* WireView.swift in Sources */,
+				E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */,
 				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
 				4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
@@ -566,6 +597,7 @@
 				E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
 				4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */,
+				E3761D89225CC9CF00DBF3F8 /* WiredButtonView.swift in Sources */,
 				E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
