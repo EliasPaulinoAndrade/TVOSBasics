@@ -12,11 +12,14 @@ import UIKit
 class GamesNavigator {
 
     var flowBallViewController = BallFlowViewController.init()
+    var initialSceneViewController = InitialSceneViewController.init()
     
     func show(controllerType: ViewControllerType) {
         switch controllerType {
         case .flowBall:
             show(controller: flowBallViewController)
+        case .initialScene:
+            show(controller: initialSceneViewController)
         }
     }
     
