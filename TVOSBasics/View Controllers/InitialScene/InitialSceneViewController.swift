@@ -28,9 +28,11 @@ class InitialSceneViewController: UIViewController {
         
         setupSceneView()
         setupInput()
+        gamesBoxConfiguration()
         
         view.addSubview(scoreBoardView)
         view.addSubview(downBox)
+        view.addSubview(gamesBox)
         
         downViewConfiguration()
         
@@ -93,7 +95,7 @@ class InitialSceneViewController: UIViewController {
         //Create e confg the reset button
         let resetButton = UIButton()
         resetButton.backgroundColor = UIColor.flLightYellow
-        resetButton.layer.borderWidth = 5.0
+        resetButton.layer.borderWidth = 7.0
         resetButton.layer.borderColor = UIColor.flDarkYellow.cgColor
         resetButton.layer.cornerRadius = 20.0
         resetButton.setTitle("Finalizar Gincana", for: .normal)
@@ -109,10 +111,70 @@ class InitialSceneViewController: UIViewController {
     
     @objc func buttonTarget(_ selector: UIButton){
         //Finalizar a gincana e chamar a tela de vencedor
-        print("oi")
+        print("fulano venceu")
     }
     
     func gamesBoxConfiguration() {
         
+        let gameBoxView = GameBoxView.init(image: UIImage.init(named: "whoAmI"), name: "Who Am I")
+        
+        self.view.addSubview(gameBoxView)
+        gameBoxView.isUserInteractionEnabled = true
+        gameBoxView.translatesAutoresizingMaskIntoConstraints = false
+        
+        gameBoxView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -60).isActive = true
+        gameBoxView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0).isActive = true
+        gameBoxView.widthAnchor.constraint(equalToConstant: 400).isActive = true
+        gameBoxView.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        
+        let tapGesture3 = UITapGestureRecognizer(target: self, action: #selector(tappedWhoAmI(_:)))
+        tapGesture3.allowedPressTypes = [NSNumber(value: UIPress.PressType.select.rawValue)];
+        gameBoxView.addGestureRecognizer(tapGesture3)
+        
+        let gameBoxView2 = GameBoxView.init(image: UIImage.init(named: "paperPlateTargets"), name: "Paper Plate Targets")
+        
+        self.view.addSubview(gameBoxView2)
+        gameBoxView2.translatesAutoresizingMaskIntoConstraints = false
+        
+        gameBoxView2.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 60).isActive = true
+        gameBoxView2.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0).isActive = true
+        gameBoxView2.widthAnchor.constraint(equalToConstant: 400).isActive = true
+        gameBoxView2.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: #selector(tappedPaperPlateTargets(_:)))
+        tapGesture2.allowedPressTypes = [NSNumber(value: UIPress.PressType.select.rawValue)];
+        gameBoxView2.addGestureRecognizer(tapGesture2)
+    
+        let gameBoxView3 = GameBoxView.init(image: UIImage.init(named: "flowBall"), name: "Flow Ball")
+        
+        self.view.addSubview(gameBoxView3)
+        gameBoxView3.translatesAutoresizingMaskIntoConstraints = false
+        
+        gameBoxView3.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+        gameBoxView3.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 80).isActive = true
+        gameBoxView3.widthAnchor.constraint(equalToConstant: 400).isActive = true
+        gameBoxView3.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedBallFlow(_:)))
+        tapGesture.allowedPressTypes = [NSNumber(value: UIPress.PressType.select.rawValue)];
+        gameBoxView3.addGestureRecognizer(tapGesture)
+
     }
+    
+    @objc func tappedBallFlow(_ gesture: UITapGestureRecognizer){
+        print("Ball Flow")
+        let t = BallFlowViewController()
+        t.modalTransitionStyle = .coverVertical
+        t.modalPresentationStyle = .overCurrentContext
+        self.present(t, animated: true, completion: nil)
+    }
+    
+    @objc func tappedPaperPlateTargets(_ gesture: UITapGestureRecognizer){
+        print("Paper Plate Targets")
+    }
+    
+    @objc func tappedWhoAmI(_ gesture: UITapGestureRecognizer){
+        print("Who Am I")
+    }
+
 }
