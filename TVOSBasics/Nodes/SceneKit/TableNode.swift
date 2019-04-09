@@ -29,6 +29,7 @@ class TableNode: SCNNode {
         }
         
         willCollideWith(nodeTypes: [BallNode.self])
+        willContactWith(nodeTypes: [PPPlateNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -10,12 +10,17 @@
 		2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
 		2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
 		2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
-		2F5366CB225C3DA300F4C51C /* PPTableLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */; };
 		2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
-		2F5366D2225C4F0900F4C51C /* prato.dae in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D1225C4F0900F4C51C /* prato.dae */; };
 		2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
 		2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
 		2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
+		2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
+		2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
+		2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
+		2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE962225CD3F500266ED6 /* Direction.swift */; };
+		2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
+		2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
+		2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
 		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
@@ -117,11 +122,12 @@
 /* Begin PBXFileReference section */
 		2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateViewController.swift; sourceTree = "<group>"; };
 		2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateScene.swift; sourceTree = "<group>"; };
-		2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTableLimits.swift; sourceTree = "<group>"; };
 		2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPlateNode.swift; sourceTree = "<group>"; };
-		2F5366D1225C4F0900F4C51C /* prato.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = prato.dae; sourceTree = "<group>"; };
+		2F5366D5225C504100F4C51C /* plate.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = plate.scn; sourceTree = "<group>"; };
 		2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateGameState.swift; sourceTree = "<group>"; };
 		2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStrawNode.swift; sourceTree = "<group>"; };
+		2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistancePanGestureRecognizer.swift; sourceTree = "<group>"; };
+		2FFAE962225CD3F500266ED6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338EBF522564B640066F863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E338EBF722564B640066F863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +280,7 @@
 				E355F5932258142D005034A8 /* FLObstacleNode.swift */,
 				E385E44122592F13001A41F6 /* Games Navigator */,
 				E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */,
+				2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */,
 				E355F56522578F76005034A8 /* Queue.swift */,
 			);
 			path = Utilities;
@@ -333,7 +340,6 @@
 				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
 				E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
 				2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
-				2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */,
 				2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */,
 			);
 			path = SceneKit;
@@ -344,7 +350,7 @@
 			children = (
 				E355F57B2257FAE6005034A8 /* Textures */,
 				E355F58422580936005034A8 /* horseshoe2.scn */,
-				2F5366D1225C4F0900F4C51C /* prato.dae */,
+				2F5366D5225C504100F4C51C /* plate.scn */,
 				E355F592225813B0005034A8 /* obstacle.scn */,
 				E355F57E2257FB7A005034A8 /* table.scn */,
 			);
@@ -394,6 +400,7 @@
 				E385E43922592112001A41F6 /* Round.swift */,
 				E385E43D225922BE001A41F6 /* GameType.swift */,
 				E385E43F22592A88001A41F6 /* Game.swift */,
+				2FFAE962225CD3F500266ED6 /* Direction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -492,11 +499,11 @@
 			files = (
 				E355F5812258023A005034A8 /* table.scn in Resources */,
 				E355F59522581531005034A8 /* obstacle.scn in Resources */,
+				2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */,
 				E355F5802257FB89005034A8 /* imbuia.jpg in Resources */,
 				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
 				E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
 				E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
-				2F5366D2225C4F0900F4C51C /* prato.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +531,6 @@
 			files = (
 				E338EC172256ADCA0066F863 /* BallNode.swift in Sources */,
 				2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */,
-				2F5366CB225C3DA300F4C51C /* PPTableLimits.swift in Sources */,
 				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
 				E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
@@ -534,6 +540,7 @@
 				E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
 				E385E447225932D1001A41F6 /* GameController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
+				2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */,
 				E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
@@ -569,6 +576,7 @@
 				E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
 				E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
+				2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +585,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */,
+				2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */,
 				E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */,
+				2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
 				E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */,
 				E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */,
 				E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */,
@@ -594,6 +604,7 @@
 				E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */,
 				E3BFE306225A26EE006C1226 /* Game.swift in Sources */,
 				E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */,
+				2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */,
 				E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */,
 				E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */,
 				E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */,
@@ -607,6 +618,7 @@
 				E3BFE302225A26EE006C1226 /* Team.swift in Sources */,
 				E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */,
 				E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */,
+				2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */,
 				E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */,
 				E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */,
 				2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */,
@@ -772,7 +784,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -792,7 +804,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -812,7 +824,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -822,7 +834,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -833,7 +845,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -843,7 +855,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

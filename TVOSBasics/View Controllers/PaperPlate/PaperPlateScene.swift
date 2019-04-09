@@ -15,6 +15,7 @@ class PaperPlateScene: SCNScene {
     var currentBall: BallNode?
     let nPlates = 10
     let possiblePoints = [100, 50, 20, 10, 5]
+    let totalPoints = 1000
     
     weak var delegate: BallFlowSceneDelegate?
     
@@ -46,14 +47,14 @@ class PaperPlateScene: SCNScene {
     }()
     
     lazy var boxBollsTeam1: BallsBoxNode = {
-        let balls = BallsBoxNode(numberOfBalls: 5, ballsRadius: 0.2)
+        let balls = BallsBoxNode(numberOfBalls: 5, ballsRadius: 0.25)
         balls.position = SCNVector3(x: 15.0, y: 5.0, z: 8.0)
     
         return balls
     }()
     
     lazy var boxBollsTeam2: BallsBoxNode = {
-        let balls = BallsBoxNode(numberOfBalls: 5, ballsRadius: 0.2)
+        let balls = BallsBoxNode(numberOfBalls: 5, ballsRadius: 0.25)
         balls.position = SCNVector3(x: -15.0, y: 5.0, z: 8.0)
         
         return balls
@@ -71,16 +72,23 @@ class PaperPlateScene: SCNScene {
     
     lazy var plates: [PPPlateNode] = {
         var plates: [PPPlateNode] = []
+        var points = 0
+        var randonPoint = 0
         for i in 0...nPlates {
             let plate = PPPlateNode()
-            plate.points = possiblePoints.randomElement()
+            repeat {
+                randonPoint = possiblePoints.randomElement() ?? 5
+            }while (randonPoint + points > totalPoints)
+            plate.points = points
+            points += randonPoint
             plates.append(plate)
         }
         return plates
     }()
     
-    lazy var tableLimitsNode: PPTableLimits = {
-        let limits = PPTableLimits()
+    lazy var tableLimitsNode: TableLimitsNode = {
+        let limits = TableLimitsNode()
+        limits.position.z = 5
   
         return limits
     }()
@@ -98,6 +106,7 @@ class PaperPlateScene: SCNScene {
         rootNode.addChildNode(boxBollsTeam2)
         rootNode.addChildNode(walls)
         rootNode.addChildNode(tableLimitsNode)
+        rootNode.addChildNodes(plates)
         self.physicsWorld.contactDelegate = self
     }
     
@@ -132,15 +141,53 @@ class PaperPlateScene: SCNScene {
         }
     }
     
-    func throwBall(withForce force: SCNVector3){
+    func throwBall(withForce force: SCNVector3) {
         self.currentBall?.physicsBody?.applyForce(force, asImpulse: true)
+    }
+    
+    func moveStraw(to distance: CGPoint) {
+        let finalPosition = SCNVector3(Float(distance.x / 100), straw.position.y, straw.position.z)
+        let action = SCNAction.move(to: finalPosition, duration: 0.001)
+        straw.runAction(action)
+    }
+    
+    func newPlates() {
+        plates.sort { (plate1, plate2) -> Bool in
+            guard let points1 = plate1.points, let points2 = plate2.points else { return false}
+            return points1 >= points2
+        }
+        var auxZ: Float = -6.0
+        var auxX: Float = -10.0
+        let limitRandon: Float = 4
+        var incremend: Float = 0.1
+        for (index, plate) in plates.enumerated() {
+            if index < 4 {
+                plate.position.x = auxX 
+                plate.position.z = auxZ + Float.random(in: 1...limitRandon)
+                auxX += Float.random(in: 5...7)
+                incremend += 0.5
+            } else if index > 4, index < 8 {
+                plate.position.x = auxX
+                plate.position.z = auxZ + Float.random(in: 1...limitRandon)
+                auxX += Float.random(in: 7...9)
+                incremend += 1.0
+            } else if index >= 9 {
+                plate.position.x = auxX
+                plate.position.z = auxZ + Float.random(in: 1...limitRandon)
+                auxX += Float.random(in: 7...9)
+                incremend += 1.5
+            } else {
+                auxX = -12 + incremend
+                auxZ += 6
+            }
+        }
     }
 }
 
 extension PaperPlateScene: SCNPhysicsContactDelegate {
     
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
-        if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: PPTableLimits.self) {
+        if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: TableLimitsNode.self) {
             self.currentBall?.removeFromParentNode()
             addNewBall()
         }
