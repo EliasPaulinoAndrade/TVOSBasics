@@ -11,6 +11,8 @@
 		2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
 		2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
 		2F5366CB225C3DA300F4C51C /* PPTableLimits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */; };
+		2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
+		2F5366D2225C4F0900F4C51C /* prato.dae in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D1225C4F0900F4C51C /* prato.dae */; };
 		2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
 		2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
 		2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
@@ -116,6 +118,8 @@
 		2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateViewController.swift; sourceTree = "<group>"; };
 		2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateScene.swift; sourceTree = "<group>"; };
 		2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTableLimits.swift; sourceTree = "<group>"; };
+		2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPlateNode.swift; sourceTree = "<group>"; };
+		2F5366D1225C4F0900F4C51C /* prato.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = prato.dae; sourceTree = "<group>"; };
 		2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateGameState.swift; sourceTree = "<group>"; };
 		2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStrawNode.swift; sourceTree = "<group>"; };
 		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -330,6 +334,7 @@
 				E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
 				2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
 				2F5366CA225C3DA300F4C51C /* PPTableLimits.swift */,
+				2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 			children = (
 				E355F57B2257FAE6005034A8 /* Textures */,
 				E355F58422580936005034A8 /* horseshoe2.scn */,
+				2F5366D1225C4F0900F4C51C /* prato.dae */,
 				E355F592225813B0005034A8 /* obstacle.scn */,
 				E355F57E2257FB7A005034A8 /* table.scn */,
 			);
@@ -490,6 +496,7 @@
 				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
 				E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
 				E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
+				2F5366D2225C4F0900F4C51C /* prato.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +550,7 @@
 				2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */,
 				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
 				E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */,
+				2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */,
 				E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
 				E338EC1B2256B0600066F863 /* TableNode.swift in Sources */,

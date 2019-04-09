@@ -13,6 +13,8 @@ class PaperPlateScene: SCNScene {
     
     var state = PaperPlateGameState.redPlaying
     var currentBall: BallNode?
+    let nPlates = 10
+    let possiblePoints = [100, 50, 20, 10, 5]
     
     weak var delegate: BallFlowSceneDelegate?
     
@@ -43,14 +45,6 @@ class PaperPlateScene: SCNScene {
         return strawNode
     }()
     
-//    lazy var plate: SCNNode = {
-//        let plate = SCNPlane()
-//        let plateNode = SCNNode(geometry: plate)
-//        plateNode.phy
-//        
-//        return plateNode
-//    }()
-    
     lazy var boxBollsTeam1: BallsBoxNode = {
         let balls = BallsBoxNode(numberOfBalls: 5, ballsRadius: 0.2)
         balls.position = SCNVector3(x: 15.0, y: 5.0, z: 8.0)
@@ -75,13 +69,15 @@ class PaperPlateScene: SCNScene {
         return table
     }()
     
-//    lazy var tableLimitsNode: TableLimitsNode = {
-//        let limits = TableLimitsNode()
-//        guard let box = limits.geometry as? SCNBox else { return limits}
-//        limits.geometry.wa
-//
-//        return limits
-//    }()
+    lazy var plates: [PPPlateNode] = {
+        var plates: [PPPlateNode] = []
+        for i in 0...nPlates {
+            let plate = PPPlateNode()
+            plate.points = possiblePoints.randomElement()
+            plates.append(plate)
+        }
+        return plates
+    }()
     
     lazy var tableLimitsNode: PPTableLimits = {
         let limits = PPTableLimits()
@@ -144,7 +140,7 @@ class PaperPlateScene: SCNScene {
 extension PaperPlateScene: SCNPhysicsContactDelegate {
     
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
-        if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: TableLimitsNode.self) {
+        if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: PPTableLimits.self) {
             self.currentBall?.removeFromParentNode()
             addNewBall()
         }

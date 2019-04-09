@@ -31,7 +31,8 @@ class BallNode: SCNNode {
             BallNode.self,
             FLHorsesShoeNode.self,
             FLObstacleNode.self,
-            PPStrawNode.self
+            PPStrawNode.self,
+            PPTableLimits.self
         ])
         willContactWith(nodeTypes: [
             FLTargetPointNode.self,
