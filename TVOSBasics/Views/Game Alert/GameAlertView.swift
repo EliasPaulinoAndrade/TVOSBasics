@@ -14,6 +14,8 @@ class GameAlertView: UIView {
     
     var completion: (() -> ())?
     
+    weak var datasource: GameAlertViewDatasource?
+    
     lazy var contentTextLabel: UILabel = {
         let contentTextLabel = UILabel.init()
         
@@ -59,17 +61,18 @@ class GameAlertView: UIView {
     
     lazy var topWire = DoubleWireView.init(wireHeight: 50, verticalCenter: -530, prefferedWidthAnchor: middleTitleSpace.widthAnchor)
     
-    init(text: String, completion: (() -> ())? = nil) {
+    init(withTitle title: String, completion: (() -> ())? = nil) {
         self.completion = completion
         
         super.init(frame: CGRect.zero)
         
-        contentTextLabel.text = text
+        titleLabel.text = title
+        
         addSubview(backgroundView)
         addSubview(contentView)
-        contentView.addSubview(contentTextLabel)
         
         addSubview(middleTitleSpace)
+        middleTitleSpace.addSubview(titleLabel)
         addSubview(topWire)
         
         setupInput()
@@ -112,24 +115,33 @@ class GameAlertView: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        contentTextLabel.translatesAutoresizingMaskIntoConstraints = false
         middleTitleSpace.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate(
             constraints(toFill: superview) +
             backgroundView.constraints(toFill: self) +
-            contentTextLabel.constraints(toFill: contentView, margin: 20) + [
+            titleLabel.constraints(toFill: middleTitleSpace, margin: 20) + [
                 
-                contentView.topAnchor.constraint(equalTo: middleTitleSpace.bottomAnchor, constant: 100),
-                contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100),
-                contentView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-                contentView.widthAnchor.constraint(equalTo: superview.widthAnchor, constant: -800),
-                
-                middleTitleSpace.topAnchor.constraint(equalTo: superview.topAnchor, constant: 20),
-                middleTitleSpace.widthAnchor.constraint(equalTo: superview.widthAnchor, constant: -800),
-                middleTitleSpace.centerXAnchor.constraint(equalTo: superview.centerXAnchor),
-                middleTitleSpace.heightAnchor.constraint(equalToConstant: 100)
+            contentView.topAnchor.constraint(equalTo: middleTitleSpace.bottomAnchor, constant: 100),
+            contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100),
+            contentView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            contentView.widthAnchor.constraint(equalTo: superview.widthAnchor, constant: -800),
+            
+            middleTitleSpace.topAnchor.constraint(equalTo: superview.topAnchor, constant: 20),
+            middleTitleSpace.widthAnchor.constraint(equalTo: superview.widthAnchor, constant: -800),
+            middleTitleSpace.centerXAnchor.constraint(equalTo: superview.centerXAnchor),
+            middleTitleSpace.heightAnchor.constraint(equalToConstant: 100)
             ]
         )
+        
+        if let contentSubView = datasource?.contentView() {
+            contentView.addSubview(contentSubView)
+            
+            contentSubView.translatesAutoresizingMaskIntoConstraints = false
+            
+            NSLayoutConstraint.activate(contentSubView.constraints(toFill: contentView))
+            
+        }
     }
 }

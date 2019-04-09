@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
+protocol GameAlertViewDatasource: AnyObject {
+    func contentView() -> UIView
+}

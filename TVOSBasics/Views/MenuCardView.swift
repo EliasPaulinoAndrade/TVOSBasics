@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+//class MenuCardView: UIView {
+//    
+//    
+//    init() {
+//        
+//    }
+//}
+//

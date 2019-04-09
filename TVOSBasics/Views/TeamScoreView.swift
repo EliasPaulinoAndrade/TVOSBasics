@@ -52,11 +52,9 @@ class TeamScoreView: UIView {
     }()
     
     lazy var turnLabelSpace: UIView = {
-        let turnLabelSpace = ScoreShadowView.init()
+        let turnLabelSpace = ScoreShadowView.init(withBorderColor: UIColor.flDarkYellow)
         
         turnLabelSpace.backgroundColor = UIColor.flLightYellow
-        turnLabelSpace.layer.borderWidth = 5
-        turnLabelSpace.layer.borderColor = UIColor.flDarkYellow.cgColor
         if !showTurnLabel {
             turnLabelSpace.isHidden = true
         }
@@ -65,11 +63,9 @@ class TeamScoreView: UIView {
     }()
     
     lazy var teamScoresSpace: UIView = {
-        let teamScoresSpace = ScoreShadowView.init()
+        let teamScoresSpace = ScoreShadowView.init(withBorderColor:  UIColor.flDarkYellow)
         
         teamScoresSpace.backgroundColor = UIColor.flYellow
-        teamScoresSpace.layer.borderWidth = 5
-        teamScoresSpace.layer.borderColor = UIColor.flDarkYellow.cgColor
         
         return teamScoresSpace
     }()

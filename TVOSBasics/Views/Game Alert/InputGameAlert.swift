@@ -13,7 +13,7 @@ private class ContainerView: UIView {
     lazy var contentTextLabel: UILabel = {
         let contentTextLabel = UILabel.init()
         
-        contentTextLabel.textAlignment = .center
+        contentTextLabel.textAlignment = .left
         contentTextLabel.font = UIFont.systemFont(ofSize: 50)
         
         return contentTextLabel
@@ -37,13 +37,12 @@ private class ContainerView: UIView {
         contentTextLabel.translatesAutoresizingMaskIntoConstraints = false
         textInputView.translatesAutoresizingMaskIntoConstraints = false
         
-        
         NSLayoutConstraint.activate(
-            contentTextLabel.constraints(toTopFill: self) +
-            textInputView.constraints(toVerticalFill: self) + [
-            textInputView.centerYAnchor.constraint(equalTo: self.centerYAnchor)
+            contentTextLabel.constraints(toTopFill: self, margin: 50) +
+            textInputView.constraints(toHorizontalFill: self, margin: 50) + [
+            textInputView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            textInputView.heightAnchor.constraint(equalToConstant: 100)
         ])
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -54,11 +53,17 @@ private class ContainerView: UIView {
 class InputGameAlert {
     
     var completion: (() -> ())?
+    
+    var alertTitle: String {
+        didSet {
+            self.gameAlertView.titleLabel.text = alertTitle
+        }
+    }
 
     private var containerView = ContainerView.init()
     
     lazy var gameAlertView: GameAlertView = {
-        let gameAlertView = GameAlertView(){
+        let gameAlertView = GameAlertView(withTitle: self.alertTitle){
             self.completion?()
         }
         
@@ -67,13 +72,14 @@ class InputGameAlert {
         return gameAlertView
     }()
     
-    init(withInputTitle inputTitle: String, completion: (() -> ())?) {
+    init(withAlertTitle alertTitle: String, inputTitle: String, completion: (() -> ())?) {
+        self.alertTitle = alertTitle
         self.completion = completion
         containerView.contentTextLabel.text = inputTitle
     }
 }
 
-extension InputAlertView: GameAlertViewDatasource {
+extension InputGameAlert: GameAlertViewDatasource {
     func contentView() -> UIView {
         return containerView
     }

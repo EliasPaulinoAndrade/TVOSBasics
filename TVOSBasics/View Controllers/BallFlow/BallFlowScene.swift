@@ -101,7 +101,7 @@ class BallFlowScene: SCNScene {
 
         
         self.physicsWorld.contactDelegate = self
-//        self.physicsWorld.gravity = SCNVector3.init(0, -100, 0)
+        self.physicsWorld.gravity = SCNVector3.init(0, -100, 0)
     }
     
     required init?(coder aDecoder: NSCoder) {
