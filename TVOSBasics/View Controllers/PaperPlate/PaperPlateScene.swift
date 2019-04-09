@@ -146,9 +146,12 @@ class PaperPlateScene: SCNScene {
     }
     
     func moveStraw(to distance: CGPoint) {
-        let finalPosition = SCNVector3(Float(distance.x / 100), straw.position.y, straw.position.z)
-        let action = SCNAction.move(to: finalPosition, duration: 0.001)
-        straw.runAction(action)
+        print(distance)
+        let finalPositionX = SCNVector3(Float(distance.x / 10), straw.position.y, straw.position.z)
+        let actionx = SCNAction.move(to: finalPositionX, duration: 0.01)
+        let actionz = SCNAction.rotateTo(x: CGFloat(distance.y / 100), y: 0, z: 0, duration: 0.01)
+        
+        straw.runAction(SCNAction.group([actionx, actionz]))
     }
     
     func newPlates() {

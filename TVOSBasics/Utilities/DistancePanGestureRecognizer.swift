@@ -30,7 +30,7 @@ class DistancePanGestureRecognizer: UIPanGestureRecognizer {
             let dy = currentLocation.y - startPanLocation.y;
             self.distance.x = dx
             self.distance.y = dy
-            self.startPanLocation = nil
+            //self.startPanLocation = nil
         default: break
         }
         return distance
