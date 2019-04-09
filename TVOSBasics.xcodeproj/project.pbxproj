@@ -10,6 +10,8 @@
 		4D00B57A225CB821007531D0 /* InitialSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B579225CB821007531D0 /* InitialSceneViewController.swift */; };
 		4D00B57C225CB845007531D0 /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57B225CB845007531D0 /* InitialScene.swift */; };
 		4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57F225CE22E007531D0 /* GameBoxView.swift */; };
+		4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B582225D509C007531D0 /* WinnerViewController.swift */; };
+		4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B584225D50B6007531D0 /* WinnerScene.swift */; };
 		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
@@ -112,6 +114,8 @@
 		4D00B579225CB821007531D0 /* InitialSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewController.swift; sourceTree = "<group>"; };
 		4D00B57B225CB845007531D0 /* InitialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScene.swift; sourceTree = "<group>"; };
 		4D00B57F225CE22E007531D0 /* GameBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoxView.swift; sourceTree = "<group>"; };
+		4D00B582225D509C007531D0 /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
+		4D00B584225D50B6007531D0 /* WinnerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerScene.swift; sourceTree = "<group>"; };
 		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338EBF522564B640066F863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E338EBF722564B640066F863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +192,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D00B581225D5071007531D0 /* WinnerScene */ = {
+			isa = PBXGroup;
+			children = (
+				4D00B582225D509C007531D0 /* WinnerViewController.swift */,
+				4D00B584225D50B6007531D0 /* WinnerScene.swift */,
+			);
+			path = WinnerScene;
+			sourceTree = "<group>";
+		};
 		4D419A4E225B9745003F1725 /* InitialScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +252,7 @@
 		E338EC0422565FC80066F863 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D00B581225D5071007531D0 /* WinnerScene */,
 				4D419A4E225B9745003F1725 /* InitialScene */,
 				E338EC0D22566F1F0066F863 /* BallFlow */,
 			);
@@ -528,6 +542,7 @@
 				E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
 				E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
 				E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */,
+				4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */,
 				E385E44022592A88001A41F6 /* Game.swift in Sources */,
 				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
 				E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */,
@@ -536,6 +551,7 @@
 				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
 				E385E4332258F77C001A41F6 /* WireView.swift in Sources */,
 				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
+				4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
 				E385E43A22592112001A41F6 /* Round.swift in Sources */,
 				E355F56622578F76005034A8 /* Queue.swift in Sources */,
