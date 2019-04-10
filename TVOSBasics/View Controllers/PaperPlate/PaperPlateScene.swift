@@ -147,10 +147,22 @@ class PaperPlateScene: SCNScene {
     
     func moveStraw(to distance: CGPoint) {
         print(distance)
-        let finalPositionX = SCNVector3(Float(distance.x / 10), straw.position.y, straw.position.z)
+        var moveX = Float(distance.x / 10)
+        if distance.x >= 110 {
+            moveX = 11
+        } else if distance.x <= -110{
+            moveX = -11
+        }
+        let finalPositionX = SCNVector3(moveX, straw.position.y, straw.position.z)
         let actionx = SCNAction.move(to: finalPositionX, duration: 0.01)
-        let actionz = SCNAction.rotateTo(x: CGFloat(distance.y / 100), y: 0, z: 0, duration: 0.01)
-        
+        var rotate = Float(distance.y / 10)
+        if distance.y >= -8.5 {
+            rotate = -8.5 / 10
+        } else if distance.y >= -17.50 {
+            rotate = -17.50 / 10
+        }
+        //print(rotate)
+        let actionz = SCNAction.rotateTo(x: CGFloat(rotate) , y: 0, z: 0, duration: 0.01)
         straw.runAction(SCNAction.group([actionx, actionz]))
     }
     
