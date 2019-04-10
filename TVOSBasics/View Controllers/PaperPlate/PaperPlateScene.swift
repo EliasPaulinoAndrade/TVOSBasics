@@ -79,7 +79,7 @@ class PaperPlateScene: SCNScene {
             repeat {
                 randonPoint = possiblePoints.randomElement() ?? 5
             }while (randonPoint + points > totalPoints)
-            plate.points = points
+            plate.points = randonPoint
             points += randonPoint
             plates.append(plate)
         }
@@ -211,7 +211,8 @@ class PaperPlateScene: SCNScene {
         let limitRandon: Float = 4
         var incremend: Float = 0.1
         for (index, plate) in plates.enumerated() {
-            let points = SCNText(
+            guard let platePoints = plate.points else { return }
+            let pointsNode = PPPoints(withText: String(platePoints))
             if index < 4 {
                 plate.position.x = auxX
                 plate.position.z = auxZ + Float.random(in: 1...limitRandon)
@@ -225,12 +226,15 @@ class PaperPlateScene: SCNScene {
             } else if index >= 9 {
                 plate.position.x = auxX
                 plate.position.z = auxZ + Float.random(in: 1...limitRandon)
-                auxX += Float.random(in: 6...8)
-                incremend += 1.5
+                auxX += Float.random(in: 6...7)
+                incremend += 1.0
             } else {
                 auxX = -12 + incremend
                 auxZ += 6
             }
+            let (min, max) = plate.boundingBox
+            pointsNode.position = SCNVector3(x: (max.x - min.x) / 2 + min.x, y: plate.position.y, z: plate.position.z)
+            plate.addChildNode(pointsNode)
         }
     }
 }

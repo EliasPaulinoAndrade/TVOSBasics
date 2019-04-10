@@ -8,19 +8,16 @@
 import Foundation
 import SceneKit
 
-/// a concept place node where the user need to go for winning points.
-class FLTargetPointNode: SCNNode {
+class PPPoints: SCNNode {
     
-    var pointsText = SCNText.init(string: "150", extrusionDepth: 0.2)
+    var pointsText = SCNText.init(string: "150", extrusionDepth: 0.1)
     
     lazy var pointsTextNode: SCNNode = {
         pointsText.font = UIFont.boldSystemFont(ofSize: 1)
         pointsText.materials.first?.diffuse.contents = UIImage.init(named: "fontTexture")
         
         let pointsTextNode = SCNNode.init(geometry: pointsText)
-        pointsTextNode.position.x = 2
-        pointsTextNode.eulerAngles.y = -Float.pi/2
-        
+        pointsTextNode.eulerAngles.x = -Float.pi/2
         return pointsTextNode
     }()
     
@@ -35,7 +32,7 @@ class FLTargetPointNode: SCNNode {
         
         physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: nil)
         
-        willContactWith(nodeTypes: [BallNode.self])
+        //willContactWith(nodeTypes: [BallNode.self])
         
         addChildNode(pointsTextNode)
     }
