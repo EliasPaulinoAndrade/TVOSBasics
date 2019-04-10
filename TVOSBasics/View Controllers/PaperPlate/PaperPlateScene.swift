@@ -35,7 +35,9 @@ class PaperPlateScene: SCNScene {
         lightNode.light = SCNLight()
         lightNode.light?.type = .omni
         lightNode.light?.intensity = 1500
-        lightNode.position = SCNVector3(x: 0, y: 20, z: 0)
+        let rad = -20 * Float.pi / 180
+        lightNode.eulerAngles = SCNVector3Make(rad, 0, 0)
+        lightNode.position = SCNVector3(x: 0, y: 20, z: 12)
         
         return lightNode
     }()
@@ -130,9 +132,9 @@ class PaperPlateScene: SCNScene {
         
         if let newBall = newBall {
             newBall.position = SCNVector3.zero
-            newBall.position.y = 2.0
-            newBall.position.x = 0.0
-            newBall.position.z = 13
+            newBall.position.y = straw.position.y
+            newBall.position.x = straw.position.x
+            newBall.position.z = straw.position.z
             
             rootNode.addChildNode(newBall)
             self.currentBall = newBall
@@ -213,6 +215,15 @@ extension PaperPlateScene: SCNPhysicsContactDelegate {
         if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: TableLimitsNode.self) {
             self.currentBall?.removeFromParentNode()
             addNewBall()
+        } else if let (ballNode, targetPlate): (BallNode,PPPlateNode) = contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: PPPlateNode.self) {
+            targetPlate.physicsBody?.isAffectedByGravity = true
+//            ballNode.runAction(SCNAction.wait(duration: 1)) {
+//                ballNode.removeFromParentNode()
+//            }
+            
+        } else if let (plate1, plate2): (PPPlateNode,PPPlateNode) = contact.checkCollisionBetween(nodeTypeA: PPPlateNode.self, nodeTypeB: PPPlateNode.self) {
+            plate1.physicsBody?.isAffectedByGravity = true
+            plate2.physicsBody?.isAffectedByGravity = true
         }
     }
 }

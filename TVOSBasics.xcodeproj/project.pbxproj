@@ -21,6 +21,7 @@
 		2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
 		2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
 		2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
+		2FFAE967225DAC6200266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
 		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
@@ -516,6 +517,7 @@
 				E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */,
 				E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */,
 				E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */,
+				2FFAE967225DAC6200266ED6 /* plate.scn in Resources */,
 				E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */,
 				E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */,
 				E3BFE300225A26E8006C1226 /* table.scn in Resources */,
