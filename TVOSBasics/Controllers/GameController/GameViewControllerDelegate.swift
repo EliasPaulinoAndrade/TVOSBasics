@@ -14,4 +14,5 @@ protocol GameViewControllerDelegate: AnyObject {
     func beginGame(withTeam: Team) -> Bool
     func teamHasFinished()
     func newPoints(points: Int)
+    func currentInfo()->(redRounds: Int?, blueRounds: Int?, currentRound: Int?)
 }

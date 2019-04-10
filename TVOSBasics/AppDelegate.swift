@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        gamesNavigator.show(controllerType: .initialScene)
+        gamesNavigator.show(controllerType: .flowBall)
         
         return true
     }

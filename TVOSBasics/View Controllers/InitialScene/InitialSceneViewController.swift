@@ -17,6 +17,8 @@ class InitialSceneViewController: UIViewController {
     var gamesBox = UIView()
     var sceneView = SCNView.init()
     var scene = initialScene.init()
+    
+    var gameController: GameController = GameController.init()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +68,7 @@ class InitialSceneViewController: UIViewController {
     
     @objc func swipeHappend(recognizer: ForceSwipeGestureRecognizer) {
         if recognizer.state == .ended {
-            let panForce = recognizer.force(in: sceneView)
+//            let panForce = recognizer.force(in: sceneView)
             
 //            scene.moveBall(withForce: panForce)
         }
@@ -164,6 +166,7 @@ class InitialSceneViewController: UIViewController {
     @objc func tappedBallFlow(_ gesture: UITapGestureRecognizer){
         print("Ball Flow")
         let t = BallFlowViewController()
+        t.gameController = self.gameController
         t.modalTransitionStyle = .coverVertical
         t.modalPresentationStyle = .overCurrentContext
         self.present(t, animated: true, completion: nil)
@@ -177,4 +180,22 @@ class InitialSceneViewController: UIViewController {
         print("Who Am I")
     }
 
+}
+
+extension InitialSceneViewController: BallFlowViewControllerDelegate {
+    func gameDidFinished(withGameController gameController: GameController?) {
+        setupInitialScoreBoard()
+    }
+    
+    func setupInitialScoreBoard() {
+        let currentGameInfo = gameController.currentInfo()
+        
+        if let redRounds = currentGameInfo.redRounds {
+            scoreBoardView.setMedalPointsTo(team: .red, points: redRounds)
+        }
+        
+        if let blueRounds = currentGameInfo.blueRounds {
+            scoreBoardView.setMedalPointsTo(team: .blue, points: blueRounds)
+        }
+    }
 }

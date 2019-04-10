@@ -16,12 +16,13 @@ class GameController {
     var gameManager = GamesManager.init()
     weak var currentController: GameViewControllerProtocol?
     
-    init(withGameViewControler gameViewController: GameViewControllerProtocol) {
+    init(withGameViewControler gameViewController: GameViewControllerProtocol? = nil) {
         self.currentController = gameViewController
     }
 }
 
 extension GameController: GameViewControllerDelegate {
+    
     func newPoints(points: Int) {
         guard let currentTeam = gameManager.currentRound?.currentTeam,
               let currentController = self.currentController,
@@ -121,5 +122,21 @@ extension GameController: GameViewControllerDelegate {
         )
         
         return gameManager.beginNextRound(byTeam: team, andNumberOfTeams: 2)
+    }
+    
+    func currentInfo() -> (redRounds: Int?, blueRounds: Int?, currentRound: Int?) {
+        
+        var redRounds: Int?
+        var blueRounds: Int?
+        
+        if let redWonRounds = gameManager.wonRounds[.red] {
+            redRounds = redWonRounds
+        }
+        
+        if let blueWonRounds = gameManager.wonRounds[.blue] {
+            blueRounds = blueWonRounds
+        }
+        
+        return (redRounds, blueRounds, gameManager.currentGame?.currentRound)
     }
 }
