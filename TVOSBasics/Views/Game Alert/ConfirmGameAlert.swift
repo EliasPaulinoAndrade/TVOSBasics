@@ -1,5 +1,5 @@
 //
-//  MenuCardView.swift
+//  ConfirmGameAlert.swift
 //  TVOSBasics
 //
 //  Created by Elias Paulino on 09/04/19.
@@ -7,13 +7,3 @@
 //
 
 import Foundation
-import UIKit
-
-//class MenuCardView: UIView {
-//    
-//    
-//    init() {
-//        
-//    }
-//}
-//
