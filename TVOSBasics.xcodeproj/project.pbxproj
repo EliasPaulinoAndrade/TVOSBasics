@@ -1,973 +1,973 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
-		2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
-		2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
-		2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
-		2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
-		2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
-		2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
-		2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
-		2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
-		2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
-		2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE962225CD3F500266ED6 /* Direction.swift */; };
-		2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
-		2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
-		2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
-		2FFAE967225DAC6200266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
-		2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
-		2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
-		4D00B57A225CB821007531D0 /* InitialSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B579225CB821007531D0 /* InitialSceneViewController.swift */; };
-		4D00B57C225CB845007531D0 /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57B225CB845007531D0 /* InitialScene.swift */; };
-		4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57F225CE22E007531D0 /* GameBoxView.swift */; };
-		4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B582225D509C007531D0 /* WinnerViewController.swift */; };
-		4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B584225D50B6007531D0 /* WinnerScene.swift */; };
-		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
-		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
-		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
-		E338EBFD22564B660066F863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E338EBFC22564B660066F863 /* Assets.xcassets */; };
-		E338EC0622565FE30066F863 /* BallFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0522565FE30066F863 /* BallFlowViewController.swift */; };
-		E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
-		E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
-		E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
-		E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
-		E338EC172256ADCA0066F863 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* BallNode.swift */; };
-		E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
-		E338EC1B2256B0600066F863 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
-		E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
-		E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
-		E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
-		E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
-		E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
-		E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
-		E355F56622578F76005034A8 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
-		E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
-		E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
-		E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
-		E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
-		E355F5702257C354005034A8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56F2257C354005034A8 /* Team.swift */; };
-		E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
-		E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
-		E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
-		E355F5802257FB89005034A8 /* imbuia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E355F57F2257FB89005034A8 /* imbuia.jpg */; };
-		E355F5812258023A005034A8 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F57E2257FB7A005034A8 /* table.scn */; };
-		E355F58522580991005034A8 /* horseshoe2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F58422580936005034A8 /* horseshoe2.scn */; };
-		E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
-		E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
-		E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
-		E3761D89225CC9CF00DBF3F8 /* WiredButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */; };
-		E3761D8B225CCA3100DBF3F8 /* MenuCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */; };
-		E3761D8D225CD11000DBF3F8 /* CardBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */; };
-		E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */; };
-		E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */; };
-		E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D94225D456300DBF3F8 /* InputGameAlert.swift */; };
-		E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
-		E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
-		E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
-		E385E4332258F77C001A41F6 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
-		E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
-		E385E43722591DA0001A41F6 /* GamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43622591DA0001A41F6 /* GamesManager.swift */; };
-		E385E43A22592112001A41F6 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43922592112001A41F6 /* Round.swift */; };
-		E385E43E225922BE001A41F6 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43D225922BE001A41F6 /* GameType.swift */; };
-		E385E44022592A88001A41F6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43F22592A88001A41F6 /* Game.swift */; };
-		E385E44322592F32001A41F6 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
-		E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4442259309C001A41F6 /* ViewControllerType.swift */; };
-		E385E447225932D1001A41F6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
-		E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
-		E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
-		E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */; };
-		E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CE225A25CA006C1226 /* ViewController.swift */; };
-		E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D0225A25CA006C1226 /* Main.storyboard */; };
-		E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D3225A25CC006C1226 /* Assets.xcassets */; };
-		E3BFE2D7225A25CC006C1226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */; };
-		E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
-		E3BFE2DD225A26B9006C1226 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
-		E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
-		E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0522565FE30066F863 /* BallFlowViewController.swift */; };
-		E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
-		E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
-		E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
-		E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* BallNode.swift */; };
-		E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
-		E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
-		E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
-		E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
-		E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
-		E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
-		E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
-		E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
-		E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
-		E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
-		E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
-		E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4442259309C001A41F6 /* ViewControllerType.swift */; };
-		E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
-		E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
-		E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
-		E3BFE2F3225A26D6006C1226 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
-		E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
-		E3BFE2F5225A26DD006C1226 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
-		E3BFE2F6225A26DD006C1226 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
-		E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
-		E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
-		E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
-		E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
-		E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
-		E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
-		E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
-		E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F58422580936005034A8 /* horseshoe2.scn */; };
-		E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
-		E3BFE300225A26E8006C1226 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F57E2257FB7A005034A8 /* table.scn */; };
-		E3BFE301225A26EB006C1226 /* imbuia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E355F57F2257FB89005034A8 /* imbuia.jpg */; };
-		E3BFE302225A26EE006C1226 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56F2257C354005034A8 /* Team.swift */; };
-		E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43622591DA0001A41F6 /* GamesManager.swift */; };
-		E3BFE304225A26EE006C1226 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43922592112001A41F6 /* Round.swift */; };
-		E3BFE305225A26EE006C1226 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43D225922BE001A41F6 /* GameType.swift */; };
-		E3BFE306225A26EE006C1226 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43F22592A88001A41F6 /* Game.swift */; };
-		E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E338EBFC22564B660066F863 /* Assets.xcassets */; };
+        2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
+        2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
+        2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
+        2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
+        2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
+        2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
+        2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
+        2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
+        2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
+        2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
+        2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE962225CD3F500266ED6 /* Direction.swift */; };
+        2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
+        2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
+        2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
+        2FFAE967225DAC6200266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
+        2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
+        2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
+        4D00B57A225CB821007531D0 /* InitialSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B579225CB821007531D0 /* InitialSceneViewController.swift */; };
+        4D00B57C225CB845007531D0 /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57B225CB845007531D0 /* InitialScene.swift */; };
+        4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57F225CE22E007531D0 /* GameBoxView.swift */; };
+        4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B582225D509C007531D0 /* WinnerViewController.swift */; };
+        4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B584225D50B6007531D0 /* WinnerScene.swift */; };
+        E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
+        E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
+        E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
+        E338EBFD22564B660066F863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E338EBFC22564B660066F863 /* Assets.xcassets */; };
+        E338EC0622565FE30066F863 /* BallFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0522565FE30066F863 /* BallFlowViewController.swift */; };
+        E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
+        E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
+        E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
+        E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
+        E338EC172256ADCA0066F863 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* BallNode.swift */; };
+        E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
+        E338EC1B2256B0600066F863 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
+        E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
+        E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
+        E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
+        E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
+        E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
+        E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
+        E355F56622578F76005034A8 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
+        E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
+        E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
+        E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
+        E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
+        E355F5702257C354005034A8 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56F2257C354005034A8 /* Team.swift */; };
+        E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
+        E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
+        E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
+        E355F5802257FB89005034A8 /* imbuia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E355F57F2257FB89005034A8 /* imbuia.jpg */; };
+        E355F5812258023A005034A8 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F57E2257FB7A005034A8 /* table.scn */; };
+        E355F58522580991005034A8 /* horseshoe2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F58422580936005034A8 /* horseshoe2.scn */; };
+        E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
+        E355F59522581531005034A8 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
+        E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
+        E3761D89225CC9CF00DBF3F8 /* WiredButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */; };
+        E3761D8B225CCA3100DBF3F8 /* MenuCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */; };
+        E3761D8D225CD11000DBF3F8 /* CardBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */; };
+        E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */; };
+        E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */; };
+        E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D94225D456300DBF3F8 /* InputGameAlert.swift */; };
+        E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
+        E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
+        E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
+        E385E4332258F77C001A41F6 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
+        E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
+        E385E43722591DA0001A41F6 /* GamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43622591DA0001A41F6 /* GamesManager.swift */; };
+        E385E43A22592112001A41F6 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43922592112001A41F6 /* Round.swift */; };
+        E385E43E225922BE001A41F6 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43D225922BE001A41F6 /* GameType.swift */; };
+        E385E44022592A88001A41F6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43F22592A88001A41F6 /* Game.swift */; };
+        E385E44322592F32001A41F6 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
+        E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4442259309C001A41F6 /* ViewControllerType.swift */; };
+        E385E447225932D1001A41F6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
+        E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
+        E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
+        E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */; };
+        E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CE225A25CA006C1226 /* ViewController.swift */; };
+        E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D0225A25CA006C1226 /* Main.storyboard */; };
+        E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D3225A25CC006C1226 /* Assets.xcassets */; };
+        E3BFE2D7225A25CC006C1226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */; };
+        E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
+        E3BFE2DD225A26B9006C1226 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
+        E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
+        E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0522565FE30066F863 /* BallFlowViewController.swift */; };
+        E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
+        E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
+        E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
+        E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* BallNode.swift */; };
+        E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
+        E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
+        E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
+        E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
+        E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
+        E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
+        E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
+        E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
+        E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
+        E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
+        E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
+        E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4442259309C001A41F6 /* ViewControllerType.swift */; };
+        E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC08225663D20066F863 /* SCNVector3+zero.swift */; };
+        E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
+        E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */; };
+        E3BFE2F3225A26D6006C1226 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F596225822A9005034A8 /* UIColor+colors.swift */; };
+        E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
+        E3BFE2F5225A26DD006C1226 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
+        E3BFE2F6225A26DD006C1226 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
+        E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
+        E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
+        E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
+        E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
+        E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
+        E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
+        E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
+        E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F58422580936005034A8 /* horseshoe2.scn */; };
+        E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F592225813B0005034A8 /* obstacle.scn */; };
+        E3BFE300225A26E8006C1226 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = E355F57E2257FB7A005034A8 /* table.scn */; };
+        E3BFE301225A26EB006C1226 /* imbuia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E355F57F2257FB89005034A8 /* imbuia.jpg */; };
+        E3BFE302225A26EE006C1226 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56F2257C354005034A8 /* Team.swift */; };
+        E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43622591DA0001A41F6 /* GamesManager.swift */; };
+        E3BFE304225A26EE006C1226 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43922592112001A41F6 /* Round.swift */; };
+        E3BFE305225A26EE006C1226 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43D225922BE001A41F6 /* GameType.swift */; };
+        E3BFE306225A26EE006C1226 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43F22592A88001A41F6 /* Game.swift */; };
+        E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E338EBFC22564B660066F863 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateViewController.swift; sourceTree = "<group>"; };
-		2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateScene.swift; sourceTree = "<group>"; };
-		2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPlateNode.swift; sourceTree = "<group>"; };
-		2F5366D5225C504100F4C51C /* plate.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = plate.scn; sourceTree = "<group>"; };
-		2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateGameState.swift; sourceTree = "<group>"; };
-		2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStrawNode.swift; sourceTree = "<group>"; };
-		2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistancePanGestureRecognizer.swift; sourceTree = "<group>"; };
-		2FFAE962225CD3F500266ED6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		2FFAE968225DC42300266ED6 /* PPPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPPoints.swift; path = TVOSBasics/Nodes/SceneKit/PPPoints.swift; sourceTree = SOURCE_ROOT; };
-		4D00B579225CB821007531D0 /* InitialSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewController.swift; sourceTree = "<group>"; };
-		4D00B57B225CB845007531D0 /* InitialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScene.swift; sourceTree = "<group>"; };
-		4D00B57F225CE22E007531D0 /* GameBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoxView.swift; sourceTree = "<group>"; };
-		4D00B582225D509C007531D0 /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
-		4D00B584225D50B6007531D0 /* WinnerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerScene.swift; sourceTree = "<group>"; };
-		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E338EBF522564B640066F863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E338EBF722564B640066F863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E338EBFA22564B640066F863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E338EBFC22564B660066F863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E338EBFE22564B660066F863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E338EC0522565FE30066F863 /* BallFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowViewController.swift; sourceTree = "<group>"; };
-		E338EC08225663D20066F863 /* SCNVector3+zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+zero.swift"; sourceTree = "<group>"; };
-		E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
-		E338EC0E22566F330066F863 /* BallFlowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowScene.swift; sourceTree = "<group>"; };
-		E338EC132256ACC30066F863 /* BallFlowGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowGameState.swift; sourceTree = "<group>"; };
-		E338EC162256ADCA0066F863 /* BallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallNode.swift; sourceTree = "<group>"; };
-		E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTargetPointNode.swift; sourceTree = "<group>"; };
-		E338EC1A2256B0600066F863 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
-		E338EC1F2256B1310066F863 /* CollisionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCenter.swift; sourceTree = "<group>"; };
-		E338EC212256B5F70066F863 /* SCNode+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+collisions.swift"; sourceTree = "<group>"; };
-		E355F5562257662D005034A8 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
-		E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fillConstraints.swift"; sourceTree = "<group>"; };
-		E355F55A2257757B005034A8 /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
-		E355F56022577F53005034A8 /* BallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallsBoxNode.swift; sourceTree = "<group>"; };
-		E355F56522578F76005034A8 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		E355F567225796D2005034A8 /* TableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLimitsNode.swift; sourceTree = "<group>"; };
-		E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsContact+collisions.swift"; sourceTree = "<group>"; };
-		E355F56B2257B058005034A8 /* GameAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertView.swift; sourceTree = "<group>"; };
-		E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowSceneDelegate.swift; sourceTree = "<group>"; };
-		E355F56F2257C354005034A8 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNScene+loadSceneNode.swift"; sourceTree = "<group>"; };
-		E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHorsesShoeNode.swift; sourceTree = "<group>"; };
-		E355F5792257F50C005034A8 /* FLWinPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWinPointNode.swift; sourceTree = "<group>"; };
-		E355F57E2257FB7A005034A8 /* table.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = table.scn; sourceTree = "<group>"; };
-		E355F57F2257FB89005034A8 /* imbuia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imbuia.jpg; sourceTree = "<group>"; };
-		E355F58422580936005034A8 /* horseshoe2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = horseshoe2.scn; sourceTree = "<group>"; };
-		E355F592225813B0005034A8 /* obstacle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = obstacle.scn; sourceTree = "<group>"; };
-		E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
-		E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
-		E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiredButtonView.swift; sourceTree = "<group>"; };
-		E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCardView.swift; sourceTree = "<group>"; };
-		E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBorderView.swift; sourceTree = "<group>"; };
-		E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertViewDatasource.swift; sourceTree = "<group>"; };
-		E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextualGameAlert.swift; sourceTree = "<group>"; };
-		E3761D94225D456300DBF3F8 /* InputGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGameAlert.swift; sourceTree = "<group>"; };
-		E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
-		E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallsBoxNode.swift; sourceTree = "<group>"; };
-		E385E4302258EBEC001A41F6 /* DoubleWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWireView.swift; sourceTree = "<group>"; };
-		E385E4322258F77C001A41F6 /* WireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireView.swift; sourceTree = "<group>"; };
-		E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+addChildNodes.swift"; sourceTree = "<group>"; };
-		E385E43622591DA0001A41F6 /* GamesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesManager.swift; sourceTree = "<group>"; };
-		E385E43922592112001A41F6 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
-		E385E43D225922BE001A41F6 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
-		E385E43F22592A88001A41F6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		E385E44222592F32001A41F6 /* GamesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesNavigator.swift; sourceTree = "<group>"; };
-		E385E4442259309C001A41F6 /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
-		E385E446225932D1001A41F6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerProtocol.swift; sourceTree = "<group>"; };
-		E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerDelegate.swift; sourceTree = "<group>"; };
-		E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3BFE2CE225A25CA006C1226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3BFE2D1225A25CA006C1226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E3BFE2D3225A25CC006C1226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3BFE2D6225A25CC006C1226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E3BFE2D8225A25CC006C1226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateViewController.swift; sourceTree = "<group>"; };
+        2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateScene.swift; sourceTree = "<group>"; };
+        2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPlateNode.swift; sourceTree = "<group>"; };
+        2F5366D5225C504100F4C51C /* plate.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = plate.scn; sourceTree = "<group>"; };
+        2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateGameState.swift; sourceTree = "<group>"; };
+        2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStrawNode.swift; sourceTree = "<group>"; };
+        2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistancePanGestureRecognizer.swift; sourceTree = "<group>"; };
+        2FFAE962225CD3F500266ED6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+        2FFAE968225DC42300266ED6 /* PPPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPPoints.swift; path = TVOSBasics/Nodes/SceneKit/PPPoints.swift; sourceTree = SOURCE_ROOT; };
+        4D00B579225CB821007531D0 /* InitialSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewController.swift; sourceTree = "<group>"; };
+        4D00B57B225CB845007531D0 /* InitialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScene.swift; sourceTree = "<group>"; };
+        4D00B57F225CE22E007531D0 /* GameBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoxView.swift; sourceTree = "<group>"; };
+        4D00B582225D509C007531D0 /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
+        4D00B584225D50B6007531D0 /* WinnerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerScene.swift; sourceTree = "<group>"; };
+        E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        E338EBF522564B640066F863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        E338EBF722564B640066F863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        E338EBFA22564B640066F863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        E338EBFC22564B660066F863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        E338EBFE22564B660066F863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        E338EC0522565FE30066F863 /* BallFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowViewController.swift; sourceTree = "<group>"; };
+        E338EC08225663D20066F863 /* SCNVector3+zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+zero.swift"; sourceTree = "<group>"; };
+        E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
+        E338EC0E22566F330066F863 /* BallFlowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowScene.swift; sourceTree = "<group>"; };
+        E338EC132256ACC30066F863 /* BallFlowGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowGameState.swift; sourceTree = "<group>"; };
+        E338EC162256ADCA0066F863 /* BallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallNode.swift; sourceTree = "<group>"; };
+        E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTargetPointNode.swift; sourceTree = "<group>"; };
+        E338EC1A2256B0600066F863 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
+        E338EC1F2256B1310066F863 /* CollisionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCenter.swift; sourceTree = "<group>"; };
+        E338EC212256B5F70066F863 /* SCNode+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+collisions.swift"; sourceTree = "<group>"; };
+        E355F5562257662D005034A8 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+        E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fillConstraints.swift"; sourceTree = "<group>"; };
+        E355F55A2257757B005034A8 /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
+        E355F56022577F53005034A8 /* BallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallsBoxNode.swift; sourceTree = "<group>"; };
+        E355F56522578F76005034A8 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+        E355F567225796D2005034A8 /* TableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLimitsNode.swift; sourceTree = "<group>"; };
+        E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsContact+collisions.swift"; sourceTree = "<group>"; };
+        E355F56B2257B058005034A8 /* GameAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertView.swift; sourceTree = "<group>"; };
+        E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowSceneDelegate.swift; sourceTree = "<group>"; };
+        E355F56F2257C354005034A8 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+        E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNScene+loadSceneNode.swift"; sourceTree = "<group>"; };
+        E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHorsesShoeNode.swift; sourceTree = "<group>"; };
+        E355F5792257F50C005034A8 /* FLWinPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWinPointNode.swift; sourceTree = "<group>"; };
+        E355F57E2257FB7A005034A8 /* table.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = table.scn; sourceTree = "<group>"; };
+        E355F57F2257FB89005034A8 /* imbuia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imbuia.jpg; sourceTree = "<group>"; };
+        E355F58422580936005034A8 /* horseshoe2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = horseshoe2.scn; sourceTree = "<group>"; };
+        E355F592225813B0005034A8 /* obstacle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = obstacle.scn; sourceTree = "<group>"; };
+        E355F5932258142D005034A8 /* FLObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLObstacleNode.swift; sourceTree = "<group>"; };
+        E355F596225822A9005034A8 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
+        E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiredButtonView.swift; sourceTree = "<group>"; };
+        E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCardView.swift; sourceTree = "<group>"; };
+        E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBorderView.swift; sourceTree = "<group>"; };
+        E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertViewDatasource.swift; sourceTree = "<group>"; };
+        E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextualGameAlert.swift; sourceTree = "<group>"; };
+        E3761D94225D456300DBF3F8 /* InputGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGameAlert.swift; sourceTree = "<group>"; };
+        E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
+        E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallsBoxNode.swift; sourceTree = "<group>"; };
+        E385E4302258EBEC001A41F6 /* DoubleWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWireView.swift; sourceTree = "<group>"; };
+        E385E4322258F77C001A41F6 /* WireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireView.swift; sourceTree = "<group>"; };
+        E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+addChildNodes.swift"; sourceTree = "<group>"; };
+        E385E43622591DA0001A41F6 /* GamesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesManager.swift; sourceTree = "<group>"; };
+        E385E43922592112001A41F6 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+        E385E43D225922BE001A41F6 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+        E385E43F22592A88001A41F6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+        E385E44222592F32001A41F6 /* GamesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesNavigator.swift; sourceTree = "<group>"; };
+        E385E4442259309C001A41F6 /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
+        E385E446225932D1001A41F6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+        E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerProtocol.swift; sourceTree = "<group>"; };
+        E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerDelegate.swift; sourceTree = "<group>"; };
+        E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        E3BFE2CE225A25CA006C1226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        E3BFE2D1225A25CA006C1226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        E3BFE2D3225A25CC006C1226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        E3BFE2D6225A25CC006C1226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        E3BFE2D8225A25CC006C1226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E338EBEF22564B640066F863 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3BFE2C7225A25CA006C1226 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        E338EBEF22564B640066F863 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        E3BFE2C7225A25CA006C1226 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F1D8447225B6F58009F32D1 /* PaperPlate */ = {
-			isa = PBXGroup;
-			children = (
-				2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */,
-				2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */,
-				2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */,
-			);
-			path = PaperPlate;
-			sourceTree = "<group>";
-		};
-		4D00B581225D5071007531D0 /* WinnerScene */ = {
-			isa = PBXGroup;
-			children = (
-				4D00B582225D509C007531D0 /* WinnerViewController.swift */,
-				4D00B584225D50B6007531D0 /* WinnerScene.swift */,
-			);
-			path = WinnerScene;
-			sourceTree = "<group>";
-		};
-		4D419A4E225B9745003F1725 /* InitialScene */ = {
-			isa = PBXGroup;
-			children = (
-				4D00B579225CB821007531D0 /* InitialSceneViewController.swift */,
-				4D00B57B225CB845007531D0 /* InitialScene.swift */,
-			);
-			path = InitialScene;
-			sourceTree = "<group>";
-		};
-		E338EBE922564B640066F863 = {
-			isa = PBXGroup;
-			children = (
-				E338EBF422564B640066F863 /* TVOSBasics */,
-				E3BFE2CB225A25CA006C1226 /* TVOSTestApp */,
-				E338EBF322564B640066F863 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		E338EBF322564B640066F863 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E338EBF222564B640066F863 /* TVOSBasics.app */,
-				E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E338EBF422564B640066F863 /* TVOSBasics */ = {
-			isa = PBXGroup;
-			children = (
-				E385E451225953A1001A41F6 /* Models */,
-				E355F5622257829B005034A8 /* SceneObjects */,
-				E355F5552257641E005034A8 /* Views */,
-				E338EC1E2256B10D0066F863 /* Collisions */,
-				E338EC152256ADA90066F863 /* Nodes */,
-				E338EC0A2256662C0066F863 /* Utilities */,
-				E338EC07225663A60066F863 /* Extensions */,
-				E385E44C22594F37001A41F6 /* Controllers */,
-				E338EC0422565FC80066F863 /* View Controllers */,
-				E338EBF522564B640066F863 /* AppDelegate.swift */,
-				E338EBF722564B640066F863 /* ViewController.swift */,
-				E338EBF922564B640066F863 /* Main.storyboard */,
-				E338EBFC22564B660066F863 /* Assets.xcassets */,
-				E338EBFE22564B660066F863 /* Info.plist */,
-			);
-			path = TVOSBasics;
-			sourceTree = "<group>";
-		};
-		E338EC0422565FC80066F863 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4D00B581225D5071007531D0 /* WinnerScene */,
-				4D419A4E225B9745003F1725 /* InitialScene */,
-				2F1D8447225B6F58009F32D1 /* PaperPlate */,
-				E338EC0D22566F1F0066F863 /* BallFlow */,
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		E338EC07225663A60066F863 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E338EC08225663D20066F863 /* SCNVector3+zero.swift */,
-				E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */,
-				E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */,
-				E355F596225822A9005034A8 /* UIColor+colors.swift */,
-				E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		E338EC0A2256662C0066F863 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				E355F5932258142D005034A8 /* FLObstacleNode.swift */,
-				E385E44122592F13001A41F6 /* Games Navigator */,
-				E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */,
-				2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */,
-				E355F56522578F76005034A8 /* Queue.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		E338EC0D22566F1F0066F863 /* BallFlow */ = {
-			isa = PBXGroup;
-			children = (
-				E338EC0522565FE30066F863 /* BallFlowViewController.swift */,
-				E338EC0E22566F330066F863 /* BallFlowScene.swift */,
-				E338EC132256ACC30066F863 /* BallFlowGameState.swift */,
-				E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */,
-			);
-			path = BallFlow;
-			sourceTree = "<group>";
-		};
-		E338EC152256ADA90066F863 /* Nodes */ = {
-			isa = PBXGroup;
-			children = (
-				E355F55C22577BFE005034A8 /* SceneKit */,
-			);
-			path = Nodes;
-			sourceTree = "<group>";
-		};
-		E338EC1E2256B10D0066F863 /* Collisions */ = {
-			isa = PBXGroup;
-			children = (
-				E338EC1F2256B1310066F863 /* CollisionCenter.swift */,
-				E338EC212256B5F70066F863 /* SCNode+collisions.swift */,
-				E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */,
-			);
-			path = Collisions;
-			sourceTree = "<group>";
-		};
-		E355F5552257641E005034A8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E3761D8E225D3C1D00DBF3F8 /* Game Alert */,
-				E355F5562257662D005034A8 /* ScoreBoardView.swift */,
-				E355F55A2257757B005034A8 /* TeamScoreView.swift */,
-				E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */,
-				E385E4302258EBEC001A41F6 /* DoubleWireView.swift */,
-				E385E4322258F77C001A41F6 /* WireView.swift */,
-				4D00B57F225CE22E007531D0 /* GameBoxView.swift */,
-				E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */,
-				E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */,
-				E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		E355F55C22577BFE005034A8 /* SceneKit */ = {
-			isa = PBXGroup;
-			children = (
-				E338EC162256ADCA0066F863 /* BallNode.swift */,
-				E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
-				E338EC1A2256B0600066F863 /* TableNode.swift */,
-				E355F56022577F53005034A8 /* BallsBoxNode.swift */,
-				E355F567225796D2005034A8 /* TableLimitsNode.swift */,
-				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
-				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
-				E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
-				2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
-				2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */,
-				2FFAE968225DC42300266ED6 /* PPPoints.swift */,
-			);
-			path = SceneKit;
-			sourceTree = "<group>";
-		};
-		E355F5622257829B005034A8 /* SceneObjects */ = {
-			isa = PBXGroup;
-			children = (
-				E355F57B2257FAE6005034A8 /* Textures */,
-				E355F58422580936005034A8 /* horseshoe2.scn */,
-				2F5366D5225C504100F4C51C /* plate.scn */,
-				E355F592225813B0005034A8 /* obstacle.scn */,
-				E355F57E2257FB7A005034A8 /* table.scn */,
-			);
-			path = SceneObjects;
-			sourceTree = "<group>";
-		};
-		E355F57B2257FAE6005034A8 /* Textures */ = {
-			isa = PBXGroup;
-			children = (
-				E355F57F2257FB89005034A8 /* imbuia.jpg */,
-			);
-			path = Textures;
-			sourceTree = "<group>";
-		};
-		E3761D8E225D3C1D00DBF3F8 /* Game Alert */ = {
-			isa = PBXGroup;
-			children = (
-				E355F56B2257B058005034A8 /* GameAlertView.swift */,
-				E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */,
-				E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */,
-				E3761D94225D456300DBF3F8 /* InputGameAlert.swift */,
-			);
-			path = "Game Alert";
-			sourceTree = "<group>";
-		};
-		E385E44122592F13001A41F6 /* Games Navigator */ = {
-			isa = PBXGroup;
-			children = (
-				E385E44222592F32001A41F6 /* GamesNavigator.swift */,
-				E385E4442259309C001A41F6 /* ViewControllerType.swift */,
-			);
-			path = "Games Navigator";
-			sourceTree = "<group>";
-		};
-		E385E44C22594F37001A41F6 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E385E45022594F9B001A41F6 /* GameController */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		E385E45022594F9B001A41F6 /* GameController */ = {
-			isa = PBXGroup;
-			children = (
-				E385E446225932D1001A41F6 /* GameController.swift */,
-				E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */,
-				E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */,
-			);
-			path = GameController;
-			sourceTree = "<group>";
-		};
-		E385E451225953A1001A41F6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E355F56F2257C354005034A8 /* Team.swift */,
-				E385E43622591DA0001A41F6 /* GamesManager.swift */,
-				E385E43922592112001A41F6 /* Round.swift */,
-				E385E43D225922BE001A41F6 /* GameType.swift */,
-				E385E43F22592A88001A41F6 /* Game.swift */,
-				2FFAE962225CD3F500266ED6 /* Direction.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E3BFE2CB225A25CA006C1226 /* TVOSTestApp */ = {
-			isa = PBXGroup;
-			children = (
-				E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */,
-				E3BFE2CE225A25CA006C1226 /* ViewController.swift */,
-				E3BFE2D0225A25CA006C1226 /* Main.storyboard */,
-				E3BFE2D3225A25CC006C1226 /* Assets.xcassets */,
-				E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */,
-				E3BFE2D8225A25CC006C1226 /* Info.plist */,
-			);
-			path = TVOSTestApp;
-			sourceTree = "<group>";
-		};
+        2F1D8447225B6F58009F32D1 /* PaperPlate */ = {
+            isa = PBXGroup;
+            children = (
+                2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */,
+                2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */,
+                2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */,
+            );
+            path = PaperPlate;
+            sourceTree = "<group>";
+        };
+        4D00B581225D5071007531D0 /* WinnerScene */ = {
+            isa = PBXGroup;
+            children = (
+                4D00B582225D509C007531D0 /* WinnerViewController.swift */,
+                4D00B584225D50B6007531D0 /* WinnerScene.swift */,
+            );
+            path = WinnerScene;
+            sourceTree = "<group>";
+        };
+        4D419A4E225B9745003F1725 /* InitialScene */ = {
+            isa = PBXGroup;
+            children = (
+                4D00B579225CB821007531D0 /* InitialSceneViewController.swift */,
+                4D00B57B225CB845007531D0 /* InitialScene.swift */,
+            );
+            path = InitialScene;
+            sourceTree = "<group>";
+        };
+        E338EBE922564B640066F863 = {
+            isa = PBXGroup;
+            children = (
+                E338EBF422564B640066F863 /* TVOSBasics */,
+                E3BFE2CB225A25CA006C1226 /* TVOSTestApp */,
+                E338EBF322564B640066F863 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        E338EBF322564B640066F863 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                E338EBF222564B640066F863 /* TVOSBasics.app */,
+                E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        E338EBF422564B640066F863 /* TVOSBasics */ = {
+            isa = PBXGroup;
+            children = (
+                E385E451225953A1001A41F6 /* Models */,
+                E355F5622257829B005034A8 /* SceneObjects */,
+                E355F5552257641E005034A8 /* Views */,
+                E338EC1E2256B10D0066F863 /* Collisions */,
+                E338EC152256ADA90066F863 /* Nodes */,
+                E338EC0A2256662C0066F863 /* Utilities */,
+                E338EC07225663A60066F863 /* Extensions */,
+                E385E44C22594F37001A41F6 /* Controllers */,
+                E338EC0422565FC80066F863 /* View Controllers */,
+                E338EBF522564B640066F863 /* AppDelegate.swift */,
+                E338EBF722564B640066F863 /* ViewController.swift */,
+                E338EBF922564B640066F863 /* Main.storyboard */,
+                E338EBFC22564B660066F863 /* Assets.xcassets */,
+                E338EBFE22564B660066F863 /* Info.plist */,
+            );
+            path = TVOSBasics;
+            sourceTree = "<group>";
+        };
+        E338EC0422565FC80066F863 /* View Controllers */ = {
+            isa = PBXGroup;
+            children = (
+                4D00B581225D5071007531D0 /* WinnerScene */,
+                4D419A4E225B9745003F1725 /* InitialScene */,
+                2F1D8447225B6F58009F32D1 /* PaperPlate */,
+                E338EC0D22566F1F0066F863 /* BallFlow */,
+            );
+            path = "View Controllers";
+            sourceTree = "<group>";
+        };
+        E338EC07225663A60066F863 /* Extensions */ = {
+            isa = PBXGroup;
+            children = (
+                E338EC08225663D20066F863 /* SCNVector3+zero.swift */,
+                E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */,
+                E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */,
+                E355F596225822A9005034A8 /* UIColor+colors.swift */,
+                E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */,
+            );
+            path = Extensions;
+            sourceTree = "<group>";
+        };
+        E338EC0A2256662C0066F863 /* Utilities */ = {
+            isa = PBXGroup;
+            children = (
+                E355F5932258142D005034A8 /* FLObstacleNode.swift */,
+                E385E44122592F13001A41F6 /* Games Navigator */,
+                E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */,
+                2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */,
+                E355F56522578F76005034A8 /* Queue.swift */,
+            );
+            path = Utilities;
+            sourceTree = "<group>";
+        };
+        E338EC0D22566F1F0066F863 /* BallFlow */ = {
+            isa = PBXGroup;
+            children = (
+                E338EC0522565FE30066F863 /* BallFlowViewController.swift */,
+                E338EC0E22566F330066F863 /* BallFlowScene.swift */,
+                E338EC132256ACC30066F863 /* BallFlowGameState.swift */,
+                E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */,
+            );
+            path = BallFlow;
+            sourceTree = "<group>";
+        };
+        E338EC152256ADA90066F863 /* Nodes */ = {
+            isa = PBXGroup;
+            children = (
+                E355F55C22577BFE005034A8 /* SceneKit */,
+            );
+            path = Nodes;
+            sourceTree = "<group>";
+        };
+        E338EC1E2256B10D0066F863 /* Collisions */ = {
+            isa = PBXGroup;
+            children = (
+                E338EC1F2256B1310066F863 /* CollisionCenter.swift */,
+                E338EC212256B5F70066F863 /* SCNode+collisions.swift */,
+                E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */,
+            );
+            path = Collisions;
+            sourceTree = "<group>";
+        };
+        E355F5552257641E005034A8 /* Views */ = {
+            isa = PBXGroup;
+            children = (
+                E3761D8E225D3C1D00DBF3F8 /* Game Alert */,
+                E355F5562257662D005034A8 /* ScoreBoardView.swift */,
+                E355F55A2257757B005034A8 /* TeamScoreView.swift */,
+                E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */,
+                E385E4302258EBEC001A41F6 /* DoubleWireView.swift */,
+                E385E4322258F77C001A41F6 /* WireView.swift */,
+                4D00B57F225CE22E007531D0 /* GameBoxView.swift */,
+                E3761D88225CC9CF00DBF3F8 /* WiredButtonView.swift */,
+                E3761D8A225CCA3100DBF3F8 /* MenuCardView.swift */,
+                E3761D8C225CD11000DBF3F8 /* CardBorderView.swift */,
+            );
+            path = Views;
+            sourceTree = "<group>";
+        };
+        E355F55C22577BFE005034A8 /* SceneKit */ = {
+            isa = PBXGroup;
+            children = (
+                E338EC162256ADCA0066F863 /* BallNode.swift */,
+                E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
+                E338EC1A2256B0600066F863 /* TableNode.swift */,
+                E355F56022577F53005034A8 /* BallsBoxNode.swift */,
+                E355F567225796D2005034A8 /* TableLimitsNode.swift */,
+                E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
+                E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
+                E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
+                2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
+                2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */,
+                2FFAE968225DC42300266ED6 /* PPPoints.swift */,
+            );
+            path = SceneKit;
+            sourceTree = "<group>";
+        };
+        E355F5622257829B005034A8 /* SceneObjects */ = {
+            isa = PBXGroup;
+            children = (
+                E355F57B2257FAE6005034A8 /* Textures */,
+                E355F58422580936005034A8 /* horseshoe2.scn */,
+                2F5366D5225C504100F4C51C /* plate.scn */,
+                E355F592225813B0005034A8 /* obstacle.scn */,
+                E355F57E2257FB7A005034A8 /* table.scn */,
+            );
+            path = SceneObjects;
+            sourceTree = "<group>";
+        };
+        E355F57B2257FAE6005034A8 /* Textures */ = {
+            isa = PBXGroup;
+            children = (
+                E355F57F2257FB89005034A8 /* imbuia.jpg */,
+            );
+            path = Textures;
+            sourceTree = "<group>";
+        };
+        E3761D8E225D3C1D00DBF3F8 /* Game Alert */ = {
+            isa = PBXGroup;
+            children = (
+                E355F56B2257B058005034A8 /* GameAlertView.swift */,
+                E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */,
+                E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */,
+                E3761D94225D456300DBF3F8 /* InputGameAlert.swift */,
+            );
+            path = "Game Alert";
+            sourceTree = "<group>";
+        };
+        E385E44122592F13001A41F6 /* Games Navigator */ = {
+            isa = PBXGroup;
+            children = (
+                E385E44222592F32001A41F6 /* GamesNavigator.swift */,
+                E385E4442259309C001A41F6 /* ViewControllerType.swift */,
+            );
+            path = "Games Navigator";
+            sourceTree = "<group>";
+        };
+        E385E44C22594F37001A41F6 /* Controllers */ = {
+            isa = PBXGroup;
+            children = (
+                E385E45022594F9B001A41F6 /* GameController */,
+            );
+            path = Controllers;
+            sourceTree = "<group>";
+        };
+        E385E45022594F9B001A41F6 /* GameController */ = {
+            isa = PBXGroup;
+            children = (
+                E385E446225932D1001A41F6 /* GameController.swift */,
+                E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */,
+                E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */,
+            );
+            path = GameController;
+            sourceTree = "<group>";
+        };
+        E385E451225953A1001A41F6 /* Models */ = {
+            isa = PBXGroup;
+            children = (
+                E355F56F2257C354005034A8 /* Team.swift */,
+                E385E43622591DA0001A41F6 /* GamesManager.swift */,
+                E385E43922592112001A41F6 /* Round.swift */,
+                E385E43D225922BE001A41F6 /* GameType.swift */,
+                E385E43F22592A88001A41F6 /* Game.swift */,
+                2FFAE962225CD3F500266ED6 /* Direction.swift */,
+            );
+            path = Models;
+            sourceTree = "<group>";
+        };
+        E3BFE2CB225A25CA006C1226 /* TVOSTestApp */ = {
+            isa = PBXGroup;
+            children = (
+                E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */,
+                E3BFE2CE225A25CA006C1226 /* ViewController.swift */,
+                E3BFE2D0225A25CA006C1226 /* Main.storyboard */,
+                E3BFE2D3225A25CC006C1226 /* Assets.xcassets */,
+                E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */,
+                E3BFE2D8225A25CC006C1226 /* Info.plist */,
+            );
+            path = TVOSTestApp;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E338EBF122564B640066F863 /* TVOSBasics */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E338EC0122564B660066F863 /* Build configuration list for PBXNativeTarget "TVOSBasics" */;
-			buildPhases = (
-				E338EBEE22564B640066F863 /* Sources */,
-				E338EBEF22564B640066F863 /* Frameworks */,
-				E338EBF022564B640066F863 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TVOSBasics;
-			productName = TVOSBasics;
-			productReference = E338EBF222564B640066F863 /* TVOSBasics.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E3BFE2C9225A25CA006C1226 /* TVOSTestApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E3BFE2DB225A25CC006C1226 /* Build configuration list for PBXNativeTarget "TVOSTestApp" */;
-			buildPhases = (
-				E3BFE2C6225A25CA006C1226 /* Sources */,
-				E3BFE2C7225A25CA006C1226 /* Frameworks */,
-				E3BFE2C8225A25CA006C1226 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TVOSTestApp;
-			productName = TVOSTestApp;
-			productReference = E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */;
-			productType = "com.apple.product-type.application";
-		};
+        E338EBF122564B640066F863 /* TVOSBasics */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = E338EC0122564B660066F863 /* Build configuration list for PBXNativeTarget "TVOSBasics" */;
+            buildPhases = (
+                E338EBEE22564B640066F863 /* Sources */,
+                E338EBEF22564B640066F863 /* Frameworks */,
+                E338EBF022564B640066F863 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = TVOSBasics;
+            productName = TVOSBasics;
+            productReference = E338EBF222564B640066F863 /* TVOSBasics.app */;
+            productType = "com.apple.product-type.application";
+        };
+        E3BFE2C9225A25CA006C1226 /* TVOSTestApp */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = E3BFE2DB225A25CC006C1226 /* Build configuration list for PBXNativeTarget "TVOSTestApp" */;
+            buildPhases = (
+                E3BFE2C6225A25CA006C1226 /* Sources */,
+                E3BFE2C7225A25CA006C1226 /* Frameworks */,
+                E3BFE2C8225A25CA006C1226 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = TVOSTestApp;
+            productName = TVOSTestApp;
+            productReference = E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */;
+            productType = "com.apple.product-type.application";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E338EBEA22564B640066F863 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Elias Paulino";
-				TargetAttributes = {
-					E338EBF122564B640066F863 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					E3BFE2C9225A25CA006C1226 = {
-						CreatedOnToolsVersion = 10.2;
-					};
-				};
-			};
-			buildConfigurationList = E338EBED22564B640066F863 /* Build configuration list for PBXProject "TVOSBasics" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = E338EBE922564B640066F863;
-			productRefGroup = E338EBF322564B640066F863 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				E338EBF122564B640066F863 /* TVOSBasics */,
-				E3BFE2C9225A25CA006C1226 /* TVOSTestApp */,
-			);
-		};
+        E338EBEA22564B640066F863 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1020;
+                LastUpgradeCheck = 1010;
+                ORGANIZATIONNAME = "Elias Paulino";
+                TargetAttributes = {
+                    E338EBF122564B640066F863 = {
+                        CreatedOnToolsVersion = 10.1;
+                    };
+                    E3BFE2C9225A25CA006C1226 = {
+                        CreatedOnToolsVersion = 10.2;
+                    };
+                };
+            };
+            buildConfigurationList = E338EBED22564B640066F863 /* Build configuration list for PBXProject "TVOSBasics" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = E338EBE922564B640066F863;
+            productRefGroup = E338EBF322564B640066F863 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                E338EBF122564B640066F863 /* TVOSBasics */,
+                E3BFE2C9225A25CA006C1226 /* TVOSTestApp */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E338EBF022564B640066F863 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E355F5812258023A005034A8 /* table.scn in Resources */,
-				E355F59522581531005034A8 /* obstacle.scn in Resources */,
-				2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */,
-				E355F5802257FB89005034A8 /* imbuia.jpg in Resources */,
-				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
-				E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
-				E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3BFE2C8225A25CA006C1226 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3BFE2D7225A25CC006C1226 /* LaunchScreen.storyboard in Resources */,
-				E3BFE301225A26EB006C1226 /* imbuia.jpg in Resources */,
-				E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */,
-				E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */,
-				E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */,
-				2FFAE967225DAC6200266ED6 /* plate.scn in Resources */,
-				E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */,
-				E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */,
-				E3BFE300225A26E8006C1226 /* table.scn in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        E338EBF022564B640066F863 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                E355F5812258023A005034A8 /* table.scn in Resources */,
+                E355F59522581531005034A8 /* obstacle.scn in Resources */,
+                2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */,
+                E355F5802257FB89005034A8 /* imbuia.jpg in Resources */,
+                E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
+                E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
+                E338EBFB22564B640066F863 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        E3BFE2C8225A25CA006C1226 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                E3BFE2D7225A25CC006C1226 /* LaunchScreen.storyboard in Resources */,
+                E3BFE301225A26EB006C1226 /* imbuia.jpg in Resources */,
+                E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */,
+                E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */,
+                E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */,
+                2FFAE967225DAC6200266ED6 /* plate.scn in Resources */,
+                E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */,
+                E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */,
+                E3BFE300225A26E8006C1226 /* table.scn in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E338EBEE22564B640066F863 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E338EC172256ADCA0066F863 /* BallNode.swift in Sources */,
-				2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */,
-				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
-				E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
-				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
-				E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */,
-				E3761D8B225CCA3100DBF3F8 /* MenuCardView.swift in Sources */,
-				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
-				E338EC0622565FE30066F863 /* BallFlowViewController.swift in Sources */,
-				E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
-				E385E447225932D1001A41F6 /* GameController.swift in Sources */,
-				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
-				2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */,
-				E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */,
-				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
-				E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */,
-				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
-				2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */,
-				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
-				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
-				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
-				E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
-				E3761D8D225CD11000DBF3F8 /* CardBorderView.swift in Sources */,
-				E385E43722591DA0001A41F6 /* GamesManager.swift in Sources */,
-				E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
-				E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
-				E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */,
-				4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */,
-				E385E44022592A88001A41F6 /* Game.swift in Sources */,
-				2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */,
-				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
-				E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */,
-				2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */,
-				E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
-				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
-				E338EC1B2256B0600066F863 /* TableNode.swift in Sources */,
-				E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */,
-				E385E4332258F77C001A41F6 /* WireView.swift in Sources */,
-				E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */,
-				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
-				4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */,
-				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
-				E385E43A22592112001A41F6 /* Round.swift in Sources */,
-				E355F56622578F76005034A8 /* Queue.swift in Sources */,
-				2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */,
-				2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */,
-				E355F5702257C354005034A8 /* Team.swift in Sources */,
-				E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */,
-				E385E43E225922BE001A41F6 /* GameType.swift in Sources */,
-				4D00B57C225CB845007531D0 /* InitialScene.swift in Sources */,
-				E385E44322592F32001A41F6 /* GamesNavigator.swift in Sources */,
-				4D00B57A225CB821007531D0 /* InitialSceneViewController.swift in Sources */,
-				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
-				E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */,
-				E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */,
-				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
-				4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */,
-				E3761D89225CC9CF00DBF3F8 /* WiredButtonView.swift in Sources */,
-				E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
-				2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3BFE2C6225A25CA006C1226 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */,
-				E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */,
-				2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */,
-				E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */,
-				2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
-				E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */,
-				E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */,
-				2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */,
-				E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */,
-				E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */,
-				E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */,
-				E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */,
-				E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */,
-				E3BFE2F6225A26DD006C1226 /* SCNode+collisions.swift in Sources */,
-				E3BFE304225A26EE006C1226 /* Round.swift in Sources */,
-				E3BFE2DD225A26B9006C1226 /* GameViewControllerProtocol.swift in Sources */,
-				E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */,
-				E3BFE305225A26EE006C1226 /* GameType.swift in Sources */,
-				E3BFE2F3225A26D6006C1226 /* UIColor+colors.swift in Sources */,
-				E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */,
-				E3BFE306225A26EE006C1226 /* Game.swift in Sources */,
-				E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */,
-				2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */,
-				E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */,
-				E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */,
-				E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */,
-				E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */,
-				2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */,
-				E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */,
-				E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */,
-				E3BFE2F5225A26DD006C1226 /* CollisionCenter.swift in Sources */,
-				E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */,
-				E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */,
-				E3BFE302225A26EE006C1226 /* Team.swift in Sources */,
-				E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */,
-				E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */,
-				2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */,
-				E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */,
-				E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */,
-				2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */,
-				E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */,
-				E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */,
-				E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */,
-				E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */,
-				E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */,
-				E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */,
-				E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */,
-				E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */,
-				E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        E338EBEE22564B640066F863 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                E338EC172256ADCA0066F863 /* BallNode.swift in Sources */,
+                2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */,
+                E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
+                E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
+                E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
+                E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */,
+                E3761D8B225CCA3100DBF3F8 /* MenuCardView.swift in Sources */,
+                E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
+                E338EC0622565FE30066F863 /* BallFlowViewController.swift in Sources */,
+                E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
+                E385E447225932D1001A41F6 /* GameController.swift in Sources */,
+                E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
+                2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */,
+                E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */,
+                E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
+                E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */,
+                E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
+                2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */,
+                E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
+                E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
+                E338EBF822564B640066F863 /* ViewController.swift in Sources */,
+                E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
+                E3761D8D225CD11000DBF3F8 /* CardBorderView.swift in Sources */,
+                E385E43722591DA0001A41F6 /* GamesManager.swift in Sources */,
+                E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
+                E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
+                E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */,
+                4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */,
+                E385E44022592A88001A41F6 /* Game.swift in Sources */,
+                2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */,
+                E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
+                E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */,
+                2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */,
+                E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
+                E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
+                E338EC1B2256B0600066F863 /* TableNode.swift in Sources */,
+                E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */,
+                E385E4332258F77C001A41F6 /* WireView.swift in Sources */,
+                E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */,
+                E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
+                4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */,
+                E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
+                E385E43A22592112001A41F6 /* Round.swift in Sources */,
+                E355F56622578F76005034A8 /* Queue.swift in Sources */,
+                2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */,
+                2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */,
+                E355F5702257C354005034A8 /* Team.swift in Sources */,
+                E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */,
+                E385E43E225922BE001A41F6 /* GameType.swift in Sources */,
+                4D00B57C225CB845007531D0 /* InitialScene.swift in Sources */,
+                E385E44322592F32001A41F6 /* GamesNavigator.swift in Sources */,
+                4D00B57A225CB821007531D0 /* InitialSceneViewController.swift in Sources */,
+                E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
+                E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */,
+                E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */,
+                E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
+                4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */,
+                E3761D89225CC9CF00DBF3F8 /* WiredButtonView.swift in Sources */,
+                E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
+                2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        E3BFE2C6225A25CA006C1226 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */,
+                E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */,
+                2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */,
+                E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */,
+                2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
+                E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */,
+                E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */,
+                2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */,
+                E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */,
+                E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */,
+                E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */,
+                E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */,
+                E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */,
+                E3BFE2F6225A26DD006C1226 /* SCNode+collisions.swift in Sources */,
+                E3BFE304225A26EE006C1226 /* Round.swift in Sources */,
+                E3BFE2DD225A26B9006C1226 /* GameViewControllerProtocol.swift in Sources */,
+                E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */,
+                E3BFE305225A26EE006C1226 /* GameType.swift in Sources */,
+                E3BFE2F3225A26D6006C1226 /* UIColor+colors.swift in Sources */,
+                E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */,
+                E3BFE306225A26EE006C1226 /* Game.swift in Sources */,
+                E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */,
+                2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */,
+                E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */,
+                E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */,
+                E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */,
+                E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */,
+                2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */,
+                E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */,
+                E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */,
+                E3BFE2F5225A26DD006C1226 /* CollisionCenter.swift in Sources */,
+                E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */,
+                E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */,
+                E3BFE302225A26EE006C1226 /* Team.swift in Sources */,
+                E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */,
+                E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */,
+                2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */,
+                E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */,
+                E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */,
+                2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */,
+                E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */,
+                E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */,
+                E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */,
+                E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */,
+                E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */,
+                E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */,
+                E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */,
+                E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */,
+                E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E338EBF922564B640066F863 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E338EBFA22564B640066F863 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E3BFE2D0225A25CA006C1226 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3BFE2D1225A25CA006C1226 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3BFE2D6225A25CC006C1226 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        E338EBF922564B640066F863 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                E338EBFA22564B640066F863 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        E3BFE2D0225A25CA006C1226 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                E3BFE2D1225A25CA006C1226 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        E3BFE2D5225A25CC006C1226 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                E3BFE2D6225A25CC006C1226 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E338EBFF22564B660066F863 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = appletvos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 12.1;
-			};
-			name = Debug;
-		};
-		E338EC0022564B660066F863 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = appletvos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TVOS_DEPLOYMENT_TARGET = 12.1;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E338EC0222564B660066F863 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MQ922JMCL6;
-				INFOPLIST_FILE = TVOSBasics/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSBasics;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
-			};
-			name = Debug;
-		};
-		E338EC0322564B660066F863 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MQ922JMCL6;
-				INFOPLIST_FILE = TVOSBasics/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSBasics;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
-			};
-			name = Release;
-		};
-		E3BFE2D9225A25CC006C1226 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MQ922JMCL6;
-				INFOPLIST_FILE = TVOSTestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E3BFE2DA225A25CC006C1226 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MQ922JMCL6;
-				INFOPLIST_FILE = TVOSTestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+        E338EBFF22564B660066F863 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = appletvos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                TVOS_DEPLOYMENT_TARGET = 12.1;
+            };
+            name = Debug;
+        };
+        E338EC0022564B660066F863 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                SDKROOT = appletvos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                TVOS_DEPLOYMENT_TARGET = 12.1;
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        E338EC0222564B660066F863 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+                ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = MQ922JMCL6;
+                INFOPLIST_FILE = TVOSBasics/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSBasics;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = 3;
+                TVOS_DEPLOYMENT_TARGET = 12.1;
+            };
+            name = Debug;
+        };
+        E338EC0322564B660066F863 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+                ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = MQ922JMCL6;
+                INFOPLIST_FILE = TVOSBasics/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSBasics;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = 3;
+                TVOS_DEPLOYMENT_TARGET = 12.1;
+            };
+            name = Release;
+        };
+        E3BFE2D9225A25CC006C1226 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = MQ922JMCL6;
+                INFOPLIST_FILE = TVOSTestApp/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        E3BFE2DA225A25CC006C1226 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = MQ922JMCL6;
+                INFOPLIST_FILE = TVOSTestApp/Info.plist;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SDKROOT = iphoneos;
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E338EBED22564B640066F863 /* Build configuration list for PBXProject "TVOSBasics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E338EBFF22564B660066F863 /* Debug */,
-				E338EC0022564B660066F863 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E338EC0122564B660066F863 /* Build configuration list for PBXNativeTarget "TVOSBasics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E338EC0222564B660066F863 /* Debug */,
-				E338EC0322564B660066F863 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3BFE2DB225A25CC006C1226 /* Build configuration list for PBXNativeTarget "TVOSTestApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E3BFE2D9225A25CC006C1226 /* Debug */,
-				E3BFE2DA225A25CC006C1226 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        E338EBED22564B640066F863 /* Build configuration list for PBXProject "TVOSBasics" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                E338EBFF22564B660066F863 /* Debug */,
+                E338EC0022564B660066F863 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        E338EC0122564B660066F863 /* Build configuration list for PBXNativeTarget "TVOSBasics" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                E338EC0222564B660066F863 /* Debug */,
+                E338EC0322564B660066F863 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        E3BFE2DB225A25CC006C1226 /* Build configuration list for PBXNativeTarget "TVOSTestApp" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                E3BFE2D9225A25CC006C1226 /* Debug */,
+                E3BFE2DA225A25CC006C1226 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = E338EBEA22564B640066F863 /* Project object */;
+    };
+    rootObject = E338EBEA22564B640066F863 /* Project object */;
 }
