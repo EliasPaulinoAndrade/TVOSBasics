@@ -27,7 +27,7 @@ class BallNode: SCNNode {
         
         willCollideWith(nodeTypes: [
             TableNode.self,
-            FLBallsBoxNode.self,
+            BallsBoxNode.self,
             BallNode.self,
             FLHorsesShoeNode.self,
             FLObstacleNode.self

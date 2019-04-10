@@ -29,7 +29,7 @@
 		E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
 		E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
 		E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
-		E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* FLBallsBoxNode.swift */; };
+		E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
 		E355F56622578F76005034A8 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
 		E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
 		E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
@@ -80,7 +80,7 @@
 		E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* BallNode.swift */; };
 		E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
 		E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
-		E3BFE2E6225A26C9006C1226 /* FLBallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* FLBallsBoxNode.swift */; };
+		E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
 		E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
 		E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
 		E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
@@ -141,7 +141,7 @@
 		E355F5562257662D005034A8 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 		E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fillConstraints.swift"; sourceTree = "<group>"; };
 		E355F55A2257757B005034A8 /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
-		E355F56022577F53005034A8 /* FLBallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBallsBoxNode.swift; sourceTree = "<group>"; };
+		E355F56022577F53005034A8 /* BallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallsBoxNode.swift; sourceTree = "<group>"; };
 		E355F56522578F76005034A8 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		E355F567225796D2005034A8 /* TableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLimitsNode.swift; sourceTree = "<group>"; };
 		E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsContact+collisions.swift"; sourceTree = "<group>"; };
@@ -345,7 +345,7 @@
 				E338EC162256ADCA0066F863 /* BallNode.swift */,
 				E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
 				E338EC1A2256B0600066F863 /* TableNode.swift */,
-				E355F56022577F53005034A8 /* FLBallsBoxNode.swift */,
+				E355F56022577F53005034A8 /* BallsBoxNode.swift */,
 				E355F567225796D2005034A8 /* TableLimitsNode.swift */,
 				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
 				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
@@ -574,7 +574,7 @@
 				4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */,
 				E385E44022592A88001A41F6 /* Game.swift in Sources */,
 				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
-				E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */,
+				E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */,
 				E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
 				E338EC1B2256B0600066F863 /* TableNode.swift in Sources */,
@@ -643,7 +643,7 @@
 				E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */,
 				E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */,
 				E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */,
-				E3BFE2E6225A26C9006C1226 /* FLBallsBoxNode.swift in Sources */,
+				E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */,
 				E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */,
 				E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */,
 				E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */,
