@@ -10,4 +10,5 @@ import Foundation
 
 enum ViewControllerType {
     case flowBall
+    case howAmI
 }

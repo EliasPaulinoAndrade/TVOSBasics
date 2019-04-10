@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7B79ED7225B83E3007853D3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79ED6225B83E3007853D3 /* UIView+Constraints.swift */; };
+		D7B79EDA225B8431007853D3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79ED9225B8431007853D3 /* MenuViewController.swift */; };
+		D7B79EDD225B873B007853D3 /* ChooseWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79EDC225B873B007853D3 /* ChooseWordsView.swift */; };
+		D7B79EDF225B90CD007853D3 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79EDE225B90CD007853D3 /* ChooseViewController.swift */; };
+		D7B79EFC225CD9F0007853D3 /* UIButton+Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79EFB225CD9F0007853D3 /* UIButton+Focus.swift */; };
+		D7B79EFE225CE1CA007853D3 /* FLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79EFD225CE1CA007853D3 /* FLButton.swift */; };
+		D7B79F00225CE3D9007853D3 /* FLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79EFF225CE3D9007853D3 /* FLTextField.swift */; };
+		D7B79F02225E09BF007853D3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B79F01225E09BF007853D3 /* Alert.swift */; };
 		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
@@ -106,6 +114,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7B79ED6225B83E3007853D3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		D7B79ED9225B8431007853D3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D7B79EDC225B873B007853D3 /* ChooseWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWordsView.swift; sourceTree = "<group>"; };
+		D7B79EDE225B90CD007853D3 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		D7B79EFB225CD9F0007853D3 /* UIButton+Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Focus.swift"; sourceTree = "<group>"; };
+		D7B79EFD225CE1CA007853D3 /* FLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLButton.swift; sourceTree = "<group>"; };
+		D7B79EFF225CE3D9007853D3 /* FLTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTextField.swift; sourceTree = "<group>"; };
+		D7B79F01225E09BF007853D3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338EBF522564B640066F863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E338EBF722564B640066F863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +198,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7B79ED4225B8390007853D3 /* HomAmI? */ = {
+			isa = PBXGroup;
+			children = (
+				D7B79EE0225B90D4007853D3 /* Choose */,
+				D7B79ED8225B8417007853D3 /* Menu */,
+			);
+			path = "HomAmI?";
+			sourceTree = "<group>";
+		};
+		D7B79ED5225B83C6007853D3 /* HowAmI? */ = {
+			isa = PBXGroup;
+			children = (
+				D7B79EDB225B867B007853D3 /* Choose */,
+				D7B79EFD225CE1CA007853D3 /* FLButton.swift */,
+				D7B79EFF225CE3D9007853D3 /* FLTextField.swift */,
+			);
+			path = "HowAmI?";
+			sourceTree = "<group>";
+		};
+		D7B79ED8225B8417007853D3 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D7B79ED9225B8431007853D3 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		D7B79EDB225B867B007853D3 /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				D7B79EDC225B873B007853D3 /* ChooseWordsView.swift */,
+				D7B79F01225E09BF007853D3 /* Alert.swift */,
+			);
+			path = Choose;
+			sourceTree = "<group>";
+		};
+		D7B79EE0225B90D4007853D3 /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				D7B79EDE225B90CD007853D3 /* ChooseViewController.swift */,
+			);
+			path = Choose;
+			sourceTree = "<group>";
+		};
 		E338EBE922564B640066F863 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +284,7 @@
 		E338EC0422565FC80066F863 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D7B79ED4225B8390007853D3 /* HomAmI? */,
 				E338EC0D22566F1F0066F863 /* BallFlow */,
 			);
 			path = "View Controllers";
@@ -237,6 +298,8 @@
 				E355F5742257D38E005034A8 /* SCNScene+loadSceneNode.swift */,
 				E355F596225822A9005034A8 /* UIColor+colors.swift */,
 				E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */,
+				D7B79ED6225B83E3007853D3 /* UIView+Constraints.swift */,
+				D7B79EFB225CD9F0007853D3 /* UIButton+Focus.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -283,6 +346,7 @@
 		E355F5552257641E005034A8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7B79ED5225B83C6007853D3 /* HowAmI? */,
 				E355F5562257662D005034A8 /* ScoreBoardView.swift */,
 				E355F55A2257757B005034A8 /* TeamScoreView.swift */,
 				E355F56B2257B058005034A8 /* GameAlertView.swift */,
@@ -493,6 +557,7 @@
 				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
 				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
 				E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
+				D7B79ED7225B83E3007853D3 /* UIView+Constraints.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
 				E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */,
 				E355F5752257D38E005034A8 /* SCNScene+loadSceneNode.swift in Sources */,
@@ -501,9 +566,11 @@
 				E385E447225932D1001A41F6 /* GameController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
 				E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */,
+				D7B79F00225CE3D9007853D3 /* FLTextField.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
 				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
+				D7B79EDD225B873B007853D3 /* ChooseWordsView.swift in Sources */,
 				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
 				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
 				E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */,
@@ -514,17 +581,22 @@
 				E385E44022592A88001A41F6 /* Game.swift in Sources */,
 				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
 				E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */,
+				D7B79F02225E09BF007853D3 /* Alert.swift in Sources */,
 				E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
 				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
 				E385E4332258F77C001A41F6 /* WireView.swift in Sources */,
+				D7B79EDA225B8431007853D3 /* MenuViewController.swift in Sources */,
 				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
+				D7B79EFC225CD9F0007853D3 /* UIButton+Focus.swift in Sources */,
 				E385E43A22592112001A41F6 /* Round.swift in Sources */,
 				E355F56622578F76005034A8 /* Queue.swift in Sources */,
 				E355F5702257C354005034A8 /* Team.swift in Sources */,
 				E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */,
+				D7B79EFE225CE1CA007853D3 /* FLButton.swift in Sources */,
 				E385E43E225922BE001A41F6 /* GameType.swift in Sources */,
+				D7B79EDF225B90CD007853D3 /* ChooseViewController.swift in Sources */,
 				E385E44322592F32001A41F6 /* GamesNavigator.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
 				E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */,
@@ -732,7 +804,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -742,7 +814,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
+				TVOS_DEPLOYMENT_TARGET = 12.2;
 			};
 			name = Debug;
 		};
@@ -752,7 +824,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -762,7 +834,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
+				TVOS_DEPLOYMENT_TARGET = 12.2;
 			};
 			name = Release;
 		};

@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        gamesNavigator.show(controllerType: .flowBall)
+        window?.rootViewController = ChooseViewController()
+        //gamesNavigator.show(controllerType: .howAmI)
         
         return true
     }
