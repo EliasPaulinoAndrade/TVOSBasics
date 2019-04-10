@@ -42,7 +42,7 @@ class FLHorsesShoeNode: SCNNode {
             physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: shapeBody)
         }
         
-        willCollideWith(nodeTypes: [FLBallNode.self])
+        willCollideWith(nodeTypes: [BallNode.self])
     }
     
     func colorMaterial() -> SCNMaterial? {

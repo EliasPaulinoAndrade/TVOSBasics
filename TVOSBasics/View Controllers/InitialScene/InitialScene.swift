@@ -30,7 +30,7 @@ class initialScene: SCNScene{
         return lightNode
     }()
     
-    var testWalls = FLWallsBoxNode.init()
+    var testWalls = WallsBoxNode.init()
     
     override init() {
         super.init()

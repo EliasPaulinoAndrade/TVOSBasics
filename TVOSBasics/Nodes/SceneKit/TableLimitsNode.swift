@@ -10,7 +10,7 @@ import Foundation
 import SceneKit
 
 /// a giant box arround the scenario used to detect when a ball leaves the scene
-class FLTableLimitsNode: SCNNode {
+class TableLimitsNode: SCNNode {
     override init() {
         super.init()
         
@@ -28,7 +28,7 @@ class FLTableLimitsNode: SCNNode {
         physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: tableShape)
         
         willCollideWith(nodeTypes: [])
-        willContactWith(nodeTypes: [FLBallNode.self])
+        willContactWith(nodeTypes: [BallNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {

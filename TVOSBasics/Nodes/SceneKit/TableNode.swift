@@ -10,7 +10,7 @@ import Foundation
 import SceneKit
 
 /// the table of the game
-class FLTableNode: SCNNode {
+class TableNode: SCNNode {
     
     var tableNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "table.scn", nodeName: "table")
     
@@ -27,7 +27,7 @@ class FLTableNode: SCNNode {
             addChildNode(tableNode)
         }
         
-        willCollideWith(nodeTypes: [FLBallNode.self])
+        willCollideWith(nodeTypes: [BallNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {

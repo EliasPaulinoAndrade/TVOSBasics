@@ -10,7 +10,7 @@ import Foundation
 import SceneKit
 
 /// the ball controlled by the user
-class FLBallNode: SCNNode {
+class BallNode: SCNNode {
     
     var wasUsed = false
     
@@ -26,15 +26,15 @@ class FLBallNode: SCNNode {
         physicsBody = SCNPhysicsBody.init(type: .dynamic, shape: nil)
         
         willCollideWith(nodeTypes: [
-            FLTableNode.self,
+            TableNode.self,
             FLBallsBoxNode.self,
-            FLBallNode.self,
+            BallNode.self,
             FLHorsesShoeNode.self,
             FLObstacleNode.self
         ])
         willContactWith(nodeTypes: [
             FLTargetPointNode.self,
-            FLTableLimitsNode.self
+            TableLimitsNode.self
         ])
     }
     
