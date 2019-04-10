@@ -174,7 +174,10 @@ class InitialSceneViewController: UIViewController {
     }
     
     @objc func tappedPaperPlateTargets(_ gesture: UITapGestureRecognizer){
-        print("Paper Plate Targets")
+        let paper = PaperPlateViewController()
+        paper.modalTransitionStyle = .coverVertical
+        paper.modalPresentationStyle = .overCurrentContext
+        self.present(paper, animated: true, completion: nil)
     }
     
     @objc func tappedWhoAmI(_ gesture: UITapGestureRecognizer){
