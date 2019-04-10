@@ -89,7 +89,7 @@ class GameAlertView: UIView {
     
     func setupInput() {
         let tapRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(playWasTapped(tapGestureRecognizer:)))
-//        tapRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
+        tapRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
         self.addGestureRecognizer(tapRecognizer)
     }
     
