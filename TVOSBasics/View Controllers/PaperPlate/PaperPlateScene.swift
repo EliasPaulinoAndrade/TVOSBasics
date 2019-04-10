@@ -146,7 +146,6 @@ class PaperPlateScene: SCNScene {
     }
     
     func moveStraw(to distance: CGPoint) {
-        print(distance)
         var moveX = Float(distance.x / 10)
         if distance.x >= 110 {
             moveX = 11
@@ -157,13 +156,22 @@ class PaperPlateScene: SCNScene {
         let actionx = SCNAction.move(to: finalPositionX, duration: 0.01)
         var rotate = Float(distance.y / 10)
         if distance.y >= -8.5 {
-            rotate = -8.5 / 10
-        } else if distance.y >= -17.50 {
-            rotate = -17.50 / 10
+            rotate = -0.85
+        } else if distance.y <= -17.50 {
+            rotate = -1.750
         }
-        //print(rotate)
         let actionz = SCNAction.rotateTo(x: CGFloat(rotate) , y: 0, z: 0, duration: 0.01)
-        straw.runAction(SCNAction.group([actionx, actionz]))
+        if let ball = currentBall {
+            straw.runAction(SCNAction.group([actionx, actionz])) {
+                self.straw.position.x = moveX
+                self.straw.rotation.x = rotate
+            }
+            
+            ball.runAction(SCNAction.group([actionx, actionz])) {
+                ball.position.x = moveX
+                ball.rotation.x = rotate
+            }
+        }
     }
     
     func newPlates() {
@@ -189,8 +197,8 @@ class PaperPlateScene: SCNScene {
             } else if index >= 9 {
                 plate.position.x = auxX
                 plate.position.z = auxZ + Float.random(in: 1...limitRandon)
-                auxX += Float.random(in: 7...9)
-                incremend += 1.5
+                auxX += Float.random(in: 6...8)
+                incremend += 2.0
             } else {
                 auxX = -12 + incremend
                 auxZ += 6
