@@ -10,12 +10,12 @@ import Foundation
 import SceneKit
 
 /// the box where the balls stay before to be used
-class FLBallsBoxNode: SCNNode {
+class BallsBoxNode: SCNNode {
     
     let numberOfBalls: Int
     let ballsRadius: CGFloat
     
-    var ballsQueue = Queue<FLBallNode>()
+    var ballsQueue = Queue<BallNode>()
     
     lazy var height: CGFloat = {
         return max(2.1 * CGFloat(numberOfBalls) * ballsRadius, 4)
@@ -74,19 +74,19 @@ class FLBallsBoxNode: SCNNode {
         
         physicsBody = SCNPhysicsBody.init(type: .static, shape: shape)
         
-        willCollideWith(nodeTypes: [FLBallNode.self])
+        willCollideWith(nodeTypes: [BallNode.self])
         
         fill()
         
         addChildNode(shoeNode)
     }
     
-    func ballNodes(numberOfBalls: Int, ballRadius: CGFloat) -> [FLBallNode] {
+    func ballNodes(numberOfBalls: Int, ballRadius: CGFloat) -> [BallNode] {
         
-        var ballNodes: [FLBallNode] = []
+        var ballNodes: [BallNode] = []
         
         for ballIndex in 0..<numberOfBalls {
-            let ballNode = FLBallNode.init(withRadius: ballRadius)
+            let ballNode = BallNode.init(withRadius: ballRadius)
             
             ballNode.position = SCNVector3.zero
             ballNode.position.y += Float(ballIndex) * Float(ballRadius * 2.1)
@@ -102,14 +102,14 @@ class FLBallsBoxNode: SCNNode {
         add(balls: ballNodes(numberOfBalls: numberOfBalls, ballRadius: ballsRadius))
     }
     
-    func add(balls: [FLBallNode]) {
+    func add(balls: [BallNode]) {
         for ball in balls {
             addChildNode(ball)
             ballsQueue.push(item: ball)
         }
     }
     
-    func pull() -> FLBallNode? {
+    func pull() -> BallNode? {
         let firstBall = ballsQueue.pull()
         
         firstBall?.removeFromParentNode()

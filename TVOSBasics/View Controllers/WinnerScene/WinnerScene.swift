@@ -1,5 +1,5 @@
 //
-//  InitialScene.swift
+//  WinnerScene.swift
 //  TVOSBasics
 //
 //  Created by Cibele Paulino on 09/04/19.
@@ -9,7 +9,7 @@
 import Foundation
 import SceneKit
 
-class initialScene: SCNScene{
+class WinnerScene: SCNScene{
     
     lazy var cameraNode: SCNNode = {
         let cameraNode = SCNNode()
@@ -34,7 +34,7 @@ class initialScene: SCNScene{
     
     override init() {
         super.init()
-     
+        
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(lightNode)
         rootNode.addChildNode(testWalls)

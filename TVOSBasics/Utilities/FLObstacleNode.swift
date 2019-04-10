@@ -31,7 +31,7 @@ class FLObstacleNode: SCNNode {
             physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: nil)
         }
         
-        willCollideWith(nodeTypes: [FLBallNode.self])
+        willCollideWith(nodeTypes: [BallNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {

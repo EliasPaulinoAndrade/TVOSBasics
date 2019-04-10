@@ -13,6 +13,7 @@ class GamesNavigator {
 
     var flowBallViewController = BallFlowViewController.init()
     var initialSceneViewController = InitialSceneViewController.init()
+    var paperPlateViewControler = PaperPlateViewController()
     
     func show(controllerType: ViewControllerType) {
         switch controllerType {
@@ -20,7 +21,12 @@ class GamesNavigator {
             show(controller: flowBallViewController)
         case .initialScene:
             show(controller: initialSceneViewController)
+            break
+        case .paperPlate:
+            show(controller: paperPlateViewControler)
+            break
         }
+        
     }
     
     func show(controller: UIViewController) {

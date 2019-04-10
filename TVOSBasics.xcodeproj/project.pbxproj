@@ -7,9 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
+		2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */; };
+		2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
+		2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
+		2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
+		2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
+		2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */; };
+		2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
+		2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
+		2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */; };
+		2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE962225CD3F500266ED6 /* Direction.swift */; };
+		2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */; };
+		2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
+		2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
+		2FFAE967225DAC6200266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
+		2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
+		2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
 		4D00B57A225CB821007531D0 /* InitialSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B579225CB821007531D0 /* InitialSceneViewController.swift */; };
 		4D00B57C225CB845007531D0 /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57B225CB845007531D0 /* InitialScene.swift */; };
 		4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57F225CE22E007531D0 /* GameBoxView.swift */; };
+		4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B582225D509C007531D0 /* WinnerViewController.swift */; };
+		4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B584225D50B6007531D0 /* WinnerScene.swift */; };
 		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
@@ -19,17 +38,17 @@
 		E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
 		E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
 		E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
-		E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* FLBallNode.swift */; };
+		E338EC172256ADCA0066F863 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* BallNode.swift */; };
 		E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
-		E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* FLTableNode.swift */; };
+		E338EC1B2256B0600066F863 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
 		E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1F2256B1310066F863 /* CollisionCenter.swift */; };
 		E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC212256B5F70066F863 /* SCNode+collisions.swift */; };
 		E355F5572257662D005034A8 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5562257662D005034A8 /* ScoreBoardView.swift */; };
 		E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */; };
 		E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F55A2257757B005034A8 /* TeamScoreView.swift */; };
-		E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* FLBallsBoxNode.swift */; };
+		E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
 		E355F56622578F76005034A8 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
-		E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* FLTableLimitsNode.swift */; };
+		E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
 		E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */; };
 		E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56B2257B058005034A8 /* GameAlertView.swift */; };
 		E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
@@ -46,18 +65,8 @@
 		E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */; };
 		E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */; };
 		E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D94225D456300DBF3F8 /* InputGameAlert.swift */; };
-		E3761D97225D58C800DBF3F8 /* BallFlowViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D96225D58C800DBF3F8 /* BallFlowViewControllerDelegate.swift */; };
-		E3761D99225D651900DBF3F8 /* ConfirmGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D98225D651900DBF3F8 /* ConfirmGameAlert.swift */; };
-		E3761D9A225D84CA00DBF3F8 /* InitialSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B579225CB821007531D0 /* InitialSceneViewController.swift */; };
-		E3761D9B225D84CC00DBF3F8 /* InitialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57B225CB845007531D0 /* InitialScene.swift */; };
-		E3761D9C225D84D900DBF3F8 /* InputGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D94225D456300DBF3F8 /* InputGameAlert.swift */; };
-		E3761D9D225D84D900DBF3F8 /* ConfirmGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D98225D651900DBF3F8 /* ConfirmGameAlert.swift */; };
-		E3761D9E225D84DE00DBF3F8 /* GameAlertViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */; };
-		E3761D9F225D84EA00DBF3F8 /* BallFlowViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D96225D58C800DBF3F8 /* BallFlowViewControllerDelegate.swift */; };
-		E3761DA0225D84FA00DBF3F8 /* GameBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00B57F225CE22E007531D0 /* GameBoxView.swift */; };
-		E3761DA1225D850A00DBF3F8 /* TextualGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */; };
 		E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */; };
-		E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
+		E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
 		E385E4312258EBEC001A41F6 /* DoubleWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4302258EBEC001A41F6 /* DoubleWireView.swift */; };
 		E385E4332258F77C001A41F6 /* WireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4322258F77C001A41F6 /* WireView.swift */; };
 		E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */; };
@@ -82,15 +91,15 @@
 		E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0E22566F330066F863 /* BallFlowScene.swift */; };
 		E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC132256ACC30066F863 /* BallFlowGameState.swift */; };
 		E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */; };
-		E3BFE2E3225A26C9006C1226 /* FLBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* FLBallNode.swift */; };
+		E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC162256ADCA0066F863 /* BallNode.swift */; };
 		E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */; };
-		E3BFE2E5225A26C9006C1226 /* FLTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* FLTableNode.swift */; };
-		E3BFE2E6225A26C9006C1226 /* FLBallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* FLBallsBoxNode.swift */; };
-		E3BFE2E7225A26C9006C1226 /* FLTableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* FLTableLimitsNode.swift */; };
+		E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC1A2256B0600066F863 /* TableNode.swift */; };
+		E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56022577F53005034A8 /* BallsBoxNode.swift */; };
+		E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F567225796D2005034A8 /* TableLimitsNode.swift */; };
 		E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */; };
 		E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5792257F50C005034A8 /* FLWinPointNode.swift */; };
 		E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F5932258142D005034A8 /* FLObstacleNode.swift */; };
-		E3BFE2EB225A26C9006C1226 /* FLWallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */; };
+		E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */; };
 		E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */; };
 		E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E355F56522578F76005034A8 /* Queue.swift */; };
 		E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44222592F32001A41F6 /* GamesNavigator.swift */; };
@@ -119,12 +128,24 @@
 		E3BFE305225A26EE006C1226 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43D225922BE001A41F6 /* GameType.swift */; };
 		E3BFE306225A26EE006C1226 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E43F22592A88001A41F6 /* Game.swift */; };
 		E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E338EBFC22564B660066F863 /* Assets.xcassets */; };
+		E3EC6739225E1503000E53CD /* BallFlowViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC6738225E1503000E53CD /* BallFlowViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateViewController.swift; sourceTree = "<group>"; };
+		2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateScene.swift; sourceTree = "<group>"; };
+		2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPlateNode.swift; sourceTree = "<group>"; };
+		2F5366D5225C504100F4C51C /* plate.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = plate.scn; sourceTree = "<group>"; };
+		2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperPlateGameState.swift; sourceTree = "<group>"; };
+		2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStrawNode.swift; sourceTree = "<group>"; };
+		2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistancePanGestureRecognizer.swift; sourceTree = "<group>"; };
+		2FFAE962225CD3F500266ED6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		2FFAE968225DC42300266ED6 /* PPPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPPoints.swift; path = TVOSBasics/Nodes/SceneKit/PPPoints.swift; sourceTree = SOURCE_ROOT; };
 		4D00B579225CB821007531D0 /* InitialSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSceneViewController.swift; sourceTree = "<group>"; };
 		4D00B57B225CB845007531D0 /* InitialScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScene.swift; sourceTree = "<group>"; };
 		4D00B57F225CE22E007531D0 /* GameBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoxView.swift; sourceTree = "<group>"; };
+		4D00B582225D509C007531D0 /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
+		4D00B584225D50B6007531D0 /* WinnerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerScene.swift; sourceTree = "<group>"; };
 		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338EBF522564B640066F863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E338EBF722564B640066F863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,17 +157,17 @@
 		E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceSwipeGestureRecognizer.swift; sourceTree = "<group>"; };
 		E338EC0E22566F330066F863 /* BallFlowScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowScene.swift; sourceTree = "<group>"; };
 		E338EC132256ACC30066F863 /* BallFlowGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowGameState.swift; sourceTree = "<group>"; };
-		E338EC162256ADCA0066F863 /* FLBallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBallNode.swift; sourceTree = "<group>"; };
+		E338EC162256ADCA0066F863 /* BallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallNode.swift; sourceTree = "<group>"; };
 		E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTargetPointNode.swift; sourceTree = "<group>"; };
-		E338EC1A2256B0600066F863 /* FLTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableNode.swift; sourceTree = "<group>"; };
+		E338EC1A2256B0600066F863 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
 		E338EC1F2256B1310066F863 /* CollisionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionCenter.swift; sourceTree = "<group>"; };
 		E338EC212256B5F70066F863 /* SCNode+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+collisions.swift"; sourceTree = "<group>"; };
 		E355F5562257662D005034A8 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 		E355F55822576E6D005034A8 /* UIView+fillConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+fillConstraints.swift"; sourceTree = "<group>"; };
 		E355F55A2257757B005034A8 /* TeamScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamScoreView.swift; sourceTree = "<group>"; };
-		E355F56022577F53005034A8 /* FLBallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLBallsBoxNode.swift; sourceTree = "<group>"; };
+		E355F56022577F53005034A8 /* BallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallsBoxNode.swift; sourceTree = "<group>"; };
 		E355F56522578F76005034A8 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		E355F567225796D2005034A8 /* FLTableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLTableLimitsNode.swift; sourceTree = "<group>"; };
+		E355F567225796D2005034A8 /* TableLimitsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLimitsNode.swift; sourceTree = "<group>"; };
 		E355F569225798CF005034A8 /* SCNPhysicsContact+collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNPhysicsContact+collisions.swift"; sourceTree = "<group>"; };
 		E355F56B2257B058005034A8 /* GameAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertView.swift; sourceTree = "<group>"; };
 		E355F56D2257C23D005034A8 /* BallFlowSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowSceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,10 +184,8 @@
 		E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAlertViewDatasource.swift; sourceTree = "<group>"; };
 		E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextualGameAlert.swift; sourceTree = "<group>"; };
 		E3761D94225D456300DBF3F8 /* InputGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGameAlert.swift; sourceTree = "<group>"; };
-		E3761D96225D58C800DBF3F8 /* BallFlowViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallFlowViewControllerDelegate.swift; sourceTree = "<group>"; };
-		E3761D98225D651900DBF3F8 /* ConfirmGameAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmGameAlert.swift; sourceTree = "<group>"; };
 		E385E42C2258DEF4001A41F6 /* ScoreShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreShadowView.swift; sourceTree = "<group>"; };
-		E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLWallsBoxNode.swift; sourceTree = "<group>"; };
+		E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallsBoxNode.swift; sourceTree = "<group>"; };
 		E385E4302258EBEC001A41F6 /* DoubleWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleWireView.swift; sourceTree = "<group>"; };
 		E385E4322258F77C001A41F6 /* WireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireView.swift; sourceTree = "<group>"; };
 		E385E4342259066C001A41F6 /* SCNode+addChildNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+addChildNodes.swift"; sourceTree = "<group>"; };
@@ -186,6 +205,7 @@
 		E3BFE2D3225A25CC006C1226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3BFE2D6225A25CC006C1226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3BFE2D8225A25CC006C1226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3EC6738225E1503000E53CD /* BallFlowViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallFlowViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +226,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1D8447225B6F58009F32D1 /* PaperPlate */ = {
+			isa = PBXGroup;
+			children = (
+				2F1D8448225B6FE4009F32D1 /* PaperPlateViewController.swift */,
+				2F1D844B225B7451009F32D1 /* PaperPlateScene.swift */,
+				2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */,
+			);
+			path = PaperPlate;
+			sourceTree = "<group>";
+		};
+		4D00B581225D5071007531D0 /* WinnerScene */ = {
+			isa = PBXGroup;
+			children = (
+				4D00B582225D509C007531D0 /* WinnerViewController.swift */,
+				4D00B584225D50B6007531D0 /* WinnerScene.swift */,
+			);
+			path = WinnerScene;
+			sourceTree = "<group>";
+		};
 		4D419A4E225B9745003F1725 /* InitialScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +296,9 @@
 		E338EC0422565FC80066F863 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D00B581225D5071007531D0 /* WinnerScene */,
 				4D419A4E225B9745003F1725 /* InitialScene */,
+				2F1D8447225B6F58009F32D1 /* PaperPlate */,
 				E338EC0D22566F1F0066F863 /* BallFlow */,
 			);
 			path = "View Controllers";
@@ -278,8 +319,10 @@
 		E338EC0A2256662C0066F863 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E355F5932258142D005034A8 /* FLObstacleNode.swift */,
 				E385E44122592F13001A41F6 /* Games Navigator */,
 				E338EC0B225667F00066F863 /* ForceSwipeGestureRecognizer.swift */,
+				2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */,
 				E355F56522578F76005034A8 /* Queue.swift */,
 			);
 			path = Utilities;
@@ -288,7 +331,7 @@
 		E338EC0D22566F1F0066F863 /* BallFlow */ = {
 			isa = PBXGroup;
 			children = (
-				E3761D96225D58C800DBF3F8 /* BallFlowViewControllerDelegate.swift */,
+				E3EC6738225E1503000E53CD /* BallFlowViewControllerDelegate.swift */,
 				E338EC0522565FE30066F863 /* BallFlowViewController.swift */,
 				E338EC0E22566F330066F863 /* BallFlowScene.swift */,
 				E338EC132256ACC30066F863 /* BallFlowGameState.swift */,
@@ -332,15 +375,17 @@
 		E355F55C22577BFE005034A8 /* SceneKit */ = {
 			isa = PBXGroup;
 			children = (
-				E338EC162256ADCA0066F863 /* FLBallNode.swift */,
+				E338EC162256ADCA0066F863 /* BallNode.swift */,
 				E338EC182256AF3D0066F863 /* FLTargetPointNode.swift */,
-				E338EC1A2256B0600066F863 /* FLTableNode.swift */,
-				E355F56022577F53005034A8 /* FLBallsBoxNode.swift */,
-				E355F567225796D2005034A8 /* FLTableLimitsNode.swift */,
+				E338EC1A2256B0600066F863 /* TableNode.swift */,
+				E355F56022577F53005034A8 /* BallsBoxNode.swift */,
+				E355F567225796D2005034A8 /* TableLimitsNode.swift */,
 				E355F5762257D4C8005034A8 /* FLHorsesShoeNode.swift */,
 				E355F5792257F50C005034A8 /* FLWinPointNode.swift */,
-				E355F5932258142D005034A8 /* FLObstacleNode.swift */,
-				E385E42E2258E38A001A41F6 /* FLWallsBoxNode.swift */,
+				E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
+				2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
+				2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */,
+				2FFAE968225DC42300266ED6 /* PPPoints.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -350,6 +395,7 @@
 			children = (
 				E355F57B2257FAE6005034A8 /* Textures */,
 				E355F58422580936005034A8 /* horseshoe2.scn */,
+				2F5366D5225C504100F4C51C /* plate.scn */,
 				E355F592225813B0005034A8 /* obstacle.scn */,
 				E355F57E2257FB7A005034A8 /* table.scn */,
 			);
@@ -371,7 +417,6 @@
 				E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */,
 				E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */,
 				E3761D94225D456300DBF3F8 /* InputGameAlert.swift */,
-				E3761D98225D651900DBF3F8 /* ConfirmGameAlert.swift */,
 			);
 			path = "Game Alert";
 			sourceTree = "<group>";
@@ -411,6 +456,7 @@
 				E385E43922592112001A41F6 /* Round.swift */,
 				E385E43D225922BE001A41F6 /* GameType.swift */,
 				E385E43F22592A88001A41F6 /* Game.swift */,
+				2FFAE962225CD3F500266ED6 /* Direction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -509,6 +555,7 @@
 			files = (
 				E355F5812258023A005034A8 /* table.scn in Resources */,
 				E355F59522581531005034A8 /* obstacle.scn in Resources */,
+				2FFAE95E225CBD1F00266ED6 /* plate.scn in Resources */,
 				E355F5802257FB89005034A8 /* imbuia.jpg in Resources */,
 				E338EBFD22564B660066F863 /* Assets.xcassets in Resources */,
 				E355F58522580991005034A8 /* horseshoe2.scn in Resources */,
@@ -525,6 +572,7 @@
 				E3BFE2D4225A25CC006C1226 /* Assets.xcassets in Resources */,
 				E3BFE2FE225A26E8006C1226 /* horseshoe2.scn in Resources */,
 				E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */,
+				2FFAE967225DAC6200266ED6 /* plate.scn in Resources */,
 				E3BFE2FF225A26E8006C1226 /* obstacle.scn in Resources */,
 				E3BFE307225A275F006C1226 /* Assets.xcassets in Resources */,
 				E3BFE300225A26E8006C1226 /* table.scn in Resources */,
@@ -538,7 +586,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E338EC172256ADCA0066F863 /* FLBallNode.swift in Sources */,
+				E338EC172256ADCA0066F863 /* BallNode.swift in Sources */,
+				2FC4B7DF225B90D2004E3545 /* PPStrawNode.swift in Sources */,
 				E385E42D2258DEF4001A41F6 /* ScoreShadowView.swift in Sources */,
 				E385E4352259066C001A41F6 /* SCNode+addChildNodes.swift in Sources */,
 				E355F56E2257C23D005034A8 /* BallFlowSceneDelegate.swift in Sources */,
@@ -548,11 +597,12 @@
 				E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
 				E385E447225932D1001A41F6 /* GameController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
-				E385E42F2258E38A001A41F6 /* FLWallsBoxNode.swift in Sources */,
+				2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */,
+				E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
-				E3761D99225D651900DBF3F8 /* ConfirmGameAlert.swift in Sources */,
 				E3761D95225D456300DBF3F8 /* InputGameAlert.swift in Sources */,
 				E338EC09225663E60066F863 /* SCNVector3+zero.swift in Sources */,
+				2FC4B7DD225B8CD5004E3545 /* PaperPlateGameState.swift in Sources */,
 				E338EC0C225667F00066F863 /* ForceSwipeGestureRecognizer.swift in Sources */,
 				E338EC0F22566F330066F863 /* BallFlowScene.swift in Sources */,
 				E338EBF822564B640066F863 /* ViewController.swift in Sources */,
@@ -560,21 +610,27 @@
 				E385E43722591DA0001A41F6 /* GamesManager.swift in Sources */,
 				E338EC142256ACC30066F863 /* BallFlowGameState.swift in Sources */,
 				E355F56A225798CF005034A8 /* SCNPhysicsContact+collisions.swift in Sources */,
+				E3EC6739225E1503000E53CD /* BallFlowViewControllerDelegate.swift in Sources */,
 				E355F5942258142D005034A8 /* FLObstacleNode.swift in Sources */,
+				4D00B585225D50B6007531D0 /* WinnerScene.swift in Sources */,
 				E385E44022592A88001A41F6 /* Game.swift in Sources */,
+				2F1D8449225B6FE4009F32D1 /* PaperPlateViewController.swift in Sources */,
 				E355F5772257D4C8005034A8 /* FLHorsesShoeNode.swift in Sources */,
-				E355F56122577F53005034A8 /* FLBallsBoxNode.swift in Sources */,
+				E355F56122577F53005034A8 /* BallsBoxNode.swift in Sources */,
+				2F5366CE225C4B1400F4C51C /* PPPlateNode.swift in Sources */,
 				E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */,
 				E338EBF622564B640066F863 /* AppDelegate.swift in Sources */,
-				E338EC1B2256B0600066F863 /* FLTableNode.swift in Sources */,
+				E338EC1B2256B0600066F863 /* TableNode.swift in Sources */,
 				E3761D91225D3C6100DBF3F8 /* GameAlertViewDatasource.swift in Sources */,
 				E385E4332258F77C001A41F6 /* WireView.swift in Sources */,
 				E3761D93225D3E0700DBF3F8 /* TextualGameAlert.swift in Sources */,
 				E355F55922576E6D005034A8 /* UIView+fillConstraints.swift in Sources */,
-				E3761D97225D58C800DBF3F8 /* BallFlowViewControllerDelegate.swift in Sources */,
+				4D00B583225D509C007531D0 /* WinnerViewController.swift in Sources */,
 				E338EC202256B1310066F863 /* CollisionCenter.swift in Sources */,
 				E385E43A22592112001A41F6 /* Round.swift in Sources */,
 				E355F56622578F76005034A8 /* Queue.swift in Sources */,
+				2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */,
+				2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */,
 				E355F5702257C354005034A8 /* Team.swift in Sources */,
 				E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */,
 				E385E43E225922BE001A41F6 /* GameType.swift in Sources */,
@@ -583,10 +639,11 @@
 				4D00B57A225CB821007531D0 /* InitialSceneViewController.swift in Sources */,
 				E338EC222256B5F70066F863 /* SCNode+collisions.swift in Sources */,
 				E355F57A2257F50C005034A8 /* FLWinPointNode.swift in Sources */,
-				E355F568225796D2005034A8 /* FLTableLimitsNode.swift in Sources */,
+				E355F568225796D2005034A8 /* TableLimitsNode.swift in Sources */,
 				E338EC192256AF3D0066F863 /* FLTargetPointNode.swift in Sources */,
 				4D00B580225CE22E007531D0 /* GameBoxView.swift in Sources */,
 				E355F56C2257B058005034A8 /* GameAlertView.swift in Sources */,
+				2FFAE960225CC96400266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,52 +652,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3BFE2EE225A26D2006C1226 /* GamesNavigator.swift in Sources */,
-				E3BFE2E3225A26C9006C1226 /* FLBallNode.swift in Sources */,
+				E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */,
+				2FFAE964225CDCC700266ED6 /* PPStrawNode.swift in Sources */,
+				E3BFE2E3225A26C9006C1226 /* BallNode.swift in Sources */,
+				2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
 				E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */,
 				E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */,
+				2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */,
 				E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */,
 				E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */,
 				E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */,
 				E3BFE2E8225A26C9006C1226 /* FLHorsesShoeNode.swift in Sources */,
 				E3BFE2EC225A26CE006C1226 /* ForceSwipeGestureRecognizer.swift in Sources */,
 				E3BFE2F6225A26DD006C1226 /* SCNode+collisions.swift in Sources */,
-				E3761DA0225D84FA00DBF3F8 /* GameBoxView.swift in Sources */,
 				E3BFE304225A26EE006C1226 /* Round.swift in Sources */,
 				E3BFE2DD225A26B9006C1226 /* GameViewControllerProtocol.swift in Sources */,
-				E3BFE2E5225A26C9006C1226 /* FLTableNode.swift in Sources */,
+				E3BFE2E5225A26C9006C1226 /* TableNode.swift in Sources */,
 				E3BFE305225A26EE006C1226 /* GameType.swift in Sources */,
 				E3BFE2F3225A26D6006C1226 /* UIColor+colors.swift in Sources */,
 				E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */,
 				E3BFE306225A26EE006C1226 /* Game.swift in Sources */,
 				E3BFE2F9225A26E1006C1226 /* TeamScoreView.swift in Sources */,
+				2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */,
 				E3BFE2E0225A26C3006C1226 /* BallFlowScene.swift in Sources */,
 				E3BFE2F1225A26D6006C1226 /* UIView+fillConstraints.swift in Sources */,
-				E3761D9E225D84DE00DBF3F8 /* GameAlertViewDatasource.swift in Sources */,
 				E3BFE2DF225A26C3006C1226 /* BallFlowViewController.swift in Sources */,
-				E3761DA1225D850A00DBF3F8 /* TextualGameAlert.swift in Sources */,
-				E3761D9C225D84D900DBF3F8 /* InputGameAlert.swift in Sources */,
-				E3BFE2EB225A26C9006C1226 /* FLWallsBoxNode.swift in Sources */,
+				E3BFE2EB225A26C9006C1226 /* WallsBoxNode.swift in Sources */,
+				2F1D844A225B71A6009F32D1 /* PaperPlateViewController.swift in Sources */,
 				E3BFE2EF225A26D2006C1226 /* ViewControllerType.swift in Sources */,
 				E3BFE2EA225A26C9006C1226 /* FLObstacleNode.swift in Sources */,
 				E3BFE2F5225A26DD006C1226 /* CollisionCenter.swift in Sources */,
 				E3BFE2DC225A26B9006C1226 /* GameController.swift in Sources */,
 				E3BFE2E2225A26C3006C1226 /* BallFlowSceneDelegate.swift in Sources */,
 				E3BFE302225A26EE006C1226 /* Team.swift in Sources */,
-				E3BFE2E7225A26C9006C1226 /* FLTableLimitsNode.swift in Sources */,
+				E3BFE2E7225A26C9006C1226 /* TableLimitsNode.swift in Sources */,
 				E3BFE2F7225A26DD006C1226 /* SCNPhysicsContact+collisions.swift in Sources */,
+				2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */,
 				E3BFE2FB225A26E1006C1226 /* ScoreShadowView.swift in Sources */,
 				E3BFE2ED225A26CE006C1226 /* Queue.swift in Sources */,
+				2FC4B7E0225C1EE9004E3545 /* PaperPlateScene.swift in Sources */,
 				E3BFE2FD225A26E1006C1226 /* WireView.swift in Sources */,
 				E3BFE2E4225A26C9006C1226 /* FLTargetPointNode.swift in Sources */,
 				E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */,
-				E3761D9B225D84CC00DBF3F8 /* InitialScene.swift in Sources */,
 				E3BFE2F8225A26E1006C1226 /* ScoreBoardView.swift in Sources */,
-				E3761D9A225D84CA00DBF3F8 /* InitialSceneViewController.swift in Sources */,
-				E3761D9D225D84D900DBF3F8 /* ConfirmGameAlert.swift in Sources */,
 				E3BFE2F0225A26D6006C1226 /* SCNVector3+zero.swift in Sources */,
-				E3BFE2E6225A26C9006C1226 /* FLBallsBoxNode.swift in Sources */,
+				E3BFE2E6225A26C9006C1226 /* BallsBoxNode.swift in Sources */,
 				E3BFE2E9225A26C9006C1226 /* FLWinPointNode.swift in Sources */,
-				E3761D9F225D84EA00DBF3F8 /* BallFlowViewControllerDelegate.swift in Sources */,
 				E3BFE2F4225A26D6006C1226 /* SCNode+addChildNodes.swift in Sources */,
 				E3BFE2FC225A26E1006C1226 /* DoubleWireView.swift in Sources */,
 			);
@@ -796,7 +853,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -816,7 +873,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -836,7 +893,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -846,7 +903,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -857,7 +914,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z8P97P3QB4;
+				DEVELOPMENT_TEAM = MQ922JMCL6;
 				INFOPLIST_FILE = TVOSTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -867,7 +924,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = paulino.elias.TVOSTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -91,7 +91,6 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         self.scoreBoardView.setRound(to: 1, of: numberOfRounds)
         setupInitialScoreBoard()
         
-        scoreBoardView.isHidden = true
     }
     
     public override func viewWillDisappear(_ animated: Bool) {

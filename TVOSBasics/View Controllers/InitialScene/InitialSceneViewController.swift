@@ -112,8 +112,12 @@ class InitialSceneViewController: UIViewController {
     }
     
     @objc func buttonTarget(_ selector: UIButton){
-        //Finalizar a gincana e chamar a tela de vencedor
+        //Finalizar a gincana e chamar a tela de vencedor --> Lembrar de mandar o vencedor
         print("fulano venceu")
+        let t = WinnerViewController()
+        t.modalTransitionStyle = .coverVertical
+        t.modalPresentationStyle = .overCurrentContext
+        self.present(t, animated: true, completion: nil)
     }
     
     func gamesBoxConfiguration() {
@@ -173,7 +177,10 @@ class InitialSceneViewController: UIViewController {
     }
     
     @objc func tappedPaperPlateTargets(_ gesture: UITapGestureRecognizer){
-        print("Paper Plate Targets")
+        let paper = PaperPlateViewController()
+        paper.modalTransitionStyle = .coverVertical
+        paper.modalPresentationStyle = .overCurrentContext
+        self.present(paper, animated: true, completion: nil)
     }
     
     @objc func tappedWhoAmI(_ gesture: UITapGestureRecognizer){

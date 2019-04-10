@@ -10,7 +10,7 @@ import Foundation
 import SceneKit
 
 /// the table of the game
-class FLTableNode: SCNNode {
+class TableNode: SCNNode {
     
     var tableNode: SCNNode? = SCNScene.loadSceneNode(sceneName: "table.scn", nodeName: "table")
     
@@ -24,10 +24,14 @@ class FLTableNode: SCNNode {
         physicsBody = SCNPhysicsBody.init(type: .static, shape: nil)
         
         if let tableNode = tableNode {
+            tableNode.position.y += 0.1
             addChildNode(tableNode)
         }
         
-        willCollideWith(nodeTypes: [FLBallNode.self])
+        willCollideWith(nodeTypes: [BallNode.self,
+                                    PPPlateNode.self,
+                                    ])
+        willContactWith(nodeTypes: [PPPlateNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {
