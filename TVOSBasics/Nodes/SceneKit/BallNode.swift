@@ -27,14 +27,18 @@ class BallNode: SCNNode {
         
         willCollideWith(nodeTypes: [
             TableNode.self,
-            FLBallsBoxNode.self,
+            BallsBoxNode.self,
             BallNode.self,
             FLHorsesShoeNode.self,
-            FLObstacleNode.self
+            FLObstacleNode.self,
+            PPStrawNode.self,
+            PPPlateNode.self
         ])
         willContactWith(nodeTypes: [
             FLTargetPointNode.self,
-            TableLimitsNode.self
+            TableLimitsNode.self,
+            WallsBoxNode.self,
+            PPPlateNode.self
         ])
     }
     

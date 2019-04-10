@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         gamesNavigator.show(controllerType: .initialScene)
-        
+
         return true
     }
 }

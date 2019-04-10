@@ -11,4 +11,5 @@ import Foundation
 enum ViewControllerType {
     case flowBall
     case initialScene
+    case paperPlate
 }

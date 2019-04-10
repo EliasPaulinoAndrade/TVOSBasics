@@ -10,4 +10,5 @@ import Foundation
 
 enum GameType {
     case flowBall
+    case paperPlate
 }
