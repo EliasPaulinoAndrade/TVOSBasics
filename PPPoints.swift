@@ -32,7 +32,7 @@ class PPPoints: SCNNode {
         
         physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: nil)
         
-        //willContactWith(nodeTypes: [BallNode.self])
+        willContactWith(nodeTypes: [BallNode.self])
         
         addChildNode(pointsTextNode)
     }

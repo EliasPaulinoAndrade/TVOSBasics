@@ -227,13 +227,14 @@ class PaperPlateScene: SCNScene {
                 plate.position.x = auxX
                 plate.position.z = auxZ + Float.random(in: 1...limitRandon)
                 auxX += Float.random(in: 6...7)
-                incremend += 1.0
+                incremend += 1.2
             } else {
                 auxX = -12 + incremend
                 auxZ += 6
             }
             let (min, max) = plate.boundingBox
-            pointsNode.position = SCNVector3(x: (max.x - min.x) / 2 + min.x, y: plate.position.y, z: plate.position.z)
+            pointsNode.pivot = SCNMatrix4MakeTranslation((max.x - min.x) / 2 + min.x, (max.y - min.y) / 2 + min.y, 0);
+            pointsNode.position = SCNVector3(x: (max.x - min.x) / 2 + min.x, y: (max.y - min.y) / 2 + min.y, z: plate.position.z / 2)
             plate.addChildNode(pointsNode)
         }
     }
