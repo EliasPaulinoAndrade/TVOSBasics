@@ -22,6 +22,8 @@
 		2FFAE965225CDCCF00266ED6 /* PPPlateNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */; };
 		2FFAE966225CDCF500266ED6 /* PaperPlateGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC4B7DC225B8CD5004E3545 /* PaperPlateGameState.swift */; };
 		2FFAE967225DAC6200266ED6 /* plate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2F5366D5225C504100F4C51C /* plate.scn */; };
+		2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
+		2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAE968225DC42300266ED6 /* PPPoints.swift */; };
 		E338EBF622564B640066F863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF522564B640066F863 /* AppDelegate.swift */; };
 		E338EBF822564B640066F863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E338EBF722564B640066F863 /* ViewController.swift */; };
 		E338EBFB22564B640066F863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E338EBF922564B640066F863 /* Main.storyboard */; };
@@ -129,6 +131,7 @@
 		2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPStrawNode.swift; sourceTree = "<group>"; };
 		2FFAE95F225CC96400266ED6 /* DistancePanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistancePanGestureRecognizer.swift; sourceTree = "<group>"; };
 		2FFAE962225CD3F500266ED6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		2FFAE968225DC42300266ED6 /* PPPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPPoints.swift; sourceTree = SOURCE_ROOT; };
 		E338EBF222564B640066F863 /* TVOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E338EBF522564B640066F863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E338EBF722564B640066F863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +345,7 @@
 				E385E42E2258E38A001A41F6 /* WallsBoxNode.swift */,
 				2FC4B7DE225B90D2004E3545 /* PPStrawNode.swift */,
 				2F5366CD225C4B1400F4C51C /* PPPlateNode.swift */,
+				2FFAE968225DC42300266ED6 /* PPPoints.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -569,6 +573,7 @@
 				E385E43A22592112001A41F6 /* Round.swift in Sources */,
 				E355F56622578F76005034A8 /* Queue.swift in Sources */,
 				2F1D844C225B7451009F32D1 /* PaperPlateScene.swift in Sources */,
+				2FFAE969225DC42300266ED6 /* PPPoints.swift in Sources */,
 				E355F5702257C354005034A8 /* Team.swift in Sources */,
 				E385E4452259309C001A41F6 /* ViewControllerType.swift in Sources */,
 				E385E43E225922BE001A41F6 /* GameType.swift in Sources */,
@@ -592,6 +597,7 @@
 				2FFAE961225CCC6700266ED6 /* DistancePanGestureRecognizer.swift in Sources */,
 				E3BFE2E1225A26C3006C1226 /* BallFlowGameState.swift in Sources */,
 				E3BFE303225A26EE006C1226 /* GamesManager.swift in Sources */,
+				2FFAE96A225DC42300266ED6 /* PPPoints.swift in Sources */,
 				E3BFE2F2225A26D6006C1226 /* SCNScene+loadSceneNode.swift in Sources */,
 				E3BFE2FA225A26E1006C1226 /* GameAlertView.swift in Sources */,
 				E3BFE2DE225A26B9006C1226 /* GameViewControllerDelegate.swift in Sources */,

@@ -27,6 +27,7 @@ class PPPlateNode: SCNNode {
         let shape = SCNPhysicsShape.init(geometry: plateGeometry, options: nil)
         
         physicsBody = SCNPhysicsBody.init(type: .dynamic, shape: shape)
+        physicsBody?.mass = 4
         physicsBody?.isAffectedByGravity = false
         self.eulerAngles = SCNVector3(Float.pi / 2, 0, 0)
         
@@ -39,10 +40,14 @@ class PPPlateNode: SCNNode {
         willCollideWith(nodeTypes: [
             BallNode.self,
             PPPlateNode.self,
-            TableNode.self
+            TableNode.self,
+            TableLimitsNode.self
             ])
         willContactWith(nodeTypes: [
-            TableNode.self
+            TableLimitsNode.self,
+            PPPlateNode.self,
+            BallNode.self,
+            TableLimitsNode.self
             ])
     }
 

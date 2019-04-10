@@ -28,7 +28,7 @@ class TableLimitsNode: SCNNode {
         physicsBody = SCNPhysicsBody.init(type: .kinematic, shape: tableShape)
         
         willCollideWith(nodeTypes: [PPPlateNode.self])
-        willContactWith(nodeTypes: [BallNode.self])
+        willContactWith(nodeTypes: [BallNode.self, PPPlateNode.self])
     }
     
     required init?(coder aDecoder: NSCoder) {

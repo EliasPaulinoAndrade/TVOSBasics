@@ -28,7 +28,9 @@ class TableNode: SCNNode {
             addChildNode(tableNode)
         }
         
-        willCollideWith(nodeTypes: [BallNode.self])
+        willCollideWith(nodeTypes: [BallNode.self,
+                                    PPPlateNode.self,
+                                    ])
         willContactWith(nodeTypes: [PPPlateNode.self])
     }
     

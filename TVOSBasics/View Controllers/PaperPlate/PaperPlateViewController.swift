@@ -18,7 +18,37 @@ class PaperPlateViewController: UIViewController {
     var tube: SCNTube!
     var table: SCNPlane!
     var pan: DistancePanGestureRecognizer!
-    let force = SCNVector3(0, 0, -50)
+    let force = SCNVector3(0, 0, -40)
+    var scoreBoardView = ScoreBoardView.init()
+    var gameDelegate: GameViewControllerDelegate?
+    
+    lazy var gameAlertView: GameAlertView = {
+        let gameAlertView = GameAlertView.init(text: "Vez da Equipe \(Team.red). Pressione Play para continuar.") {
+            self.scnScene.initiateGame(forTeam: .red)
+            self.gameDelegate?.beginGame(withTeam: .red)
+        }
+        return gameAlertView
+    }()
+    
+    lazy var gameController: GameController = {
+        let gameController = GameController.init(withGameViewControler: self)
+        
+        return gameController
+    }()
+    
+    override public var preferredFocusEnvironments: [UIFocusEnvironment] {
+        return [gameAlertView]
+    }
+    
+    public init() {
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +57,16 @@ class PaperPlateViewController: UIViewController {
         setupGestures()
         self.scnScene.addNewBall()
         self.scnScene.newPlates()
+
+        view.addSubview(scoreBoardView)
+        view.addSubview(gameAlertView)
+        
+        self.scnView.backgroundColor = UIColor.flLightBlue
+        
+        self.gameDelegate = gameController
+        
+        self.scoreBoardView.titleLabel.text = "Paper Plate Game"
+        self.scoreBoardView.setRound(to: 1, of: 5)
     }
     
     private func setupView(){
@@ -66,5 +106,60 @@ class PaperPlateViewController: UIViewController {
         let distance = pan.getDistance(in: self.view)
         self.scnScene.moveStraw(to: distance)
         
+    }
+}
+
+extension PaperPlateViewController: GameViewControllerProtocol {
+    
+    var gameType: GameType {
+        return .paperPlate
+    }
+    
+    var numberOfRounds: Int {
+        return 5
+    }
+    
+    func setViewForChangeOf(team: Team) {
+        DispatchQueue.main.async {
+            self.gameAlertView.isHidden = false
+            self.gameAlertView.reset(withText: "Vez da Equipe \(team). Pressione Play para continuar.") {
+                self.scnScene.initiateGame(forTeam: team)
+                self.scoreBoardView.currentTeam = team
+            }
+        }
+    }
+    
+    func setViewForChangeOfRound(toTeam team: Team, withRedRounds redRounds: Int, andBlueRounds blueRounds: Int, nextRoundNumber: Int) {
+        DispatchQueue.main.async {
+            self.gameAlertView.isHidden = false
+            self.gameAlertView.reset(withText: "Novo round. Vez da Equipe \(team). Pressione Play para continuar.") {
+                self.scoreBoardView.currentTeam = team
+                self.scoreBoardView.setMedalPointsTo(team: .red, points: redRounds)
+                self.scoreBoardView.setMedalPointsTo(team: .blue, points: blueRounds)
+                self.scnScene.initiateRound(forTeam: team)
+            }
+            
+            self.scoreBoardView.setRound(to: nextRoundNumber, of: self.numberOfRounds)
+        }
+    }
+    
+    func setViewForEndGame() {
+        DispatchQueue.main.async {
+            self.gameAlertView.isHidden = false
+            self.gameAlertView.reset(withText: "End Game")
+        }
+    }
+    
+    func setViewForPointsChange(ofTeam team: Team, points: Int) {
+        DispatchQueue.main.async {
+            self.scoreBoardView.setPointsTo(team: team, points: points)
+        }
+    }
+    
+    func setViewForPositionChange(redWinner: Bool, blueWinner: Bool) {
+        DispatchQueue.main.async {
+            
+            self.scoreBoardView.setMedals(blueIsGold: blueWinner, redIsGold: redWinner)
+        }
     }
 }

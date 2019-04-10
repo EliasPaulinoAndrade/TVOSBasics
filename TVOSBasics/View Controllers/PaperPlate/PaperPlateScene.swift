@@ -16,9 +16,7 @@ class PaperPlateScene: SCNScene {
     let nPlates = 10
     let possiblePoints = [100, 50, 20, 10, 5]
     let totalPoints = 1000
-    
-    weak var delegate: BallFlowSceneDelegate?
-    
+        
     lazy var cameraNode: SCNNode = {
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
@@ -100,6 +98,7 @@ class PaperPlateScene: SCNScene {
     
     override init() {
         super.init()
+//        self.physicsWorld.gravity = SCNVector3Make(0, -9.8, 0);
         rootNode.addChildNode(cameraNode)
         rootNode.addChildNode(straw)
         rootNode.addChildNode(lightNode)
@@ -110,10 +109,26 @@ class PaperPlateScene: SCNScene {
         rootNode.addChildNode(tableLimitsNode)
         rootNode.addChildNodes(plates)
         self.physicsWorld.contactDelegate = self
+        currentBall?.physicsBody?.isAffectedByGravity = false
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func initiateRound(forTeam team: Team) {
+        switch team {
+        case .red:
+            self.state = .redPlaying
+            self.boxBollsTeam1.fill()
+            self.boxBollsTeam2.fill()
+        case .blue:
+            self.state = .bluePlaying
+            self.boxBollsTeam1.fill()
+            self.boxBollsTeam2.fill()
+        }
+        
+        self.addNewBall()
     }
     
     func addNewBall() {
@@ -138,12 +153,12 @@ class PaperPlateScene: SCNScene {
             
             rootNode.addChildNode(newBall)
             self.currentBall = newBall
-        } else if let _ = currentTeam {
-            self.delegate?.finished()
+            self.currentBall?.physicsBody?.isAffectedByGravity = false
         }
     }
     
     func throwBall(withForce force: SCNVector3) {
+        currentBall?.physicsBody?.isAffectedByGravity = true
         self.currentBall?.physicsBody?.applyForce(force, asImpulse: true)
     }
     
@@ -176,6 +191,16 @@ class PaperPlateScene: SCNScene {
         }
     }
     
+    func initiateGame(forTeam team: Team) {
+        
+        switch team {
+        case .red:
+            self.state = .redPlaying
+        case .blue:
+            self.state = .bluePlaying
+        }
+    }
+    
     func newPlates() {
         plates.sort { (plate1, plate2) -> Bool in
             guard let points1 = plate1.points, let points2 = plate2.points else { return false}
@@ -186,8 +211,9 @@ class PaperPlateScene: SCNScene {
         let limitRandon: Float = 4
         var incremend: Float = 0.1
         for (index, plate) in plates.enumerated() {
+            let points = SCNText(
             if index < 4 {
-                plate.position.x = auxX 
+                plate.position.x = auxX
                 plate.position.z = auxZ + Float.random(in: 1...limitRandon)
                 auxX += Float.random(in: 5...7)
                 incremend += 0.5
@@ -200,7 +226,7 @@ class PaperPlateScene: SCNScene {
                 plate.position.x = auxX
                 plate.position.z = auxZ + Float.random(in: 1...limitRandon)
                 auxX += Float.random(in: 6...8)
-                incremend += 2.0
+                incremend += 1.5
             } else {
                 auxX = -12 + incremend
                 auxZ += 6
@@ -215,13 +241,14 @@ extension PaperPlateScene: SCNPhysicsContactDelegate {
         if contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: TableLimitsNode.self) {
             self.currentBall?.removeFromParentNode()
             addNewBall()
-        } else if let (ballNode, targetPlate): (BallNode,PPPlateNode) = contact.checkCollisionBetween(nodeTypeA: BallNode.self, nodeTypeB: PPPlateNode.self) {
+        } else if let (ballNode, targetPlate) = contact.checkCollisionBetween1(nodeTypeA: BallNode.self, nodeTypeB: PPPlateNode.self), !ballNode.wasUsed {
             targetPlate.physicsBody?.isAffectedByGravity = true
+            ballNode.wasUsed = true
 //            ballNode.runAction(SCNAction.wait(duration: 1)) {
 //                ballNode.removeFromParentNode()
 //            }
             
-        } else if let (plate1, plate2): (PPPlateNode,PPPlateNode) = contact.checkCollisionBetween(nodeTypeA: PPPlateNode.self, nodeTypeB: PPPlateNode.self) {
+        } else if let (plate1, plate2) = contact.checkCollisionBetween1(nodeTypeA: PPPlateNode.self, nodeTypeB: PPPlateNode.self) {
             plate1.physicsBody?.isAffectedByGravity = true
             plate2.physicsBody?.isAffectedByGravity = true
         }
