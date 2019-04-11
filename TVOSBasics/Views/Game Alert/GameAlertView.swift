@@ -16,15 +16,6 @@ class GameAlertView: UIView {
     
     weak var datasource: GameAlertViewDatasource?
     
-    lazy var contentTextLabel: UILabel = {
-        let contentTextLabel = UILabel.init()
-        
-        contentTextLabel.textAlignment = .center
-        contentTextLabel.font = UIFont.systemFont(ofSize: 50)
-        
-        return contentTextLabel
-    }()
-    
     lazy var backgroundView: UIView = {
         let backgroundView = UIView.init()
         
@@ -78,10 +69,9 @@ class GameAlertView: UIView {
         setupInput()
     }
     
-    func reset(withText text: String, completion: (() -> ())? = nil) {
+    func reset(completion: (() -> ())? = nil) {
         self.completion = completion
         
-        self.contentTextLabel.text = text
         UIView.animate(withDuration: 0.3, animations: {
             self.layer.opacity = 1
         })

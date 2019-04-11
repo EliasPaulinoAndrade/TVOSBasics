@@ -171,6 +171,7 @@ class InitialSceneViewController: UIViewController {
         print("Ball Flow")
         let t = BallFlowViewController()
         t.gameController = self.gameController
+        t.delegate = self
         t.modalTransitionStyle = .coverVertical
         t.modalPresentationStyle = .overCurrentContext
         self.present(t, animated: true, completion: nil)

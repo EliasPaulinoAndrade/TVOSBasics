@@ -9,45 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TVOSBasics/Models/Round.swift"
-            timestampString = "576298375.776701"
+            filePath = "TVOSBasics/View Controllers/InitialScene/InitialSceneViewController.swift"
+            timestampString = "576713235.381741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "teamWithMorePoints()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVOSBasics/View Controllers/BallFlow/BallFlowViewController.swift"
-            timestampString = "576591297.301648"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
-            landmarkName = "finished()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TVOSBasics/Controllers/GameController/GameController.swift"
-            timestampString = "576586979.343496"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "beginNewTeam(team:)"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "setupInitialScoreBoard()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

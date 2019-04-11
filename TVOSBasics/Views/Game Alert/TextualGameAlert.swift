@@ -84,9 +84,8 @@ class TextualGameAlert {
     
     func reset(withTitle title: String, andText text: String, completion: (() -> ())? = nil) {
         containerView.titleContentLabel.text = title
-//        containerView.contentTextLabel.text = text
-//        self.gameAlertView.completion = completion
-        self.gameAlertView.reset(withText: text, completion: completion)
+        containerView.contentTextLabel.text = text
+        self.gameAlertView.reset(completion: completion)
     }
 }
 

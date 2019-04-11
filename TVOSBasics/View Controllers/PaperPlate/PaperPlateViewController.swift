@@ -144,7 +144,7 @@ extension PaperPlateViewController: GameViewControllerProtocol {
         }
     }
     
-    func setViewForEndGame() {
+    func setViewForEndGame(winnerTeam: Team?, winnerRounds: Int?) {
         DispatchQueue.main.async {
             self.textualGameAlert.gameAlertView.isHidden = false
             self.textualGameAlert.reset(withTitle: "End Game", andText: "")

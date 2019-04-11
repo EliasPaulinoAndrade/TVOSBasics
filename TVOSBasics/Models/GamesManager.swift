@@ -46,13 +46,18 @@ class GamesManager {
             oldGames.append(currentGame)
         }
         
+        self.currentRound = nil
+        
         currentGame = Game.init(gameType, withNumberOfRounds: numberOfRounds)
     }
     
     func beginNextRound(byTeam team: Team, andNumberOfTeams numberOfTeams: Int) -> Bool {
-        guard let currentGame = self.currentGame, currentGame.hasMoreRounds() else {
+        guard let currentGame = self.currentGame else {
+            
             return false
         }
+        
+        let hasMoreRounds = currentGame.hasMoreRounds()
         
         if let currentRound = self.currentRound {
             oldRounds.append(currentRound)
@@ -60,6 +65,13 @@ class GamesManager {
                 addWonRound(toTeam: teamWithMorePoints.team)
             }
             currentGame.currentRound += 1
+        }
+        
+        guard hasMoreRounds else {
+            
+            currentRound = nil
+            
+            return false
         }
         
         currentRound = Round.init(withGameType: currentGame.gameType, beginByTeam: team, andNumberOfTeams: numberOfTeams)

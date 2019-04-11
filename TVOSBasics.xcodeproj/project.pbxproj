@@ -79,6 +79,7 @@
 		E385E447225932D1001A41F6 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E446225932D1001A41F6 /* GameController.swift */; };
 		E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */; };
 		E385E44B225933E1001A41F6 /* GameViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */; };
+		E39EE588225FDD22003344C9 /* ConfirmGameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39EE587225FDD22003344C9 /* ConfirmGameAlert.swift */; };
 		E3BFE2CD225A25CA006C1226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */; };
 		E3BFE2CF225A25CA006C1226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BFE2CE225A25CA006C1226 /* ViewController.swift */; };
 		E3BFE2D2225A25CA006C1226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BFE2D0225A25CA006C1226 /* Main.storyboard */; };
@@ -198,6 +199,7 @@
 		E385E446225932D1001A41F6 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		E385E4482259335E001A41F6 /* GameViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerProtocol.swift; sourceTree = "<group>"; };
 		E385E44A225933E1001A41F6 /* GameViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControllerDelegate.swift; sourceTree = "<group>"; };
+		E39EE587225FDD22003344C9 /* ConfirmGameAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmGameAlert.swift; sourceTree = "<group>"; };
 		E3BFE2CA225A25CA006C1226 /* TVOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BFE2CC225A25CA006C1226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3BFE2CE225A25CA006C1226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 		E3761D8E225D3C1D00DBF3F8 /* Game Alert */ = {
 			isa = PBXGroup;
 			children = (
+				E39EE587225FDD22003344C9 /* ConfirmGameAlert.swift */,
 				E355F56B2257B058005034A8 /* GameAlertView.swift */,
 				E3761D90225D3C6100DBF3F8 /* GameAlertViewDatasource.swift */,
 				E3761D92225D3E0700DBF3F8 /* TextualGameAlert.swift */,
@@ -597,6 +600,7 @@
 				E385E4492259335E001A41F6 /* GameViewControllerProtocol.swift in Sources */,
 				E385E447225932D1001A41F6 /* GameController.swift in Sources */,
 				E355F597225822A9005034A8 /* UIColor+colors.swift in Sources */,
+				E39EE588225FDD22003344C9 /* ConfirmGameAlert.swift in Sources */,
 				2FFAE963225CD3F500266ED6 /* Direction.swift in Sources */,
 				E385E42F2258E38A001A41F6 /* WallsBoxNode.swift in Sources */,
 				E355F55B2257757B005034A8 /* TeamScoreView.swift in Sources */,
@@ -853,7 +857,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MQ922JMCL6;
+				DEVELOPMENT_TEAM = Z8P97P3QB4;
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -873,7 +877,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MQ922JMCL6;
+				DEVELOPMENT_TEAM = Z8P97P3QB4;
 				INFOPLIST_FILE = TVOSBasics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

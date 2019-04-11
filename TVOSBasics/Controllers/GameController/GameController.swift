@@ -72,8 +72,11 @@ extension GameController: GameViewControllerDelegate {
             currentController.setViewForPointsChange(ofTeam: .blue, points: 0)
             
             checkForWinnerChange(redRounds: redRounds, blueRounds: blueRounds)
+        } else if let (winnerTeam, winnerRounds) = gameManager.teamWithMoreRounds() {
+        
+            currentController.setViewForEndGame(winnerTeam: winnerTeam, winnerRounds: winnerRounds)
         } else {
-            currentController.setViewForEndGame()
+            currentController.setViewForEndGame(winnerTeam: nil, winnerRounds: nil)
         }
     }
     

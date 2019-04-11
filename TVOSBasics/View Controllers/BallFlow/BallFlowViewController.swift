@@ -12,7 +12,7 @@ import SceneKit
 
 public class BallFlowViewController: UIViewController, GameViewControllerProtocol {
 
-    let ballPanForceFactor: CGFloat = 100
+    let ballPanForceFactor: CGFloat = 1000
     
     var sceneView = SCNView.init()
     
@@ -28,7 +28,7 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     
     var gameType: GameType = .flowBall
     
-    var numberOfRounds = 5
+    var numberOfRounds = 3
     
     lazy var preferredFocusView: UIView = textualGameAlert.gameAlertView
         
@@ -40,13 +40,13 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         return textualGameAlert
     }()
     
-//    lazy var confirmGameAlert: ConfirmGameAlert = {
-//        let confirmGameAlert = ConfirmGameAlert.init(withAlertTitle: "Warning", buttonText: "Close", contentTitle: "The Current Game Will be Lost")
-//
-//        confirmGameAlert.gameAlertView.isHidden = true
-//
-//        return confirmGameAlert
-//    }()
+    lazy var confirmGameAlert: ConfirmGameAlert = {
+        let confirmGameAlert = ConfirmGameAlert.init(withAlertTitle: "Warning", buttonText: "Close", contentTitle: "The Current Game Will be Lost")
+
+        confirmGameAlert.gameAlertView.isHidden = true
+
+        return confirmGameAlert
+    }()
     
     override public var preferredFocusEnvironments: [UIFocusEnvironment] {
         return [textualGameAlert.gameAlertView]
@@ -75,17 +75,18 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         
         if self.gameController == nil {
             self.gameController = GameController.init(withGameViewControler: self)
-            self.gameDelegate = self.gameController
+            
         }
+        self.gameDelegate = self.gameController
+        self.gameController?.currentController = self
+        
         
         view.addSubview(scoreBoardView)
         
         view.addSubview(textualGameAlert.gameAlertView)
-//        view.addSubview(confirmGameAlert.gameAlertView)
+        view.addSubview(confirmGameAlert.gameAlertView)
         
         self.sceneView.backgroundColor = UIColor.flLightBlue
-        
-        self.gameDelegate = gameController
         
         self.scoreBoardView.titleLabel.text = "Flow Ball Game"
         self.scoreBoardView.setRound(to: 1, of: numberOfRounds)
@@ -107,10 +108,6 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         if let blueRounds = currentGameInfo?.blueRounds {
             scoreBoardView.setMedalPointsTo(team: .blue, points: blueRounds)
         }
-        
-        if let currentRound = currentGameInfo?.currentRound {
-            scoreBoardView.setRound(to: currentRound, of: self.numberOfRounds)
-        }
     }
     
     @objc func swipeHappend(recognizer: ForceSwipeGestureRecognizer) {
@@ -122,25 +119,26 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
     }
     
     @objc func tapHappend(recognizer: UITapGestureRecognizer) {
-//        self.confirmGameAlert.gameAlertView.isHidden = false
-//
-//        self.preferredFocusView = self.confirmGameAlert.gameAlertView
-//
-//        setNeedsFocusUpdate()
-//        updateFocusIfNeeded()
-//
-//        self.confirmGameAlert.confirmCompletion = {
-//            self.dismiss(animated: true) {
-//                self.delegate?.gameDidFinrished(withGameController: self.gameController)
-//            }
-//        }
-//
-//        self.confirmGameAlert.completion = {
-//            self.preferredFocusView = self.textualGameAlert.gameAlertView
-//
-//            self.setNeedsFocusUpdate()
-//            self.updateFocusIfNeeded()
-//        }
+        self.confirmGameAlert.gameAlertView.isHidden = false
+        self.confirmGameAlert.gameAlertView.reset()
+
+        self.preferredFocusView = self.confirmGameAlert.gameAlertView
+
+        setNeedsFocusUpdate()
+        updateFocusIfNeeded()
+
+        self.confirmGameAlert.confirmCompletion = {
+            self.dismiss(animated: true) {
+                self.delegate?.gameDidFinished(withGameController: self.gameController)
+            }
+        }
+
+        self.confirmGameAlert.completion = {
+            self.preferredFocusView = self.textualGameAlert.gameAlertView
+
+            self.setNeedsFocusUpdate()
+            self.updateFocusIfNeeded()
+        }
     }
     
     func setupInput() {
@@ -198,10 +196,21 @@ public class BallFlowViewController: UIViewController, GameViewControllerProtoco
         }
     }
     
-    func setViewForEndGame() {
+    func setViewForEndGame(winnerTeam: Team?, winnerRounds: Int?) {
         DispatchQueue.main.async {
             self.textualGameAlert.gameAlertView.isHidden = false
-            self.textualGameAlert.reset(withTitle: "End Game", andText: "Press Play to back to Menu")
+            
+            var endGameMessage = "the game is tied"
+            
+            if let winnerTeam = winnerTeam, let winnerRounds = winnerRounds {
+                endGameMessage = "\(winnerTeam.description.capitalized) is in front with \(winnerRounds) round. Press Play to back to Menu"
+            }
+            
+            self.textualGameAlert.reset(withTitle: "End Game", andText: endGameMessage) {
+                self.dismiss(animated: true, completion: {
+                    self.delegate?.gameDidFinished(withGameController: self.gameController)
+                })
+            }
         }
     }
     
