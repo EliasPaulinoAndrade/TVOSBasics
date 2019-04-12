@@ -24,6 +24,18 @@ class TeamScoreView: UIView {
         }
     }
     
+    var showScoreCountView: Bool {
+        didSet {
+            if showScoreCountView {
+                scoreLabel.isHidden = false
+                scoreImageView.isHidden = false
+            } else {
+                scoreLabel.isHidden = true
+                scoreImageView.isHidden = true
+            }
+        }
+    }
+    
     var alignLeft: Bool
     
     lazy var teamNameLabel: UILabel = {
@@ -139,10 +151,11 @@ class TeamScoreView: UIView {
         }
     }
     
-    init(teamName: String, showTurnLabel: Bool = false, alignLeft: Bool = false) {
+    init(teamName: String, showTurnLabel: Bool = false, alignLeft: Bool = false, showScoreCountView: Bool = true) {
         
         self.showTurnLabel = showTurnLabel
         self.alignLeft = alignLeft
+        self.showScoreCountView = showScoreCountView
         
         super.init(frame: CGRect.zero)
         

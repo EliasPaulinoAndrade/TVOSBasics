@@ -42,6 +42,9 @@ class InitialSceneViewController: UIViewController {
         self.scoreBoardView.roundLabel.text = "Choose your games and enjoy!"
         self.scoreBoardView.redTeamPlaceView.showTurnLabel = false
         
+        scoreBoardView.redTeamPlaceView.showScoreCountView = false
+        scoreBoardView.blueTeamPlaceView.showScoreCountView = false
+        
     }
     
     func setupSceneView() {
@@ -207,3 +210,4 @@ extension InitialSceneViewController: BallFlowViewControllerDelegate {
         }
     }
 }
+
